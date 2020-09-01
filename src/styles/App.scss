@@ -1,0 +1,31 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+@import "./other.scss";
+
+// pages
+@import "./pages/home.scss";
+
+// components
+@import "./components/header.scss";
+
+body {
+  background: #fff;
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.form-control {
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+  }
+}
