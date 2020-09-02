@@ -29,7 +29,7 @@ export default function Header(props) {
 
   return (
     <React.Fragment>
-      <AppBar elevation={0}>
+      <AppBar className={classes.navbar} elevation={0}>
         <Container>
           <Toolbar disableGutters>
             <Typography variant="h6" className={classes.title}>

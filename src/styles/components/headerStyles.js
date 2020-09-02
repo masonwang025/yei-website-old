@@ -10,13 +10,19 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  navbar: {
+    backgroundColor: "white",
+    "&, button": {
+      color: theme.palette.secondary.dark,
+    },
+  },
   navLinks: {
     color: "white",
     fontSize: "1.2em",
     marginLeft: "0.42em",
     "&::before": {
       transition: "0.42s ease-in-out",
-      backgroundColor: `${theme.palette.primary.dark}`,
+      backgroundColor: theme.palette.secondary.dark,
       content: '""',
       zIndex: -10,
       display: "block",
