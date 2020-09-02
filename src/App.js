@@ -4,17 +4,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Page components
-import Home from "./pages/Home";
-import About from "./pages/About";
+import routes from "./data/routes";
 
 function App() {
-  // routes
-  const routes = [
-    { path: "/", Component: Home },
-    { path: "/about", Component: About },
-  ];
-
   return (
     <div className="App">
       <ScrollToTop />

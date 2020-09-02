@@ -8,7 +8,7 @@ export default function About() {
       <Page>
         <Container>
           <Grid>
-            <Typography variant="h3">About page</Typography>
+            <Typography variant="h3">Team page</Typography>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
               illum.

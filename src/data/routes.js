@@ -1,10 +1,10 @@
 // Page components
 import Home from "../pages/Home";
-import About from "../pages/About";
+import Team from "../pages/Team";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
-  { path: "/about", Component: About, name: "About" },
+  { path: "/team", Component: Team, name: "Team" },
 ];
 
 export default routes;
