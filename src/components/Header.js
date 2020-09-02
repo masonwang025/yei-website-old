@@ -179,7 +179,7 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
               else
                 return (
                   <NestedListNav
-                    key="nested-list-nav"
+                    key={route.path + route.name}
                     route={route}
                     classes={classes}
                     currPath={currPath}
@@ -196,7 +196,7 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
 }
 
 function DropdownMenu({ route, classes, currPath }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(currPath.startsWith(route.path));
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {
@@ -293,11 +293,17 @@ function DropdownMenu({ route, classes, currPath }) {
 }
 
 function NestedListNav({ currPath, route, classes, setDrawerOpen }) {
-  const [nestedOpen, setNestedOpen] = useState(false);
+  const [nestedOpen, setNestedOpen] = useState(currPath.startsWith(route.path));
 
   return (
     <div>
-      <ListItem button onClick={() => setNestedOpen(!nestedOpen)}>
+      <ListItem
+        button
+        onClick={() => setNestedOpen(!nestedOpen)}
+        className={`${classes.listItem} ${
+          currPath.startsWith(route.path) && !nestedOpen && "active"
+        }`}
+      >
         <ListItemText primary={route.name} />
         {nestedOpen ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
