@@ -33,7 +33,7 @@ export default function Header(props) {
         <Container>
           <Toolbar disableGutters>
             <Typography variant="h6" className={classes.title}>
-              MUI Boilerplate
+              YEI
             </Typography>
             <DesktopNav classes={classes} currPath={currPath} />
             <MobileNav
@@ -52,7 +52,6 @@ export default function Header(props) {
 }
 
 function BackTop(props) {
-  const { children } = props;
   const classes = useStyles();
 
   const trigger = useScrollTrigger({
@@ -126,7 +125,12 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
           <List className={classes.list}>
             {routes.map((route) => (
               <Link key={route.path} to={route.path}>
-                <ListItem className={classes.listItem} button>
+                <ListItem
+                  className={`${classes.listItem} ${
+                    currPath === route.path && "active"
+                  }`}
+                  button
+                >
                   <ListItemText primary={route.name} />
                 </ListItem>
               </Link>

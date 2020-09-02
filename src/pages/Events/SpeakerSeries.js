@@ -1,4 +1,6 @@
 import React from "react";
+import { Container, Grid, Typography } from "@material-ui/core";
+import Page from "../../components/Page";
 
 export default function SpeakerSeries() {
   return (

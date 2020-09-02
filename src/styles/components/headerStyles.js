@@ -55,6 +55,9 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     color: "black",
+    "&.active": {
+      backgroundColor: theme.palette.action.selected,
+    },
   },
   backToTop: {
     position: "fixed",

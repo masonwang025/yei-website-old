@@ -45,11 +45,25 @@ function App() {
       <Header />
       <div className="App">
         <Switch>
-          {routes.map(({ path, Component, props }) => (
-            <Route key={path} exact path={path}>
-              <Component {...props} />
-            </Route>
-          ))}
+          {routes.map(({ path, Component, dropRoutes }) => {
+            if (!dropRoutes)
+              return (
+                <Route key={path} exact path={path}>
+                  <Component />
+                </Route>
+              );
+            else {
+              return dropRoutes.map((dropRoute) => (
+                <Route
+                  key={path + dropRoute.path}
+                  exact
+                  path={path + dropRoute.path}
+                >
+                  <dropRoute.Component />
+                </Route>
+              ));
+            }
+          })}
           <Redirect to="/" />
         </Switch>
       </div>
