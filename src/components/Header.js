@@ -50,7 +50,14 @@ export default function Header(props) {
                 />
                 <div style={{ display: "inline-block" }}>
                   <Typography variant="h6" className={classes.titleText}>
-                    YEI
+                    <Box
+                      component="span"
+                      fontWeight={800}
+                      letterSpacing={1}
+                      ml={0.42}
+                    >
+                      YEI
+                    </Box>
                   </Typography>
                 </div>
               </Link>
