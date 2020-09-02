@@ -8,7 +8,6 @@ const routes = [
   { path: "/", Component: Home, name: "Home" },
   { path: "/team", Component: Team, name: "Team" },
   {
-    type: "dropdown",
     path: "/events",
     name: "Events",
     dropRoutes: [

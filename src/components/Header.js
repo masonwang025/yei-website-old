@@ -14,6 +14,12 @@ import {
   List,
   ListItem,
   ListItemText,
+  MenuList,
+  MenuItem,
+  Paper,
+  ClickAwayListener,
+  Popper,
+  Grow,
 } from "@material-ui/core";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -82,17 +88,29 @@ function BackTop(props) {
 function DesktopNav({ classes, currPath }) {
   return (
     <Hidden xsDown>
-      {routes.map((route) => (
-        <Link to={route.path} key={route.path + route.name}>
-          <Button
-            className={`${classes.navLinks} ${
-              currPath === route.path && "active"
-            }`}
-          >
-            {route.name}
-          </Button>
-        </Link>
-      ))}
+      {routes.map((route) => {
+        if (!route.dropRoutes)
+          return (
+            <Link to={route.path} key={route.path + route.name}>
+              <Button
+                className={`${classes.navLink} ${
+                  currPath === route.path && "active"
+                }`}
+              >
+                {route.name}
+              </Button>
+            </Link>
+          );
+        else
+          return (
+            <DropdownMenu
+              key="dropdown-menu"
+              route={route}
+              classes={classes}
+              currPath={currPath}
+            />
+          );
+      })}
     </Hidden>
   );
 }
@@ -139,5 +157,100 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
         </div>
       </Drawer>
     </Hidden>
+  );
+}
+
+function DropdownMenu({ route, classes, currPath }) {
+  const [open, setOpen] = React.useState(false);
+  const anchorRef = React.useRef(null);
+
+  const handleToggle = () => {
+    setOpen((prevOpen) => !prevOpen);
+  };
+
+  const handleClose = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  function handleListKeyDown(event) {
+    if (event.key === "Tab") {
+      event.preventDefault();
+      setOpen(false);
+    }
+  }
+
+  // return focus to the button when we transitioned from !open -> open
+  const prevOpen = React.useRef(open);
+  React.useEffect(() => {
+    if (prevOpen.current === true && open === false) {
+      anchorRef.current.focus();
+    }
+
+    prevOpen.current = open;
+  }, [open]);
+
+  return (
+    <div>
+      <div>
+        <Button
+          ref={anchorRef}
+          aria-controls={open ? "menu-list-grow" : undefined}
+          aria-haspopup="true"
+          onClick={handleToggle}
+          className={`${classes.navLink} ${
+            currPath.startsWith(route.path) && "active"
+          }`}
+        >
+          {route.name}
+        </Button>
+        <Popper
+          open={open}
+          anchorEl={anchorRef.current}
+          role={undefined}
+          transition
+          disablePortal
+        >
+          {({ TransitionProps, placement }) => (
+            <Grow
+              {...TransitionProps}
+              style={{
+                transformOrigin:
+                  placement === "bottom" ? "center top" : "center bottom",
+              }}
+            >
+              <Paper>
+                <ClickAwayListener onClickAway={handleClose}>
+                  <MenuList
+                    autoFocusItem={open}
+                    id="menu-list-grow"
+                    onKeyDown={handleListKeyDown}
+                  >
+                    {route.dropRoutes.map((dropRoute) => (
+                      <Link
+                        to={route.path + dropRoute.path}
+                        key={route.path + dropRoute.path + dropRoute.name}
+                      >
+                        <MenuItem
+                          onClick={handleClose}
+                          className={`${classes.listItem} ${
+                            currPath === route.path + dropRoute.path && "active"
+                          }`}
+                        >
+                          {dropRoute.name}
+                        </MenuItem>
+                      </Link>
+                    ))}
+                  </MenuList>
+                </ClickAwayListener>
+              </Paper>
+            </Grow>
+          )}
+        </Popper>
+      </div>
+    </div>
   );
 }

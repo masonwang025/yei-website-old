@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       color: theme.palette.secondary.dark,
     },
   },
-  navLinks: {
+  navLink: {
     color: "white",
     fontSize: "1.2em",
     marginLeft: "0.42em",
@@ -43,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
     "&.active": {
+      color: theme.palette.secondary.darkest,
       fontWeight: "bold",
       "&::before": {
         width: "100%",
