@@ -2,12 +2,6 @@
 @import "./variables.scss";
 @import "./other.scss";
 
-// pages
-@import "./pages/home.scss";
-
-// components
-@import "./components/header.scss";
-
 body {
   background: #fff;
   margin: 0;
@@ -19,13 +13,4 @@ body {
   text-decoration: none;
   scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-.form-control {
-  &:active,
-  &:focus {
-    outline: none;
-    box-shadow: none !important;
-    border: none;
-  }
 }

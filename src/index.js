@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import "./styles/App.scss";
 
-import theme from "./theme";
+import theme from "./styles/theme";
 import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/core/styles";
 

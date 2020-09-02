@@ -5,7 +5,6 @@ import {
   Typography,
   useScrollTrigger,
   Button,
-  Box,
   Container,
   Fab,
   Zoom,
@@ -16,43 +15,17 @@ import {
   ListItem,
   ListItemText,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import MenuIcon from "@material-ui/icons/Menu";
 import routes from "../data/routes";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  },
-  navLinks: {
-    color: "white",
-  },
-  list: {
-    width: 250,
-    alignText: "center",
-  },
-  listItem: {
-    color: "black",
-  },
-  backToTop: {
-    position: "fixed",
-    bottom: theme.spacing(2),
-    right: theme.spacing(2),
-  },
-}));
+import useStyles from "../styles/components/headerStyles.js";
 
 export default function Header(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const classes = useStyles();
+  const currPath = useLocation().pathname;
 
   return (
     <React.Fragment>
@@ -66,7 +39,13 @@ export default function Header(props) {
             <Hidden xsDown>
               {routes.map((route) => (
                 <Link to={route.path} key={route.path + route.name}>
-                  <Button className={classes.navLinks}>{route.name}</Button>
+                  <Button
+                    className={`${classes.navLinks} ${
+                      currPath === route.path && "active"
+                    }`}
+                  >
+                    {route.name}
+                  </Button>
                 </Link>
               ))}
             </Hidden>
