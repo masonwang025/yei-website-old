@@ -42,9 +42,6 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
       },
     },
-    "&> span.MuiTouchRipple-root": {
-      display: "none",
-    },
     "&.active": {
       color: theme.palette.secondary.darkest,
       fontWeight: "bold",

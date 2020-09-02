@@ -100,12 +100,13 @@ function BackTop(props) {
 // NAVIGATION COMPONENTS
 function DesktopNav({ classes, currPath }) {
   return (
-    <Hidden xsDown>
+    <Hidden smDown>
       {routes.map((route) => {
         if (!route.dropRoutes)
           return (
             <Link to={route.path} key={route.path + route.name}>
               <Button
+                disableRipple
                 className={`${classes.navLink} ${
                   currPath === route.path && "active"
                 }`}
@@ -130,7 +131,7 @@ function DesktopNav({ classes, currPath }) {
 
 function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
   return (
-    <Hidden smUp>
+    <Hidden mdUp>
       <IconButton
         edge="start"
         className={classes.menuButton}
@@ -224,6 +225,7 @@ function DropdownMenu({ route, classes, currPath }) {
           aria-controls={open ? "menu-list-grow" : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
+          disableRipple
           className={`${classes.navLink} ${
             currPath.startsWith(route.path) && "active"
           }`}

@@ -5,13 +5,25 @@ import Events from "../pages/Events/Events";
 import SpeakerSeries from "../pages/Events/SpeakerSeries";
 import EconBowl from "../pages/Events/EconBowl";
 import EconOlympiad from "../pages/Events/EconOlympiad";
-import Clubs from "../pages/Clubs";
+import Clubs from "../pages/Clubs/Clubs";
+import CurrentClubs from "../pages/Clubs/CurrentClubs";
 import Programs from "../pages/Programs";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
   { path: "/team", Component: Team, name: "Team" },
-  { path: "/clubs", Component: Clubs, name: "Clubs" },
+  {
+    path: "/clubs",
+    name: "EconClubs",
+    dropRoutes: [
+      { path: "/", Component: Clubs, name: "Overview" },
+      {
+        path: "/current-clubs",
+        Component: CurrentClubs,
+        name: "Current Clubs",
+      },
+    ],
+  },
   {
     path: "/events",
     name: "Events",
