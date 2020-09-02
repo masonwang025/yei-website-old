@@ -217,6 +217,7 @@ function DropdownMenu({ route, classes, currPath }) {
           }`}
         >
           {route.name}
+          <ExpandMore />
         </Button>
         <Popper
           open={open}
