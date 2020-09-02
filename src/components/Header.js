@@ -10,7 +10,7 @@ import {
   Zoom,
   IconButton,
   Hidden,
-  Drawer,
+  SwipeableDrawer,
   List,
   ListItem,
   ListItemText,
@@ -145,10 +145,11 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
         <MenuIcon />
       </IconButton>
 
-      <Drawer
+      <SwipeableDrawer
         elevation={0}
         anchor="right"
         open={drawerOpen}
+        onOpen={() => setDrawerOpen(true)}
         onClose={() => setDrawerOpen(false)}
       >
         <div role="presentation" onKeyDown={() => setDrawerOpen(false)}>
@@ -182,7 +183,7 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
           </List>
         </div>
         <CallToActionButton classes={classes} />
-      </Drawer>
+      </SwipeableDrawer>
     </Hidden>
   );
 }
@@ -285,13 +286,13 @@ function DropdownMenu({ route, classes, currPath }) {
 }
 
 function NestedListNav({ currPath, route, classes, setDrawerOpen }) {
-  const [nestedOpen, setNestedOpen] = useState(true);
+  const [nestedOpen, setNestedOpen] = useState(false);
 
   return (
     <div>
       <ListItem button onClick={() => setNestedOpen(!nestedOpen)}>
+        <ListItemText primary={route.name} />
         {nestedOpen ? <ExpandLess /> : <ExpandMore />}
-        <ListItemText style={{ paddingLeft: "7.5px" }} primary={route.name} />
       </ListItem>
       <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
