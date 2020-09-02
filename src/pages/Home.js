@@ -1,19 +1,13 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
-import Page from "../components/Page";
+import HomeHero from "../components/home/HomeHero";
+
+import useStyles from "../styles/pages/homeStyles";
 
 export default function Home() {
+  const classes = useStyles();
   return (
-    <Page>
-      <Container>
-        <Grid>
-          <Typography variant="h3">Home page</Typography>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            illum.
-          </p>
-        </Grid>
-      </Container>
-    </Page>
+    <div>
+      <HomeHero classes={classes} />
+    </div>
   );
 }

@@ -119,7 +119,7 @@ function DesktopNav({ classes, currPath }) {
         else
           return (
             <DropdownMenu
-              key="dropdown-menu"
+              key={route.name + route.path}
               route={route}
               classes={classes}
               currPath={currPath}
@@ -322,7 +322,7 @@ function CallToActionButton({ classes }) {
   return (
     <Box ml={2}>
       <Button variant="contained" className={classes.callToAction}>
-        Register Club
+        Register a Club
       </Button>
     </Box>
   );
