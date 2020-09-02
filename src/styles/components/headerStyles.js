@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
       bottom: "0",
       position: "absolute",
-      height: "9%",
+      height: "6.9%",
       width: "0",
       borderBottomLeftRadius: "4px",
       borderBottomRightRadius: "4px",

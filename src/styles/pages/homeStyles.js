@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       position: "absolute",
       display: "block",
-      background: `url(${heroBgImage})`,
+      background: `#D6DCE2 url(${heroBgImage})`,
       backgroundPosition: "0% 25%",
       zIndex: -1,
       backgroundSize: "cover",
