@@ -21,6 +21,7 @@ import {
   Popper,
   Grow,
   Collapse,
+  Box,
 } from "@material-ui/core";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
@@ -125,6 +126,7 @@ function DesktopNav({ classes, currPath }) {
             />
           );
       })}
+      <CallToActionButton classes={classes} />
     </Hidden>
   );
 }
@@ -179,6 +181,7 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
             })}
           </List>
         </div>
+        <CallToActionButton classes={classes} />
       </Drawer>
     </Hidden>
   );
@@ -311,5 +314,15 @@ function NestedListNav({ currPath, route, classes, setDrawerOpen }) {
         </List>
       </Collapse>
     </div>
+  );
+}
+
+function CallToActionButton({ classes }) {
+  return (
+    <Box ml={2}>
+      <Button variant="contained" className={classes.callToAction}>
+        Register Club
+      </Button>
+    </Box>
   );
 }

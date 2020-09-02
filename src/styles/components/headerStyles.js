@@ -60,6 +60,13 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.action.selected,
     },
   },
+  callToAction: {
+    color: "white !important",
+    background: theme.palette.primary.main,
+    "&:hover, &:active, &:focus": {
+      background: theme.palette.primary.darker,
+    },
+  },
   backToTop: {
     position: "fixed",
     bottom: theme.spacing(2),

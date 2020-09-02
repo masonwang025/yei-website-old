@@ -11,7 +11,6 @@ import Programs from "../pages/Programs";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
-  { path: "/team", Component: Team, name: "Team" },
   {
     path: "/clubs",
     name: "EconClubs",
@@ -24,6 +23,7 @@ const routes = [
       },
     ],
   },
+  { path: "/team", Component: Team, name: "Team" },
   {
     path: "/events",
     name: "Events",
