@@ -3,10 +3,13 @@ import Home from "../pages/Home";
 import Team from "../pages/Team";
 import SpeakerSeries from "../pages/Events/SpeakerSeries";
 import EconBowl from "../pages/Events/EconBowl";
+import Clubs from "../pages/Clubs";
+import Programs from "../pages/Programs";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
   { path: "/team", Component: Team, name: "Team" },
+  { path: "/clubs", Component: Clubs, name: "Clubs" },
   {
     path: "/events",
     name: "Events",
@@ -19,6 +22,7 @@ const routes = [
       },
     ],
   },
+  { path: "/programs", Component: Programs, name: "Programs" },
 ];
 
 export default routes;
