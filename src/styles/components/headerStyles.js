@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
   },
+  titleText: {
+    color: theme.palette.secondary.dark,
+  },
   navbar: {
     backgroundColor: "white",
     "&, button": {

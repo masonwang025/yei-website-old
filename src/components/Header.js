@@ -39,9 +39,21 @@ export default function Header(props) {
       <AppBar className={classes.navbar} elevation={0}>
         <Container>
           <Toolbar disableGutters>
-            <Typography variant="h6" className={classes.title}>
-              YEI
-            </Typography>
+            <div className={classes.title}>
+              <Link to="/">
+                <img
+                  src={require("../assets/logo.png")}
+                  alt="YEI logo"
+                  height="26.9px"
+                  style={{ marginRight: "5px", marginBottom: "-5px" }}
+                />
+                <div style={{ display: "inline-block" }}>
+                  <Typography variant="h6" className={classes.titleText}>
+                    YEI
+                  </Typography>
+                </div>
+              </Link>
+            </div>
             <DesktopNav classes={classes} currPath={currPath} />
             <MobileNav
               classes={classes}
