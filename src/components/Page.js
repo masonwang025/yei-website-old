@@ -8,6 +8,7 @@ export default function Page(props) {
         style={{
           minHeight: `calc(100vh - ${window.innerWidth > 600 ? 64 : 56}px)`,
         }}
+        pt={1}
       >
         {props.children}
       </Box>

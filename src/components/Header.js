@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -20,12 +20,13 @@ import {
   ClickAwayListener,
   Popper,
   Grow,
+  Collapse,
 } from "@material-ui/core";
+import { ExpandLess, ExpandMore } from "@material-ui/icons";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 import MenuIcon from "@material-ui/icons/Menu";
 import routes from "../data/routes";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
 import useStyles from "../styles/components/headerStyles.js";
 
 export default function Header(props) {
@@ -135,24 +136,34 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
       >
-        <div
-          role="presentation"
-          onClick={() => setDrawerOpen(false)}
-          onKeyDown={() => setDrawerOpen(false)}
-        >
+        <div role="presentation" onKeyDown={() => setDrawerOpen(false)}>
           <List className={classes.list}>
-            {routes.map((route) => (
-              <Link key={route.path} to={route.path}>
-                <ListItem
-                  className={`${classes.listItem} ${
-                    currPath === route.path && "active"
-                  }`}
-                  button
-                >
-                  <ListItemText primary={route.name} />
-                </ListItem>
-              </Link>
-            ))}
+            {routes.map((route) => {
+              if (!route.dropRoutes)
+                return (
+                  <Link key={route.path} to={route.path}>
+                    <ListItem
+                      className={`${classes.listItem} ${
+                        currPath === route.path && "active"
+                      }`}
+                      button
+                      onClick={() => setDrawerOpen(false)}
+                    >
+                      <ListItemText primary={route.name} />
+                    </ListItem>
+                  </Link>
+                );
+              else
+                return (
+                  <NestedListNav
+                    key="nested-list-nav"
+                    route={route}
+                    classes={classes}
+                    currPath={currPath}
+                    setDrawerOpen={setDrawerOpen}
+                  />
+                );
+            })}
           </List>
         </div>
       </Drawer>
@@ -185,7 +196,7 @@ function DropdownMenu({ route, classes, currPath }) {
 
   // return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open);
-  React.useEffect(() => {
+  useEffect(() => {
     if (prevOpen.current === true && open === false) {
       anchorRef.current.focus();
     }
@@ -251,6 +262,39 @@ function DropdownMenu({ route, classes, currPath }) {
           )}
         </Popper>
       </div>
+    </div>
+  );
+}
+
+function NestedListNav({ currPath, route, classes, setDrawerOpen }) {
+  const [nestedOpen, setNestedOpen] = useState(true);
+
+  return (
+    <div>
+      <ListItem button onClick={() => setNestedOpen(!nestedOpen)}>
+        {nestedOpen ? <ExpandLess /> : <ExpandMore />}
+        <ListItemText style={{ paddingLeft: "7.5px" }} primary={route.name} />
+      </ListItem>
+      <Collapse in={nestedOpen} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {route.dropRoutes.map((r) => (
+            <Link key={route.path + r.path + r.name} to={route.path + r.path}>
+              <ListItem
+                className={`${classes.listItem} ${
+                  currPath === route.path + r.path && "active"
+                }`}
+                button
+                onClick={() => setDrawerOpen(false)}
+              >
+                <ListItemText
+                  style={{ paddingLeft: "31px" }}
+                  primary={r.name}
+                />
+              </ListItem>
+            </Link>
+          ))}
+        </List>
+      </Collapse>
     </div>
   );
 }
