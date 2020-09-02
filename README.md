@@ -1,2 +1,2 @@
-# react-mui-boilerplate
-Material-UI CRA Boilerplate with React Routing and Node Sass.
+# yei-website
+The [Youth Economics Initiative website](https://theyei.netlify.app/). The YEI has over 1300 active members and 30 clubs.
