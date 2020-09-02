@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
     "&, button": {
       color: theme.palette.secondary.dark,
+      textTransform: "none",
     },
   },
   navLink: {
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
   callToAction: {
     color: "white !important",
     background: theme.palette.primary.main,
+    textTransform: "uppercase !important",
     "&:hover, &:active, &:focus": {
       background: theme.palette.primary.darker,
     },
