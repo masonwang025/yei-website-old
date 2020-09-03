@@ -29,6 +29,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import routes from "../data/routes";
 import { Link, useLocation } from "react-router-dom";
 import useStyles from "../styles/components/headerStyles.js";
+import { Image } from "cloudinary-react";
 
 export default function Header(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -42,11 +43,11 @@ export default function Header(props) {
           <Toolbar disableGutters>
             <div className={classes.title}>
               <Link to="/">
-                <img
-                  src={require("../assets/logo.png")}
-                  alt="YEI logo"
-                  height="26.9px"
-                  style={{ marginRight: "5px", marginBottom: "-5px" }}
+                <Image
+                  cloudName="masonwang"
+                  publicId="https://res.cloudinary.com/masonwang/image/upload/v1599092302/yei-website/logo-sm.png"
+                  height={33}
+                  style={{ marginBottom: "-6.9px" }}
                 />
                 <div style={{ display: "inline-block" }}>
                   <Typography variant="h6" className={classes.titleText}>

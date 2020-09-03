@@ -17,6 +17,28 @@ const theme = createMuiTheme({
     background: { default: "#f7f5f5" },
   },
   typography: {
+    h1: {
+      userSelect: "none",
+    },
+    h2: {
+      userSelect: "none",
+    },
+    h3: {
+      fontSize: "2.8em",
+      userSelect: "none",
+    },
+    h4: {
+      userSelect: "none",
+    },
+    h5: {
+      userSelect: "none",
+    },
+    h6: {
+      userSelect: "none",
+    },
+    body1: {
+      fontSize: 18.5,
+    },
     fontFamily: [
       "Inter",
       "-apple-system",

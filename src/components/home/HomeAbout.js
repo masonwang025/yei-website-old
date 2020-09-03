@@ -1,0 +1,30 @@
+import React from "react";
+import { Container, Box, Grid, Typography, Button } from "@material-ui/core";
+
+export default function HomeAbout() {
+  return (
+    <Box id="home-about" py={8}>
+      <Container fixed>
+        <Typography variant="h3">
+          What is the Youth Economics Intiative?
+        </Typography>
+        <Box mt={1}>
+          <Grid>
+            <Typography variant="body1">
+              <b>We're not just a collective of Economics Clubs.</b> By
+              promoting cross-collaboration and friendly competition, we open up
+              the ever growing field of economics to students in a fast-paced
+              world. We provide pathways toward careers in economics, business,
+              and finance and equip tomorrow's leaders with the tools necessary
+              to make change. YEI is a completely student-run 501(c)(3)
+              nonprofit corporation.
+            </Typography>
+            <Box my={2}>
+              <Button variant="outlined">Our Events</Button>
+            </Box>
+          </Grid>
+        </Box>
+      </Container>
+    </Box>
+  );
+}

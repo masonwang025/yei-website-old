@@ -1,8 +1,8 @@
 import { makeStyles } from "@material-ui/core/styles";
-import heroBgImage from "../../assets/bg-images/economy.jpg";
 
 const useStyles = makeStyles((theme) => ({
   hero: {
+    overflow: "hidden",
     position: "relative",
     background: "#f7f5f5dd",
     "&::before": {
@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       position: "absolute",
       display: "block",
-      background: `#D6DCE2 url(${heroBgImage})`,
+      background: `#D6DCE2 url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
       backgroundPosition: "0% 25%",
       zIndex: -1,
       backgroundSize: "cover",

@@ -59,6 +59,11 @@ export default function HomeHero({ classes }) {
                   variant="contained"
                   color="secondary"
                   size="large"
+                  onClick={() => {
+                    document
+                      .querySelector("#home-about")
+                      .scrollIntoView({ behavior: "smooth", block: "center" });
+                  }}
                 >
                   About Us
                 </Button>
