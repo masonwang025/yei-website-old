@@ -4,7 +4,7 @@ import { Container, Box, Grid, Typography, Button } from "@material-ui/core";
 
 export default function HomeAbout() {
   return (
-    <Box id="home-about" py={8}>
+    <Box id="home-about" py={4}>
       <Container fixed>
         <Typography variant="h3">
           What is the Youth Economics Intiative?
