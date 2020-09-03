@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Grid, Typography, Button } from "@material-ui/core";
+import { Container, Box, Grid, Typography } from "@material-ui/core";
 import { Image } from "cloudinary-react";
 
 export default function HomeAsSeenOn() {

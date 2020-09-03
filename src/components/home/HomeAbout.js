@@ -17,8 +17,7 @@ export default function HomeAbout() {
               the ever growing field of economics to students in a fast-paced
               world. We provide pathways toward careers in economics, business,
               and finance and equip tomorrow's leaders with the tools necessary
-              to make change. YEI is a completely student-run 501(c)(3)
-              nonprofit corporation.
+              to make change.
             </Typography>
             <Box my={2}>
               <Link to="/events">
