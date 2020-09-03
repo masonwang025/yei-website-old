@@ -8,6 +8,7 @@ import {
   Button,
 } from "@material-ui/core";
 import Page from "../Page";
+import { Image } from "cloudinary-react";
 
 export default function HomeHero({ classes }) {
   return (
@@ -20,21 +21,19 @@ export default function HomeHero({ classes }) {
               marginTop: `-${window.innerWidth > 600 ? 64 : 56}px`,
               padding: "6.9em 0 4.2em 0",
             }}
+            className={classes.heroGrid}
             container
             justify="center"
             direction="column"
           >
             <Grid item>
-              <Box fontWeight={800}>
-                <Typography variant="h2" className={classes.mainTitle}>
-                  Youth
-                  <br />
-                  Economics
-                  <br />
-                  Intitiative
-                </Typography>
-              </Box>
-              <Typography variant="h4">
+              <Image
+                cloudName="masonwang"
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1599113467/yei-website/yeilogo-full.png"
+                width="100%"
+                className={classes.logoImg}
+              />
+              <Typography variant="h4" className={classes.slogan}>
                 Exploring economics.{" "}
                 <Hidden mdUp>
                   {" "}

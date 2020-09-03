@@ -20,16 +20,40 @@ const useStyles = makeStyles((theme) => ({
       filter: "blur(2.5px)",
     },
   },
-  mainTitle: {
-    fontWeight: 500,
+  logoImg: {
+    width: "500px",
+    marginBottom: "5.5px",
+    [theme.breakpoints.down("md")]: {
+      width: "400px",
+    },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "3.69em",
+      width: "300px",
+    },
+  },
+  slogan: {
+    fontSize: "2.5em",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "2em",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.69em",
     },
   },
   ctaBtn: {
     fontWeight: "bold",
     letterSpacing: "0.25px",
     fontSize: "1.25em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.2em",
+    },
+  },
+  heroGrid: {
+    [theme.breakpoints.down("sm")]: {
+      alignItems: "center",
+      "& > *": {
+        textAlign: "center",
+      },
+    },
   },
   mainCta: {
     backgroundColor: theme.palette.primary.main,
