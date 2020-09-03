@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Box, Grid, Typography, Button } from "@material-ui/core";
 
 export default function HomeAbout() {
@@ -20,9 +21,11 @@ export default function HomeAbout() {
               nonprofit corporation.
             </Typography>
             <Box my={2}>
-              <Button variant="contained" color="secondary" size="large">
-                Our Events
-              </Button>
+              <Link to="/events">
+                <Button variant="contained" color="secondary" size="large">
+                  Our Events
+                </Button>
+              </Link>
             </Box>
           </Grid>
         </Box>
