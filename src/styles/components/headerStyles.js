@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.dark,
   },
   navbar: {
-    backgroundColor: "#ffffffef",
+    backgroundColor: "#ffffff",
     "&, button": {
       color: theme.palette.secondary.dark,
       textTransform: "none",

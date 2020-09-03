@@ -10,7 +10,7 @@ export default function HomeAsSeenOn() {
       <Container fixed>
         <Box mb={3}>
           <Typography align="center" variant="h3">
-            As Seen On
+            Featured On
           </Typography>
         </Box>
         <Grid container alignItems="center" justify="center" spacing={3}>
