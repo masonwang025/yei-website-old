@@ -20,7 +20,9 @@ export default function HomeAbout() {
               nonprofit corporation.
             </Typography>
             <Box my={2}>
-              <Button variant="outlined">Our Events</Button>
+              <Button variant="contained" color="secondary" size="large">
+                Our Events
+              </Button>
             </Box>
           </Grid>
         </Box>
