@@ -15,12 +15,17 @@ export default function Footer() {
   return (
     <Box py={"2.5em"} className={classes.root}>
       <Container fixed>
-        <Grid container justify="space-between" alignItems="center">
+        <Grid
+          container
+          className={classes.gridContainer}
+          justify="space-between"
+          alignItems="center"
+        >
           <Grid item>
-            <Typography variant="body2">
+            <Typography variant="body2" align="center">
               Youth Economics Initiative is a 501(c)(3) non-profit organization.
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body2" align="center">
               &copy; 2020 The Youth Economics Initiative Inc. All Rights
               Reserved.
             </Typography>
