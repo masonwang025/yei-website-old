@@ -5,7 +5,7 @@ import Page from "../../components/Page";
 export default function Events() {
   return (
     <Page>
-      <Container>
+      <Container fixed>
         <Grid>
           <Typography variant="h3">Events page</Typography>
           <p>

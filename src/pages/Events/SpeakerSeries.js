@@ -5,7 +5,7 @@ import Page from "../../components/Page";
 export default function SpeakerSeries() {
   return (
     <Page>
-      <Container>
+      <Container fixed>
         <Grid>
           <Typography variant="h3">Speaker Series page</Typography>
           <p>

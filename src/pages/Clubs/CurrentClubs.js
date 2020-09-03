@@ -6,7 +6,7 @@ export default function CurrentClubs() {
   return (
     <div className="home page">
       <Page>
-        <Container>
+        <Container fixed>
           <Grid>
             <Typography variant="h3">Current Clubs page</Typography>
             <p>

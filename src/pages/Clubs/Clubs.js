@@ -6,7 +6,7 @@ export default function Clubs() {
   return (
     <div className="home page">
       <Page>
-        <Container>
+        <Container fixed>
           <Grid>
             <Typography variant="h3">Clubs page</Typography>
             <p>

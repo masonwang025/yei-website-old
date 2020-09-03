@@ -6,7 +6,7 @@ export default function Programs() {
   return (
     <div className="home page">
       <Page>
-        <Container>
+        <Container fixed>
           <Grid>
             <Typography variant="h3">Programs page</Typography>
             <p>
