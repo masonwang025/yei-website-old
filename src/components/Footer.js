@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <Box py={"2.5em"} className={classes.root}>
-      <Container>
+      <Container fixed>
         <Grid>Footer</Grid>
       </Container>
     </Box>

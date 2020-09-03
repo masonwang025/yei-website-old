@@ -71,6 +71,7 @@ const useStyles = makeStyles((theme) => ({
   },
   backToTop: {
     position: "fixed",
+    zIndex: 10,
     bottom: theme.spacing(2),
     right: theme.spacing(2),
   },

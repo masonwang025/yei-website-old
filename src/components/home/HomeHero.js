@@ -13,7 +13,7 @@ export default function HomeHero({ classes }) {
   return (
     <Page>
       <Box className={classes.hero}>
-        <Container>
+        <Container fixed>
           <Grid
             style={{
               minHeight: "100vh",

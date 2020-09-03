@@ -38,7 +38,7 @@ export default function Header(props) {
   return (
     <React.Fragment>
       <AppBar className={classes.navbar} elevation={0}>
-        <Container>
+        <Container fixed>
           <Toolbar disableGutters>
             <div className={classes.title}>
               <Link to="/">
