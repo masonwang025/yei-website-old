@@ -1,14 +1,6 @@
 import React from "react";
-import {
-  Container,
-  Grid,
-  Typography,
-  Box,
-  Hidden,
-  Button,
-} from "@material-ui/core";
+import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 import Page from "../Page";
-import { Image } from "cloudinary-react";
 
 export default function HomeHero({ classes }) {
   return (
@@ -27,19 +19,11 @@ export default function HomeHero({ classes }) {
             direction="column"
           >
             <Grid item>
-              <Image
-                cloudName="masonwang"
-                publicId="https://res.cloudinary.com/masonwang/image/upload/v1599113467/yei-website/yeilogo-full.png"
-                width="100%"
-                className={classes.logoImg}
-              />
+              <Typography variant="h3" className={classes.title}>
+                Launchpad for Student Economists
+              </Typography>
               <Typography variant="h4" className={classes.slogan}>
-                Exploring economics.{" "}
-                <Hidden mdUp>
-                  {" "}
-                  <br />
-                </Hidden>{" "}
-                Empowering leaders.
+                World's largest coalition of high school economics clubs.
               </Typography>
             </Grid>
             <Box mt={2}>

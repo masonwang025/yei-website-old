@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Toolbar,
-  Typography,
   useScrollTrigger,
   Button,
   Container,
@@ -45,22 +44,11 @@ export default function Header(props) {
               <Link to="/">
                 <Image
                   cloudName="masonwang"
-                  publicId="https://res.cloudinary.com/masonwang/image/upload/v1599092302/yei-website/logo-sm.png"
-                  height={33}
-                  style={{ marginBottom: "-6.9px" }}
+                  publicId="https://res.cloudinary.com/masonwang/image/upload/v1599113467/yei-website/yeilogo-full.png"
+                  height={36}
+                  style={{ marginBottom: "-5px" }}
+                  className={classes.logoImg}
                 />
-                <div style={{ display: "inline-block" }}>
-                  <Typography variant="h6" className={classes.titleText}>
-                    <Box
-                      component="span"
-                      fontWeight={800}
-                      letterSpacing={1}
-                      ml={0.42}
-                    >
-                      YEI
-                    </Box>
-                  </Typography>
-                </div>
               </Link>
             </div>
             <DesktopNav classes={classes} currPath={currPath} />

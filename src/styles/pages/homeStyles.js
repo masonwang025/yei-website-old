@@ -30,11 +30,14 @@ const useStyles = makeStyles((theme) => ({
       width: "300px",
     },
   },
-  slogan: {
-    fontSize: "2.5em",
-    [theme.breakpoints.down("md")]: {
-      fontSize: "2em",
+  title: {
+    [theme.breakpoints.up("md")]: {
+      fontSize: "3em",
     },
+    fontWeight: "bold",
+  },
+  slogan: {
+    fontSize: "2em",
     [theme.breakpoints.down("xs")]: {
       fontSize: "1.69em",
     },
@@ -44,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: "0.25px",
     fontSize: "1.25em",
     [theme.breakpoints.down("sm")]: {
-      fontSize: "1.2em",
+      fontSize: "1.1em",
     },
   },
   heroGrid: {
