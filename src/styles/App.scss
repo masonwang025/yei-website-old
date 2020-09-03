@@ -13,3 +13,7 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+img {
+  user-select: none;
+}
