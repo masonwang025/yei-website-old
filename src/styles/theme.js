@@ -39,6 +39,9 @@ const theme = createMuiTheme({
     body1: {
       fontSize: 18.5,
     },
+    body2: {
+      fontSize: 16,
+    },
     fontFamily: [
       "Inter",
       "-apple-system",
