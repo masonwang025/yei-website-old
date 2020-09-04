@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
+import { Container, Grid, Typography, Box } from "@material-ui/core";
 import useStyles from "../styles/components/sectionHeroStyles";
 
 export default function SectionHero({ title, subtitle }) {
