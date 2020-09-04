@@ -2,22 +2,11 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import useStyles from "../styles/components/sectionHeroStyles";
 import { Image } from "cloudinary-react";
-export default function SectionHero({
-  title,
-  subtitle,
-  paragraph,
-  callToAction,
-}) {
+export default function SectionHero({ title, paragraph, callToAction }) {
   const classes = useStyles();
 
   return (
     <Box className={classes.hero}>
-      <Image
-        cloudName="masonwang"
-        publicId="https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg"
-        style={{ marginBottom: "-5px" }}
-        className={classes.bgImg}
-      />
       <Container fixed>
         <Grid
           style={{
@@ -35,7 +24,6 @@ export default function SectionHero({
                   <Typography variant="h3">
                     <b>{title}</b>
                   </Typography>
-                  <Typography variant="h4">{subtitle}</Typography>
                 </Grid>
                 {paragraph && (
                   <Grid item>

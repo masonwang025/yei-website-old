@@ -4,16 +4,7 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     width: "100%",
     position: "relative",
-    background: "#f7f5f5dd",
-  },
-  bgImg: {
-    position: "absolute",
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    top: 0,
-    left: 0,
-    zIndex: -2,
+    background: "#eee",
   },
   image: {
     width: "69%",

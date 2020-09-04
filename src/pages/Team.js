@@ -8,8 +8,8 @@ export default function Team() {
     <div className="home page">
       <Page>
         <SectionHero
-          title="Team"
-          subtitle="Meet our Team"
+          title="Meet our team"
+          subtitle="Team"
           paragraph="Here is a short paragraph that has the page's key information."
           callToAction={
             <Button variant="contained" color="secondary">

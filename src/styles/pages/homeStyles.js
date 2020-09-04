@@ -66,8 +66,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   ctaBtn: {
-    fontWeight: "bold",
-    letterSpacing: "0.25px",
     fontSize: "1.25em",
     [theme.breakpoints.down("sm")]: {
       fontSize: "1.1em",

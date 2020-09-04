@@ -17,6 +17,9 @@ const theme = createMuiTheme({
     background: { default: "#f7f5f5" },
   },
   typography: {
+    button: {
+      fontSize: "1.1em",
+    },
     h1: {
       userSelect: "none",
     },
