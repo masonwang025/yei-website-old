@@ -178,7 +178,9 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
             })}
           </List>
         </div>
-        <CallToActionButton classes={classes} />
+        <Box mb={2}>
+          <CallToActionButton classes={classes} />
+        </Box>
       </SwipeableDrawer>
     </Hidden>
   );
