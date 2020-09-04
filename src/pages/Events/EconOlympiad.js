@@ -1,19 +1,21 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
 import Page from "../../components/Page";
+import SectionHero from "../../components/SectionHero";
+import { Button } from "@material-ui/core";
 
 export default function EconOlympiad() {
   return (
     <Page>
-      <Container fixed>
-        <Grid>
-          <Typography variant="h3">EconOlympiad page</Typography>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            illum.
-          </p>
-        </Grid>
-      </Container>
+      <SectionHero
+        title="YEI EconOlympiad"
+        paragraph="Here is a short paragraph that has the page's key information."
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599260960/yei-website/section-heroes/econEventHero1.png"
+        callToAction={
+          <Button variant="contained" color="secondary">
+            Join Today
+          </Button>
+        }
+      />
     </Page>
   );
 }

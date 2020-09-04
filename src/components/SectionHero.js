@@ -2,7 +2,12 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import useStyles from "../styles/components/sectionHeroStyles";
 import { Image } from "cloudinary-react";
-export default function SectionHero({ title, paragraph, callToAction }) {
+export default function SectionHero({
+  title,
+  paragraph,
+  imgURL,
+  callToAction,
+}) {
   const classes = useStyles();
 
   return (
@@ -43,7 +48,7 @@ export default function SectionHero({ title, paragraph, callToAction }) {
                 <Image
                   cloudName="masonwang"
                   className={classes.image}
-                  publicId="https://res.cloudinary.com/masonwang/image/upload/v1599249199/yei-website/section-heroes/teamHero.png"
+                  publicId={imgURL}
                 />
               </Box>
             </Grid>

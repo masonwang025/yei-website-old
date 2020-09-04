@@ -1,19 +1,15 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
 import Page from "../../components/Page";
+import SectionHero from "../../components/SectionHero";
 
 export default function Events() {
   return (
     <Page>
-      <Container fixed>
-        <Grid>
-          <Typography variant="h3">Events page</Typography>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            illum.
-          </p>
-        </Grid>
-      </Container>
+      <SectionHero
+        title="YEI Events"
+        paragraph="Here is a short paragraph that has the page's key information."
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599259957/yei-website/section-heroes/eventsHero.png"
+      />
     </Page>
   );
 }

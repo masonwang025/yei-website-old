@@ -1,21 +1,21 @@
 import React from "react";
-import { Container, Grid, Typography } from "@material-ui/core";
 import Page from "../../components/Page";
+import SectionHero from "../../components/SectionHero";
+import { Button } from "@material-ui/core";
 
 export default function CurrentClubs() {
   return (
-    <div className="home page">
-      <Page>
-        <Container fixed>
-          <Grid>
-            <Typography variant="h3">Current Clubs page</Typography>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              illum.
-            </p>
-          </Grid>
-        </Container>
-      </Page>
-    </div>
+    <Page>
+      <SectionHero
+        title="YEI Current Clubs"
+        paragraph="Here is a short paragraph that has the page's key information."
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599259347/yei-website/section-heroes/clubsHero.png"
+        callToAction={
+          <Button variant="contained" color="secondary">
+            Register Your Club
+          </Button>
+        }
+      />
+    </Page>
   );
 }
