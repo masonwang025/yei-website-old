@@ -6,7 +6,7 @@ export default function HomeAsSeenOn() {
   const baseUrl =
     "https://res.cloudinary.com/masonwang/image/upload/v1599110765/yei-website/as-seen-on";
   return (
-    <Box id="home-about" py={4}>
+    <Box id="home-about" py={5}>
       <Container fixed>
         <Box mb={3}>
           <Typography align="center" variant="h3">
