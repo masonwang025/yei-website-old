@@ -59,7 +59,7 @@ const team = [
   },
   {
     name: "June Wang",
-    positions: ["Grant/Sponsorship Coordinator", "Finance"],
+    positions: ["Grant Coordinator", "Finance"],
     linkedin: "https://www.linkedin.com/in/june-wang/",
   },
   {
@@ -164,7 +164,7 @@ const team = [
   },
   {
     name: "Benjamin Bray",
-    positions: ["Multimedia Workflow Manager"],
+    positions: ["Multimedia Manager"],
     linkedin: "https://www.linkedin.com/in/benjamin-bray-6aa9371a3/",
   },
   {
