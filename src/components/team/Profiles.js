@@ -25,6 +25,13 @@ export default function Profiles() {
                     positions={member.positions}
                     linkedin={member.linkedin}
                     github={member.github}
+                    email={
+                      member.name.startsWith("Henry")
+                        ? "admin@theyei.org"
+                        : `${member.name
+                            .split(" ")[0]
+                            .toLowerCase()}@theyei.org`
+                    }
                   />
                 </Grid>
               );

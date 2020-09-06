@@ -2,6 +2,7 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
+    margin: "0 auto",
     width: "125px",
     height: "125px",
   },

@@ -17,11 +17,18 @@ export default function ProfileCard({
   imgURL,
   linkedin,
   github,
+  email,
 }) {
   const classes = useStyles();
   return (
     <Paper elevation={0}>
-      <Grid container wrap="nowrap" alignItems="center" spacing={1}>
+      <Grid
+        container
+        wrap="nowrap"
+        alignItems="center"
+        justify="center"
+        spacing={1}
+      >
         <Grid item xs={5}>
           <Box p={2}>
             <Avatar className={classes.avatar} alt={name} src={imgURL} />
@@ -44,17 +51,27 @@ export default function ProfileCard({
             </Grid>
             <Grid item>
               <Box mt={1}>
-                <IconButton color="secondary" size="small">
-                  <LinkedIn />
-                </IconButton>
-                {github && (
+                <a href={linkedin} target="_blank" rel="noopener noreferrer">
                   <IconButton color="secondary" size="small">
-                    <GitHub />
+                    <LinkedIn />
                   </IconButton>
+                </a>
+                {github && (
+                  <a href={github} target="_blank" rel="noopener noreferrer">
+                    <IconButton color="secondary" size="small">
+                      <GitHub />
+                    </IconButton>
+                  </a>
                 )}
-                <IconButton color="secondary" size="small">
-                  <Mail />
-                </IconButton>
+                <a
+                  href={`mailto:${email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconButton color="secondary" size="small">
+                    <Mail />
+                  </IconButton>
+                </a>
               </Box>
             </Grid>
           </Grid>

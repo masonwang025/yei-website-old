@@ -3,6 +3,7 @@ const team = [
     name: "Henry Weng",
     positions: ["CEO", "Co-founder", "Co-Chairman"],
     linkedin: "https://www.linkedin.com/in/henry-weng/",
+    email: "admin@theyei.org",
   },
   {
     name: "Ian Chen",
@@ -27,12 +28,12 @@ const team = [
   {
     name: "Aryan Shah",
     positions: ["Executive Board Member", "VP of Marketing"],
-    linkedin: "www.linkedin.com/in/aryan-shah1",
+    linkedin: "https://www.linkedin.com/in/aryan-shah1",
   },
   {
     name: "Helena Su",
     positions: ["Executive Board Member", "VP of Resources"],
-    linkedin: "www.linkedin.com/in/helena-su-063965193",
+    linkedin: "https://www.linkedin.com/in/helena-su-063965193",
   },
   {
     name: "Parth Asawa",
@@ -129,32 +130,32 @@ const team = [
   {
     name: "Mounica Policharla",
     positions: ["Expansion Associate", "Regional Ambassador", "Finance"],
-    linkedin: "www.linkedin.com/in/mounica-policharla-3308ab1ab/",
+    linkedin: "https://www.linkedin.com/in/mounica-policharla-3308ab1ab/",
   },
   {
     name: "Brook Chuang",
     positions: ["Expansion Associate"],
-    linkedin: "www.linkedin.com/in/chuangbrook/",
+    linkedin: "https://www.linkedin.com/in/chuangbrook/",
   },
   {
     name: "Kavin Shah",
     positions: ["Leadership Associate"],
-    linkedin: "www.linkedin.com/in/kavinshah-student/",
+    linkedin: "https://www.linkedin.com/in/kavinshah-student/",
   },
   {
     name: "Kevin Lin",
     positions: ["Regional Ambassador"],
-    linkedin: "www.linkedin.com/in/kevin-lin-0274b21a7/",
+    linkedin: "https://www.linkedin.com/in/kevin-lin-0274b21a7/",
   },
   {
     name: "Rohan Bajpai",
     positions: ["Regional Ambassador"],
-    linkedin: "www.linkedin.com/in/rohan-bajpai-460b141ab/",
+    linkedin: "https://www.linkedin.com/in/rohan-bajpai-460b141ab/",
   },
   {
     name: "Neha Basu",
     positions: ["Regional Ambassador"],
-    linkedin: "www.linkedin.com/in/nehabasu1/",
+    linkedin: "https://www.linkedin.com/in/nehabasu1/",
   },
   {
     name: "Selina Chen",
