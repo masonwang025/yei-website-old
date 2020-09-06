@@ -3,7 +3,7 @@ import { Container, Box, Grid, Typography } from "@material-ui/core";
 
 export default function SectionAbout(props) {
   return (
-    <Box id="home-about" py={5} id={props.id}>
+    <Box py={5} id={props.id}>
       <Container fixed>
         <Typography align="center" variant="h4">
           <b>{props.title}</b>
