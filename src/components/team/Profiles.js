@@ -7,9 +7,6 @@ export default function Profiles() {
   return (
     <Box py={5}>
       <Container fixed>
-        <Typography align="center" variant="h4">
-          <b>Our Team</b>
-        </Typography>
         <Box mt={3}>
           <Grid container alignItems="center" justify="center" spacing={2}>
             {team.map((member) => {
