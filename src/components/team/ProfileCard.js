@@ -51,11 +51,13 @@ export default function ProfileCard({
             </Grid>
             <Grid item>
               <Box mt={1}>
-                <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                  <IconButton color="secondary" size="small">
-                    <LinkedIn />
-                  </IconButton>
-                </a>
+                {linkedin && (
+                  <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                    <IconButton color="secondary" size="small">
+                      <LinkedIn />
+                    </IconButton>
+                  </a>
+                )}
                 {github && (
                   <a href={github} target="_blank" rel="noopener noreferrer">
                     <IconButton color="secondary" size="small">
