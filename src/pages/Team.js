@@ -1,5 +1,4 @@
 import React from "react";
-import Page from "../components/Page";
 import SectionHero from "../components/SectionHero";
 import SectionAbout from "../components/SectionAbout";
 import Profiles from "../components/team/Profiles";
