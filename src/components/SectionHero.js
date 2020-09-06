@@ -22,7 +22,7 @@ export default function SectionHero({
           justify="center"
           direction="column"
         >
-          <Grid container alignItems="center" spacing={3}>
+          <Grid container alignItems="center" spacing={4}>
             <Grid item xs={12} md={6}>
               <Grid container direction="column" spacing={2}>
                 <Grid item>
