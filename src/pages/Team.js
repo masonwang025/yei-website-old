@@ -2,6 +2,7 @@ import React from "react";
 import Page from "../components/Page";
 import SectionHero from "../components/SectionHero";
 import SectionAbout from "../components/SectionAbout";
+import Profiles from "../components/team/Profiles";
 import { Button, Typography } from "@material-ui/core";
 
 export default function Team() {
@@ -25,6 +26,7 @@ export default function Team() {
           </Button>
         }
       />
+      <Profiles />
       <SectionAbout
         title="Join the Team"
         id="join-the-team"

@@ -15,11 +15,6 @@ const team = [
     linkedin: "https://www.linkedin.com/in/andy-chen-82ba6b1a9/",
   },
   {
-    name: "Andy Chen",
-    positions: ["Executive Board Member", "VP of Leadership"],
-    linkedin: "https://www.linkedin.com/in/andy-chen-82ba6b1a9/",
-  },
-  {
     name: "Anishka Banerjee",
     positions: ["Executive Board Member", "VP of Finance"],
     linkedin: "https://www.linkedin.com/in/anishka-banerjee-657775171/",
@@ -28,11 +23,6 @@ const team = [
     name: "Cheryl Wu",
     positions: ["Executive Board Member", "VP of Events"],
     linkedin: "https://www.linkedin.com/in/cheryl-wu-ba12801b1/",
-  },
-  {
-    name: "Anishka Banerjee",
-    positions: ["Executive Board Member", "VP of Finance"],
-    linkedin: "https://www.linkedin.com/in/anishka-banerjee-657775171/",
   },
   {
     name: "Aryan Shah",
@@ -62,12 +52,13 @@ const team = [
     name: "Mason Wang",
     positions: ["Tech Director"],
     linkedin: "https://www.linkedin.com/in/mason-wang/",
+    github: "http://github.com/MasonWang025",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1599418850/yei-website/team/mason-wang.png",
   },
   {
     name: "June Wang",
-    positions: ["Grant/Sponsorship Coordinator"],
+    positions: ["Grant/Sponsorship Coordinator", "Finance"],
     linkedin: "https://www.linkedin.com/in/june-wang/",
   },
   {
@@ -86,7 +77,7 @@ const team = [
     linkedin: "https://www.linkedin.com/in/deeya-jain/",
   },
   {
-    name: "Tarun Srivasta",
+    name: "Tarun Srivastava",
     positions: ["FLIP Curriculum Designer"],
     linkedin: "https://www.linkedin.com/in/tarun-srivastava-b9a7aa1a9/",
   },
@@ -137,7 +128,7 @@ const team = [
   },
   {
     name: "Mounica Policharla",
-    positions: ["Expansion Associate", "Regional Ambassador"],
+    positions: ["Expansion Associate", "Regional Ambassador", "Finance"],
     linkedin: "www.linkedin.com/in/mounica-policharla-3308ab1ab/",
   },
   {
