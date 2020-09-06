@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Grid, Typography } from "@material-ui/core";
+import { Container, Box, Grid } from "@material-ui/core";
 import ProfileCard from "./ProfileCard";
 import team from "../../data/team";
 
