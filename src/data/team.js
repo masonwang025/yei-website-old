@@ -1,7 +1,7 @@
 const team = [
   {
     name: "Henry Weng",
-    positions: ["CEO", "Co-founder", "Co-Chairman"],
+    positions: ["Co-founder", "CEO", "Co-Chairman"],
     linkedin: "https://www.linkedin.com/in/henry-weng/",
     email: "admin@theyei.org",
   },
@@ -59,7 +59,7 @@ const team = [
   },
   {
     name: "June Wang",
-    positions: ["Grant Coordinator", "Finance"],
+    positions: ["Grant Coordinator"],
     linkedin: "https://www.linkedin.com/in/june-wang/",
   },
   {
@@ -129,7 +129,7 @@ const team = [
   },
   {
     name: "Mounica Policharla",
-    positions: ["Expansion Associate", "Regional Ambassador", "Finance"],
+    positions: ["Expansion Associate", "Regional Ambassador"],
     linkedin: "https://www.linkedin.com/in/mounica-policharla-3308ab1ab/",
   },
   {

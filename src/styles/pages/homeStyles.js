@@ -79,6 +79,14 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  aboutContainer: {
+    [theme.breakpoints.down("sm")]: {
+      alignItems: "center",
+      "& > *": {
+        textAlign: "center",
+      },
+    },
+  },
   mainCta: {
     backgroundColor: theme.palette.primary.main,
     color: "white",

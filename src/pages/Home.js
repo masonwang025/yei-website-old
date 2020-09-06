@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <HomeHero classes={classes} />
       <Box py={3}>
-        <HomeAbout />
+        <HomeAbout classes={classes} />
         <HomeNumbers classes={classes} />
         <HomeAsSeenOn />
       </Box>
