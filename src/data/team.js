@@ -174,7 +174,7 @@ const team = [
   },
   {
     name: "Benjamin Chen",
-    positions: ["Finance"],
+    positions: ["Fundraising Coordinator"],
     linkedin: "https://www.linkedin.com/in/benjamin-chen-60584a157/",
   },
 ];
