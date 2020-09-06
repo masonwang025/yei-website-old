@@ -9,7 +9,7 @@ export default function EconBowl() {
       <SectionHero
         title="YEI EconBowl"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599260959/yei-website/section-heroes/econEventHero2.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/econBowlHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Join Today

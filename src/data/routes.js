@@ -2,7 +2,7 @@
 import Home from "../pages/Home";
 import Team from "../pages/Team";
 import Events from "../pages/Events/Events";
-import SpeakerSeries from "../pages/Events/SpeakerSeries";
+import EconTalks from "../pages/Events/EconTalks";
 import EconBowl from "../pages/Events/EconBowl";
 import EconOlympiad from "../pages/Events/EconOlympiad";
 import Clubs from "../pages/Clubs/Clubs";
@@ -32,9 +32,9 @@ const routes = [
       { path: "/econbowl", Component: EconBowl, name: "EconBowl" },
       { path: "/econolympiad", Component: EconOlympiad, name: "EconOlympiad" },
       {
-        path: "/speaker-series",
-        Component: SpeakerSeries,
-        name: "Speaker Series",
+        path: "/econtalks",
+        Component: EconTalks,
+        name: "EconTalks",
       },
     ],
   },

@@ -9,7 +9,7 @@ export default function EconOlympiad() {
       <SectionHero
         title="YEI EconOlympiad"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599260960/yei-website/section-heroes/econEventHero1.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/econOlympiadHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Join Today

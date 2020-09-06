@@ -8,7 +8,7 @@ export default function Programs() {
       <SectionHero
         title="YEI Programs"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599260634/yei-website/section-heroes/programsHero.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/programsHero.png"
       />
     </Page>
   );

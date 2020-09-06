@@ -9,7 +9,7 @@ export default function Team() {
       <SectionHero
         title="Meet our team"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599249199/yei-website/section-heroes/teamHero.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/teamHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Join Team

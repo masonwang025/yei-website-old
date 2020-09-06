@@ -7,15 +7,18 @@ const useStyles = makeStyles((theme) => ({
     background: "#eee",
   },
   image: {
-    width: "69%",
+    maxWidth: "69%",
+    [theme.breakpoints.up("lg")]: {
+      maxHeight: "300px",
+    },
     [theme.breakpoints.down("md")]: {
-      width: "75%",
+      width: "72%",
     },
     [theme.breakpoints.down("sm")]: {
       width: "60%",
     },
     [theme.breakpoints.down("xs")]: {
-      width: "80%",
+      width: "76.9%",
     },
   },
 }));

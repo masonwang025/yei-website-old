@@ -9,7 +9,7 @@ export default function Clubs() {
       <SectionHero
         title="YEI Clubs"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599259697/yei-website/section-heroes/clubsHero.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/clubsHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Register Your Club
