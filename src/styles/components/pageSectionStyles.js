@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       alignItems: "center",
       "& > *": {
-        textAlign: "center",
+        textAlign: "center !important",
       },
     },
   },

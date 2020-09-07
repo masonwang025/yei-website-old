@@ -9,7 +9,7 @@ export default function CurrentClubs() {
       <PageHero
         title="YEI Current Clubs"
         paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407419/yei-website/manypixels-isometric/currentClubsHero.png"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/currentClubsHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Register Your Club

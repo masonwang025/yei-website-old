@@ -7,7 +7,7 @@ export default function EconTalks() {
   return (
     <Page>
       <PageHero
-        title="YEI Speaker EconTalks"
+        title="YEI EconTalks"
         paragraph="Here is a short paragraph that has the page's key information."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/econTalksHero.png"
         callToAction={
