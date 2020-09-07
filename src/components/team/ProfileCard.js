@@ -35,9 +35,11 @@ export default function ProfileCard({
           </Box>
         </Grid>
         <Grid item xs={7}>
-          <Grid container justify="center" direction="column">
+          <Grid container justify="center" align="left" direction="column">
             <Grid item>
-              <Typography className={classes.name}>{name}</Typography>
+              <Typography align="left" className={classes.name}>
+                {name}
+              </Typography>
             </Grid>
             <Grid item>
               {positions.map((position) => (
