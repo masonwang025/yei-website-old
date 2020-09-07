@@ -1,12 +1,12 @@
 import React from "react";
 import Page from "../../components/Page";
-import SectionHero from "../../components/SectionHero";
+import PageHero from "../../components/PageHero";
 import { Button } from "@material-ui/core";
 
 export default function EconOlympiad() {
   return (
     <Page>
-      <SectionHero
+      <PageHero
         title="YEI EconOlympiad"
         paragraph="Here is a short paragraph that has the page's key information."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/econOlympiadHero.png"

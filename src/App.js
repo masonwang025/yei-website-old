@@ -30,7 +30,7 @@ function App() {
             height: window.innerHeight,
             width: window.innerWidth,
           });
-        }, 1000);
+        }, 420);
     });
 
     window.addEventListener("resize", debouncedHandleResize);

@@ -1,15 +1,15 @@
 import React from "react";
-import SectionHero from "../components/SectionHero";
-import SectionAbout from "../components/SectionAbout";
+import PageHero from "../components/PageHero";
+import PageSection from "../components/PageSection";
 import Profiles from "../components/team/Profiles";
 import { Button, Typography, Box } from "@material-ui/core";
 
 export default function Team() {
   return (
     <div>
-      <SectionHero
+      <PageHero
         title="Meet our team"
-        paragraph="Get to know the team that makes the magic happen."
+        paragraph="Get to know the people who make the magic happen."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/teamHero.png"
         callToAction={
           <Button
@@ -27,9 +27,10 @@ export default function Team() {
       />
       <Box py={3}>
         <Profiles />
-        <SectionAbout
+        <PageSection
           title="Join the Team"
           id="join-the-team"
+          forceCenter={true}
           content={
             <span>
               Passionate about what we do? Want to join an international team of
@@ -64,7 +65,7 @@ export default function Team() {
             exhibit high levels of drive, initiative, enthusiasm, and
             commitment.
           </Typography>
-        </SectionAbout>
+        </PageSection>
       </Box>
     </div>
   );

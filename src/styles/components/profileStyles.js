@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
       width: "100px",
       height: "100px",
     },
+    backgroundColor: theme.palette.secondary.dark,
   },
   name: {
     fontWeight: "600",

@@ -1,18 +1,13 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
-import useStyles from "../styles/components/sectionHeroStyles";
+import useStyles from "../styles/components/pageHeroStyles";
 import { Image } from "cloudinary-react";
-export default function SectionHero({
-  title,
-  paragraph,
-  imgURL,
-  callToAction,
-}) {
+export default function PageHero({ title, paragraph, imgURL, callToAction }) {
   const classes = useStyles();
 
   return (
     <Box className={classes.hero}>
-      <Container fixed>
+      <Container fixed className={classes.heroContainer}>
         <Grid
           style={{
             minHeight: "50vh",
@@ -39,12 +34,7 @@ export default function SectionHero({
               </Grid>
             </Grid>
             <Grid item xs={12} md={6} className={classes.imageCol}>
-              <Box
-                display="flex"
-                justifyContent={
-                  window.innerWidth > 960 ? "center" : "flex-start"
-                }
-              >
+              <Box display="flex" justifyContent="center">
                 <Image
                   cloudName="masonwang"
                   className={classes.image}

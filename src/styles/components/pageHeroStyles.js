@@ -6,6 +6,14 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     background: "#eee",
   },
+  heroContainer: {
+    [theme.breakpoints.down("sm")]: {
+      alignItems: "center",
+      "& > *": {
+        textAlign: "center",
+      },
+    },
+  },
   image: {
     maxWidth: "69%",
     [theme.breakpoints.up("lg")]: {

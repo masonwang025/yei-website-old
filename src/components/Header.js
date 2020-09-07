@@ -187,7 +187,7 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
 }
 
 function DropdownMenu({ route, classes, currPath }) {
-  const [open, setOpen] = React.useState(currPath.startsWith(route.path));
+  const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
   const handleToggle = () => {

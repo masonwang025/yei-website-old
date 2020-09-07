@@ -1,24 +1,24 @@
 import React from "react";
-import Page from "../../components/Page";
-import SectionHero from "../../components/SectionHero";
+import PageHero from "../../components/PageHero";
 import { Button } from "@material-ui/core";
-import SectionAbout from "../../components/SectionAbout";
+import PageSection from "../../components/PageSection";
+import ClubBenefits from "../../components/clubs/ClubBenefits";
 
 export default function Clubs() {
   return (
-    <Page>
-      <SectionHero
+    <div>
+      <PageHero
         title="YEI EconClubs"
         paragraph="Take your economics club to the next level."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/clubsHero.png"
         callToAction={
           <Button variant="contained" color="secondary">
             Register Your Club
           </Button>
         }
       />
-      <SectionAbout
+      <PageSection
         title="What are YEI EconClubs?"
+        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/teamHero.png"
         content={
           <span>
             YEI EconClubs is the premier high school economics club program for
@@ -34,6 +34,7 @@ export default function Clubs() {
           </Button>
         }
       />
-    </Page>
+      {/* <ClubBenefits /> */}
+    </div>
   );
 }
