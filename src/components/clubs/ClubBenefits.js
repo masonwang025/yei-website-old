@@ -38,7 +38,7 @@ export default function ClubBenefits() {
         <Grid container spacing={4}>
           {benefits.map(({ title, content, imgURL }) => (
             <Grid key={title} item xs={12} sm={6} lg={3}>
-              <Grid container direction="column" spacing={3}>
+              <Grid container direction="column" spacing={1}>
                 <Grid item>
                   <Box mb={0.25}>
                     <Typography variant="h5">{title}</Typography>
