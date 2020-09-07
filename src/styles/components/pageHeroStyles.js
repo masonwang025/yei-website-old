@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     width: "100%",
     position: "relative",
-    background: "#eee",
+    background: theme.palette.white.dark,
   },
   heroContainer: {
     [theme.breakpoints.down("sm")]: {

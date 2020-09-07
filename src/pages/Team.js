@@ -2,7 +2,7 @@ import React from "react";
 import PageHero from "../components/PageHero";
 import PageSection from "../components/PageSection";
 import Profiles from "../components/team/Profiles";
-import { Button, Typography, Box } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 
 export default function Team() {
   return (
@@ -25,48 +25,46 @@ export default function Team() {
           </Button>
         }
       />
-      <Box py={3}>
-        <Profiles />
-        <PageSection
-          title="Join the Team"
-          id="join-the-team"
-          forceCenter={true}
-          content={
-            <span>
-              Passionate about what we do? Want to join an international team of
-              leaders, creators, and economics enthusiasts? You can find more
-              information in the document below:
-            </span>
-          }
-          callToAction={
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://docs.google.com/document/d/1VBmep4hRFlc_m34zoB3PrCpR41UnlAKgH2r-k3FBrAM/edit"
+      <Profiles />
+      <PageSection
+        light={true}
+        title="Join the Team"
+        id="join-the-team"
+        forceCenter={true}
+        content={
+          <span>
+            Passionate about what we do? Want to join an international team of
+            leaders, creators, and economics enthusiasts? You can find more
+            information in the document below:
+          </span>
+        }
+        callToAction={
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/document/d/1VBmep4hRFlc_m34zoB3PrCpR41UnlAKgH2r-k3FBrAM/edit"
+          >
+            <Button
+              align="center"
+              variant="contained"
+              color="primary"
+              size="large"
             >
-              <Button
-                align="center"
-                variant="contained"
-                color="primary"
-                size="large"
-              >
-                Apply Now
-              </Button>
-            </a>
-          }
-        >
-          <Typography align="center" variant="body2">
-            Note that this application process is highly competitive with a{" "}
-            <i>{"<10%"} acceptance rate</i> for several positions — not all
-            qualified applicants receive a position because we simply do not
-            have the space! Applicants may be invited to several rounds of
-            interviews before a final decision is made. We employ a holistic
-            review process for each applicant and are looking for students who
-            exhibit high levels of drive, initiative, enthusiasm, and
-            commitment.
-          </Typography>
-        </PageSection>
-      </Box>
+              Apply Now
+            </Button>
+          </a>
+        }
+      >
+        <Typography align="center" variant="body2">
+          Note that this application process is highly competitive with a{" "}
+          <i>{"<10%"} acceptance rate</i> for several positions — not all
+          qualified applicants receive a position because we simply do not have
+          the space! Applicants may be invited to several rounds of interviews
+          before a final decision is made. We employ a holistic review process
+          for each applicant and are looking for students who exhibit high
+          levels of drive, initiative, enthusiasm, and commitment.
+        </Typography>
+      </PageSection>
     </div>
   );
 }

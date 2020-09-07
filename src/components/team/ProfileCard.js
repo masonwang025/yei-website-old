@@ -21,7 +21,7 @@ export default function ProfileCard({
 }) {
   const classes = useStyles();
   return (
-    <Paper elevation={0}>
+    <Paper className={classes.card} elevation={0}>
       <Grid
         container
         wrap="nowrap"

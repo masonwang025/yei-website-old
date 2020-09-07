@@ -17,15 +17,16 @@ export default function Clubs() {
           </Button>
         }
       />
-      <Box py={3}>
+      <Box pb={3}>
         <PageSection
+          light={true}
           title="What are YEI EconClubs?"
           imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407419/yei-website/manypixels-isometric/clubsPageImg.png"
           content={
             <span>
               YEI EconClubs is the premier high school economics club program
               for students who want to supercharge their economics journey.
-              Whether your a student hoping to start a new economics club or
+              Whether you're a student hoping to start a new economics club or
               already have an existing club, YEI will provide you with all of
               the resources and support for your club to thrive.
             </span>

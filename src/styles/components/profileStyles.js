@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  card: {
+    backgroundColor: theme.palette.white.secondary,
+  },
   avatar: {
     margin: "0 auto",
     width: "125px",

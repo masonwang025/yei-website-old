@@ -7,7 +7,12 @@ export default function PageSection(props) {
   const classes = useStyles();
   let centerContent = window.innerWidth <= 960;
   return (
-    <Box py={5} id={props.id}>
+    <Box
+      pt={props.pt ? 5 + props.pt : 5}
+      pb={props.pb ? 5 + props.pb : 5}
+      id={props.id}
+      className={props.light && classes.light}
+    >
       <Container
         fixed
         className={`${classes.sectionContainer} ${
