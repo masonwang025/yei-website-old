@@ -9,7 +9,7 @@ export default function Team() {
     <div>
       <SectionHero
         title="Meet our team"
-        paragraph="Get to know the team that makes the magic happen."
+        paragraph="Get to know the people that make the magic happen."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/teamHero.png"
         callToAction={
           <Button
