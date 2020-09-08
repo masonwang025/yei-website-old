@@ -4,6 +4,7 @@ import PageHero from "../../components/PageHero";
 import { Grid, Button } from "@material-ui/core";
 import clubs from "../../data/clubs";
 import PageSection from "../../components/PageSection";
+import OpenForm from "../../components/clubs/OpenForm";
 
 export default function CurrentClubs() {
   return (
@@ -13,9 +14,11 @@ export default function CurrentClubs() {
         paragraph={`View YEI's current ${clubs.length} clubs.`}
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/currentClubsHero.png"
         callToAction={
-          <Button variant="contained" color="secondary">
-            Join the List
-          </Button>
+          <OpenForm>
+            <Button variant="contained" color="secondary">
+              Join the List
+            </Button>
+          </OpenForm>
         }
       />
 

@@ -29,6 +29,7 @@ import routes from "../data/routes";
 import { Link, useLocation } from "react-router-dom";
 import useStyles from "../styles/components/headerStyles.js";
 import { Image } from "cloudinary-react";
+import OpenForm from "./clubs/OpenForm";
 
 export default function Header(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -325,9 +326,11 @@ function NestedListNav({ currPath, route, classes, setDrawerOpen }) {
 function CallToActionButton({ classes }) {
   return (
     <Box ml={2}>
-      <Button variant="contained" className={classes.callToAction}>
-        Register a Club
-      </Button>
+      <OpenForm>
+        <Button variant="contained" className={classes.callToAction}>
+          Register a Club
+        </Button>
+      </OpenForm>
     </Box>
   );
 }

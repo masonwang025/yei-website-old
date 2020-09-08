@@ -1,5 +1,5 @@
 // underline link
-a.underline {
+.underline {
   position: relative;
   text-decoration: none;
   color: currentColor;
@@ -10,7 +10,8 @@ a.underline {
     bottom: 0;
     left: 0;
     width: 100%;
-    min-height: 1px;
+    transform: scaleY(0.999);
+    height: 1px;
     background-color: currentColor;
     transform-origin: right;
     border: 0;
@@ -18,13 +19,14 @@ a.underline {
   }
 
   &:hover {
+    cursor: pointer;
     &:after {
-      transform: scaleX(0);
+      transform: scaleX(0) scaleY(1.001);
     }
   }
   &.bold {
     &:after {
-      min-height: 2px;
+      height: 2px;
     }
   }
 }

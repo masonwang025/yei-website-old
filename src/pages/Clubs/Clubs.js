@@ -4,6 +4,7 @@ import { Button, Box } from "@material-ui/core";
 import PageSection from "../../components/PageSection";
 import ClubBenefits from "../../components/clubs/ClubBenefits";
 import { Link } from "react-router-dom";
+import OpenForm from "../../components/clubs/OpenForm";
 
 export default function Clubs() {
   return (
@@ -35,9 +36,11 @@ export default function Clubs() {
             </span>
           }
           callToAction={
-            <Button variant="contained" color="primary" size="large">
-              Register Your Club
-            </Button>
+            <OpenForm>
+              <Button variant="contained" color="primary" size="large">
+                Register Your Club
+              </Button>
+            </OpenForm>
           }
         />
         <ClubBenefits />

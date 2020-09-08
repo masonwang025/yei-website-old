@@ -7,11 +7,13 @@ import HomeNumbers from "../components/home/HomeNumbers";
 import PageSection from "../components/PageSection";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import OpenForm from "../components/clubs/OpenForm";
 
 export default function Home() {
   const classes = useStyles();
   return (
     <div>
+      <OpenForm />
       <HomeHero classes={classes} />
       {/* About */}
       <PageSection

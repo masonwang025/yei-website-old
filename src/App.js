@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 
 import routes from "./data/routes";
 
@@ -41,33 +42,35 @@ function App() {
 
   return (
     <div className="App">
-      <ScrollToTop />
-      <Header />
-      <div className="App">
-        <Switch>
-          {routes.map(({ path, Component, dropRoutes }) => {
-            if (!dropRoutes)
-              return (
-                <Route key={path} exact path={path}>
-                  <Component />
-                </Route>
-              );
-            else {
-              return dropRoutes.map((dropRoute) => (
-                <Route
-                  key={path + dropRoute.path}
-                  exact
-                  path={path + dropRoute.path}
-                >
-                  <dropRoute.Component />
-                </Route>
-              ));
-            }
-          })}
-          <Redirect to="/" />
-        </Switch>
-      </div>
-      <Footer />
+      <RegisterFormContextProvider>
+        <ScrollToTop />
+        <Header />
+        <div className="App">
+          <Switch>
+            {routes.map(({ path, Component, dropRoutes }) => {
+              if (!dropRoutes)
+                return (
+                  <Route key={path} exact path={path}>
+                    <Component />
+                  </Route>
+                );
+              else {
+                return dropRoutes.map((dropRoute) => (
+                  <Route
+                    key={path + dropRoute.path}
+                    exact
+                    path={path + dropRoute.path}
+                  >
+                    <dropRoute.Component />
+                  </Route>
+                ));
+              }
+            })}
+            <Redirect to="/" />
+          </Switch>
+        </div>
+        <Footer />
+      </RegisterFormContextProvider>
     </div>
   );
 }

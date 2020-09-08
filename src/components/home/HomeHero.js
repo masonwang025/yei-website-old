@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
+import OpenForm from "../clubs/OpenForm";
 
 export default function HomeHero({ classes }) {
   return (
@@ -27,13 +28,15 @@ export default function HomeHero({ classes }) {
           <Box mt={2}>
             <Grid item>
               <Box display="inline-block" mr={1} mb={1}>
-                <Button
-                  className={`${classes.ctaBtn} ${classes.mainCta}`}
-                  variant="contained"
-                  size="large"
-                >
-                  Register a Club
-                </Button>
+                <OpenForm>
+                  <Button
+                    className={`${classes.ctaBtn} ${classes.mainCta}`}
+                    variant="contained"
+                    size="large"
+                  >
+                    Register a Club
+                  </Button>
+                </OpenForm>
               </Box>
               <Button
                 className={classes.ctaBtn}

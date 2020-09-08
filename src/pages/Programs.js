@@ -2,6 +2,7 @@ import React from "react";
 import PageSection from "../components/PageSection";
 import PageHero from "../components/PageHero";
 import { Button, Box, Typography } from "@material-ui/core";
+import OpenForm from "../components/clubs/OpenForm";
 
 export default function Programs() {
   return (
@@ -37,14 +38,9 @@ export default function Programs() {
               In order to ensure we are delivering high-quality workshops,
               participation in FLIP is limited to YEI EconClubs. If you do not
               have a YEI EconClub at your school, you may apply to start one{" "}
-              <a
-                href="https://form.typeform.com/to/WB3Um6?fbclid=IwAR2Vr0ZYeMFAr9OTixN-BSyjj4FHR5ai-dVOLNTLNDvbuTwcLaUXkMULmgE"
-                target="_blank"
-                className="underline bold"
-                rel="noopener noreferrer"
-              >
-                here
-              </a>
+              <OpenForm inline={true}>
+                <span className="underline bold">here</span>
+              </OpenForm>
               .
             </b>
           </>
@@ -76,7 +72,7 @@ export default function Programs() {
             "Experience with service and tutoring",
             "Club volunteer capacity",
           ].map((criteria) => (
-            <li>
+            <li key={criteria}>
               <Typography variant="body1" align="left">
                 {criteria}
               </Typography>
@@ -117,14 +113,9 @@ export default function Programs() {
               position. All EARN applicants must be affiliated with a YEI
               EconClub. If you do not have a YEI EconClub at your school, you
               may apply to start one{" "}
-              <a
-                className="underline bold"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://form.typeform.com/to/WB3Um6?fbclid=IwAR2Vr0ZYeMFAr9OTixN-BSyjj4FHR5ai-dVOLNTLNDvbuTwcLaUXkMULmgE"
-              >
-                here
-              </a>
+              <OpenForm inline={true}>
+                <span className="underline bold">here</span>
+              </OpenForm>
               .
             </b>
           </Typography>
