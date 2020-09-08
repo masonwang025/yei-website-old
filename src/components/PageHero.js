@@ -28,7 +28,15 @@ export default function PageHero({ title, paragraph, imgURL, callToAction }) {
                 </Grid>
                 {paragraph && (
                   <Grid item>
-                    <Typography variant="h5">{paragraph}</Typography>
+                    <Typography
+                      variant="h5"
+                      className={
+                        paragraph.split(" ").length >= 15 &&
+                        classes.smallParagraph
+                      }
+                    >
+                      {paragraph}
+                    </Typography>
                   </Grid>
                 )}
                 {callToAction && <Grid item>{callToAction}</Grid>}

@@ -29,9 +29,11 @@ export default function PageSection(props) {
                     <b>{props.title}</b>
                   </Typography>
                 </Grid>
-                <Grid item>
-                  <Typography variant="body1">{props.content}</Typography>
-                </Grid>
+                {props.content && (
+                  <Grid item>
+                    <Typography variant="body1">{props.content}</Typography>
+                  </Grid>
+                )}
                 <Grid item>{props.callToAction}</Grid>
                 {props.children && <Grid item>{props.children}</Grid>}
               </Grid>

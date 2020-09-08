@@ -15,7 +15,7 @@ const clubs = [
     region: "Massachusetts",
   },
   {
-    chapter: "Harker Oeconomica",
+    chapter: "Harker School",
     email: "21arushis@students.harker.org",
     region: "Norcal",
   },
@@ -163,6 +163,8 @@ const clubs = [
     chapter: "Sherwood Hall Senior Secondary School",
     email: "rafahasma@icloud.com",
     region: "India",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1599539013/yei-website/clubs/Sherwood-Hall-Senior-Secondary-School.jpg",
   },
   {
     chapter: "Central High School",
@@ -170,9 +172,11 @@ const clubs = [
     region: "Arkansas",
   },
   {
-    chapter: "Langeley HS",
+    chapter: "Instituto Lange Ley",
     email: "martinakurchan@gmail.com",
     region: "Argentina",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1599539013/yei-website/clubs/Instituto-Lange-Ley.jpg",
   },
 ];
 

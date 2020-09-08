@@ -3,6 +3,7 @@ import PageHero from "../../components/PageHero";
 import { Button, Box } from "@material-ui/core";
 import PageSection from "../../components/PageSection";
 import ClubBenefits from "../../components/clubs/ClubBenefits";
+import { Link } from "react-router-dom";
 
 export default function Clubs() {
   return (
@@ -12,9 +13,11 @@ export default function Clubs() {
         paragraph="Take your economics club to the next level."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599500302/yei-website/manypixels-isometric/clubsHero.png"
         callToAction={
-          <Button variant="contained" color="secondary">
-            Register Your Club
-          </Button>
+          <Link to="/clubs/current-clubs">
+            <Button variant="contained" color="secondary">
+              View Current Clubs
+            </Button>
+          </Link>
         }
       />
       <Box pb={3}>

@@ -14,6 +14,12 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  smallParagraph: {
+    fontSize: "1.42em",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "1.269em",
+    },
+  },
   image: {
     maxWidth: "69%",
     [theme.breakpoints.up("lg")]: {
