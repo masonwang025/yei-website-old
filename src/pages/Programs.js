@@ -8,7 +8,7 @@ export default function Programs() {
     <div>
       <PageHero
         title="YEI Programs"
-        paragraph="YEI offers a number of exclusive supplemental programs for our EconClubs and members created to prepare aspiring leaders through community service and real work experience."
+        paragraph="YEI's exclusive programs for EconClubs. Created to prepare aspiring leaders through community service and real work experience."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/programsHero.png"
         callToAction={
           <span>

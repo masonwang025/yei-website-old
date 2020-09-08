@@ -31,8 +31,9 @@ export default function PageHero({ title, paragraph, imgURL, callToAction }) {
                     <Typography
                       variant="h5"
                       className={
-                        paragraph.split(" ").length >= 15 &&
-                        classes.smallParagraph
+                        paragraph.split(" ").length >= 15
+                          ? classes.smallParagraph
+                          : ""
                       }
                     >
                       {paragraph}
