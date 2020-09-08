@@ -15,7 +15,13 @@ export default function ClubCard(props) {
       >
         <Grid item>
           <Image
-            style={{ width: "100%", maxHeight: "240px", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              minHeight: "100px",
+              maxHeight: "240px",
+              backgroundColor: "#0d242b",
+              objectFit: "cover",
+            }}
             cloudName="masonwang"
             publicId={props.imgURL}
           />
