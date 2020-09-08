@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
+import clubs from "../../data/clubs";
 
 export default function HomeNumber({ classes }) {
   return (
@@ -27,7 +28,7 @@ export default function HomeNumber({ classes }) {
             <Grid item xs={12} sm={3} md={2}>
               <Box mt={2}>
                 <Typography variant="h3">
-                  <b>40</b>
+                  <b>{clubs.length}</b>
                 </Typography>
                 <Typography variant="body1">Current Clubs</Typography>
               </Box>

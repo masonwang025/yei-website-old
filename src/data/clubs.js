@@ -1,4 +1,4 @@
-const chapters = [
+const clubs = [
   {
     chapter: "Saratoga High School",
     email: "henryweng2003@gmail.com",
@@ -50,7 +50,7 @@ const chapters = [
     region: "Socal",
   },
   {
-    chapter: "Ballantyne",
+    chapter: "Ardrey Kell",
     email: "linkevin465@gmail.com",
     region: "North Carolina",
   },
@@ -170,10 +170,10 @@ const chapters = [
     region: "Arkansas",
   },
   {
-    chapter: "Lange Ley HS",
+    chapter: "Langeley HS",
     email: "martinakurchan@gmail.com",
     region: "Argentina",
   },
 ];
 
-export default chapters;
+export default clubs;

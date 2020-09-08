@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import useStyles from "../styles/components/pageHeroStyles";
 import { Image } from "cloudinary-react";
+
 export default function PageHero({ title, paragraph, imgURL, callToAction }) {
   const classes = useStyles();
 
