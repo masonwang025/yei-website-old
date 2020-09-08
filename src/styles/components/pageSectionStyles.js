@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   light: {
     backgroundColor: theme.palette.white.secondary,
   },
-  sectionContainer: {
+  centerOnMobile: {
     [theme.breakpoints.down("sm")]: {
       alignItems: "center",
       "& > *": {

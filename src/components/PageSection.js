@@ -6,16 +6,13 @@ import { Image } from "cloudinary-react";
 export default function PageSection(props) {
   const classes = useStyles();
   let centerContent = window.innerWidth <= 960;
-  let pt = 0;
-  let pb = 0;
-  if (!props.subsection) {
-    pt = props.pt ? 5 + props.pt : 5;
-    pb = props.pb ? 5 + props.pb : 5;
-  }
+  let pt = props.pt ? 5 + props.pt : 5;
+  let pb = props.pb ? 5 + props.pb : 5;
 
   let titleVariant = "h4";
-  if (props.subsection === true) titleVariant = "h5";
-  else if (props.homepage === true) {
+  if (props.subsection === true) {
+    titleVariant = "h6";
+  } else if (props.homepage === true) {
     titleVariant = "h3";
   }
 
@@ -23,7 +20,7 @@ export default function PageSection(props) {
     <Box pt={pt} pb={pb} id={props.id} className={props.light && classes.light}>
       <Container
         fixed
-        className={`${classes.sectionContainer} ${
+        className={`${props.centerOnMobile && classes.centerOnMobile} ${
           props.forceCenter && classes.forceCenter
         }`}
       >
@@ -33,15 +30,12 @@ export default function PageSection(props) {
             <Grid item xs={props.imgURL && !centerContent ? 8 : 12}>
               <Grid container direction="column" justify="center" spacing={1}>
                 <Grid item>
-                  <Typography
-                    fontWeight={
-                      props.homepage === true
-                        ? "fontWeightRegular"
-                        : "fontWeightBold"
-                    }
-                    variant={titleVariant}
-                  >
-                    {props.title}
+                  <Typography variant={titleVariant}>
+                    {props.homepage === true ? (
+                      props.title
+                    ) : (
+                      <b>{props.title}</b>
+                    )}
                   </Typography>
                 </Grid>
                 {props.content && (
@@ -56,7 +50,15 @@ export default function PageSection(props) {
             {/* possible image column */}
             {props.imgURL && (
               <Grid item xs>
-                <Box display="flex" justifyContent="center">
+                <Box
+                  display="flex"
+                  justifyContent={
+                    (props.forceCenter ||
+                      !centerContent ||
+                      (props.centerOnMobile && centerContent)) &&
+                    "center"
+                  }
+                >
                   <Image
                     cloudName="masonwang"
                     className={classes.image}

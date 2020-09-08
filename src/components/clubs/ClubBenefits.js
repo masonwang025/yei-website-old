@@ -47,7 +47,9 @@ export default function ClubBenefits() {
                 </Grid>
                 <Grid item>
                   <Image
-                    style={{ width: "70%" }}
+                    style={{
+                      width: "70%",
+                    }}
                     cloudName="masonwang"
                     publicId={imgURL}
                   />

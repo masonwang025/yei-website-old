@@ -19,7 +19,7 @@ export default function CurrentClubs() {
         }
       />
 
-      <PageSection pt={-2} pb={3}>
+      <PageSection pt={-2} pb={3} centerOnMobile={true}>
         <Grid container alignItems="stretch" justify="center" spacing={3}>
           {clubs.map((club) => {
             let key = club.chapter.replace(/\s+/g, "-");
