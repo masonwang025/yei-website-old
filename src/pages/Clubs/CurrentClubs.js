@@ -37,6 +37,8 @@ export default function CurrentClubs() {
                   region={club.region}
                   imgURL={imgURL}
                   email={club.email}
+                  founding={club.founding}
+                  primaryFounding={club.primaryFounding}
                 />
               </Grid>
             );
