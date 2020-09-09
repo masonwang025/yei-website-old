@@ -85,7 +85,7 @@ const team = [
   },
   {
     name: "Selina Chen",
-    positions: ["Multimedia Coordinator", "Graphic Designer"],
+    positions: ["Graphic Designer"],
     linkedin: "https://www.linkedin.com/in/selina-chen-4a97831a2",
   },
   {
@@ -105,7 +105,7 @@ const team = [
   },
   {
     name: "Benjamin Bray",
-    positions: ["Marketing Specialist", "Multimedia Manager"],
+    positions: ["Marketing Specialist"],
     linkedin: "https://www.linkedin.com/in/benjamin-bray-6aa9371a3/",
   },
   {
@@ -127,7 +127,7 @@ const team = [
   },
   {
     name: "Darion Phan",
-    positions: ["Testing Developer", "Econbowl Writer"],
+    positions: ["Testing Developer"],
     linkedin: "https://www.linkedin.com/in/darion-phan/",
     imgURl:
       "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/darion-phan.jpg",
