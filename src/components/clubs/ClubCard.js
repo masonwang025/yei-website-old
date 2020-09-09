@@ -52,7 +52,7 @@ export default function ClubCard(props) {
             <Typography variant="h6">
               <b>{props.chapter}</b>
             </Typography>
-            <Typography variant="body1" color="textSecondary">
+            <Typography variant="body1" color="secondary">
               {props.region}
             </Typography>
             {props.founding && (
