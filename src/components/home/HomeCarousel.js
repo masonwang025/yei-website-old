@@ -18,9 +18,12 @@ export default function HomeCarousel({ classes }) {
     responsiveClass: true,
     autoplay: true,
     loop: true,
-    dots: false,
+    dots: true,
+    nav: true,
     autoWidth: true,
-    smartSpeed: 1000,
+    autoplayHoverPause: true,
+    smartSpeed: 1300,
+    autoplayTimeout: 2100,
     responsive: {
       0: {
         items: 1,
