@@ -18,8 +18,6 @@ export default function Home() {
       <HomeHero classes={classes} />
       {/* About */}
       <PageSection
-        pt={1}
-        pb={1}
         light
         id="home-about"
         homepage
@@ -44,10 +42,36 @@ export default function Home() {
           </Box>
         }
       />
-      {/* Slider */}
-      <HomeCarousel classes={classes} />
+      {/* EconClubs */}
+      <PageSection
+        pt={-2}
+        homepage
+        title="EconClubs"
+        content={
+          <span>
+            EconClubs is YEI’s signature program and is designed to help
+            students launch economics clubs at their own schools. Every YEI
+            EconClub is provided with our custom-designed AP/IB curriculum,
+            mentorship from our global leadership team, exclusive access to
+            certain YEI events, YEI brand recognition, and support from an
+            international community of aspiring economists. Existing economics
+            clubs are also welcome to join the EconClubs program.
+          </span>
+        }
+        callToAction={
+          <Box mt={0.5}>
+            <Link to="/clubs">
+              <Button variant="contained" color="secondary" size="large">
+                Learn More
+              </Button>
+            </Link>
+          </Box>
+        }
+      />
       {/* Numbers */}
       <HomeNumbers classes={classes} />
+      {/* Slider */}
+      <HomeCarousel classes={classes} />
       {/* As seen on */}
       <HomeAsSeenOn />
     </div>

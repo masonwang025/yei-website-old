@@ -15,30 +15,19 @@ import { Link } from "react-router-dom";
 
 export default function HomeCarousel({ classes }) {
   const options = {
-    responsiveClass: true,
     autoplay: true,
     loop: true,
     dots: true,
     nav: true,
+    items: 100,
     autoWidth: true,
     autoplayHoverPause: true,
     smartSpeed: 1300,
     autoplayTimeout: 2100,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 10,
-      },
-    },
   };
 
   return (
-    <Box py={5}>
+    <Box py={6}>
       <Container>
         <Typography align="center" variant="h3" gutterBottom>
           Events and Initiatives

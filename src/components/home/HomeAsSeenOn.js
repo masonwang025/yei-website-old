@@ -7,7 +7,7 @@ export default function HomeAsSeenOn() {
   const baseUrl =
     "https://res.cloudinary.com/masonwang/image/upload/v1599110765/yei-website/as-seen-on";
   return (
-    <PageSection pt={1} pb={4.2} homepage title="Featured On" forceCenter>
+    <PageSection light pt={1} pb={4.2} homepage title="Featured On" forceCenter>
       <Grid container alignItems="center" justify="center" spacing={3}>
         <Grid item md={3} xs={6}>
           <a
