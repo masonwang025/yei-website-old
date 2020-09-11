@@ -1,7 +1,4 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import featured from "../../data/featured";
 import {
   Paper,
@@ -12,20 +9,25 @@ import {
   Container,
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 2,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 export default function HomeCarousel({ classes }) {
-  const options = {
-    autoplay: true,
-    loop: true,
-    dots: true,
-    nav: true,
-    items: 100,
-    autoWidth: true,
-    autoplayHoverPause: true,
-    smartSpeed: 1300,
-    autoplayTimeout: 2100,
-  };
-
   return (
     <Box py={6}>
       <Container>
@@ -33,7 +35,19 @@ export default function HomeCarousel({ classes }) {
           Events and Initiatives
         </Typography>
       </Container>
-      <OwlCarousel style={{ overflowX: "hidden" }} {...options}>
+      <Carousel
+        swipeable
+        draggable
+        showDots
+        responsive={responsive}
+        infinite
+        centerMode={window.innerWidth > 960}
+        keyBoardControl
+        customTransition="transform 0.88s ease-in-out"
+        transitionDuration={500}
+        dotListClass="dot-list"
+        itemClass={classes.carouselCard}
+      >
         {featured.map((item) => (
           <Box key={item.title} mx={1.2}>
             <Paper className={classes.carouselCard}>
@@ -66,7 +80,7 @@ export default function HomeCarousel({ classes }) {
             </Paper>
           </Box>
         ))}
-      </OwlCarousel>
+      </Carousel>
     </Box>
   );
 }

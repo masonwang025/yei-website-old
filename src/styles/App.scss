@@ -28,3 +28,9 @@ button {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+.react-multi-carousel-dot--active {
+  button {
+    background: #174a5a;
+  }
+}

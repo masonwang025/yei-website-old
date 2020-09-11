@@ -95,12 +95,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselCard: {
-    width: "500px",
-    maxWidth: "80vw",
-    height: "269px",
-    [theme.breakpoints.down("xs")]: {
-      height: "350px",
-    },
+    marginBottom: "1.69em",
   },
 }));
 
