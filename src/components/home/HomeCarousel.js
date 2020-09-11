@@ -43,7 +43,7 @@ export default function HomeCarousel({ classes }) {
         infinite
         centerMode={window.innerWidth > 960}
         keyBoardControl
-        customTransition="transform 0.88s ease-in-out"
+        customTransition="transform 0.42s ease-in-out"
         transitionDuration={500}
         dotListClass="dot-list"
         itemClass={classes.carouselCard}

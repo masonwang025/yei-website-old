@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   carouselCard: {
-    marginBottom: "1.69em",
+    marginBottom: "1em",
   },
 }));
 
