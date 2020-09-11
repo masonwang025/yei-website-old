@@ -6,8 +6,9 @@ import HomeAsSeenOn from "../components/home/HomeAsSeenOn";
 import HomeNumbers from "../components/home/HomeNumbers";
 import PageSection from "../components/PageSection";
 import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
+import { Button, Box } from "@material-ui/core";
 import OpenForm from "../components/clubs/OpenForm";
+import HomeCarousel from "../components/home/HomeCarousel";
 
 export default function Home() {
   const classes = useStyles();
@@ -19,8 +20,9 @@ export default function Home() {
       <PageSection
         pt={1}
         pb={1}
+        light
         id="home-about"
-        homepage={true}
+        homepage
         title="What is the Youth Economics Intiative?"
         content={
           <span>
@@ -33,13 +35,17 @@ export default function Home() {
           </span>
         }
         callToAction={
-          <Link to="/events">
-            <Button variant="contained" color="secondary" size="large">
-              Our Events
-            </Button>
-          </Link>
+          <Box mt={0.5}>
+            <Link to="/events">
+              <Button variant="contained" color="secondary" size="large">
+                Our Events
+              </Button>
+            </Link>
+          </Box>
         }
-      ></PageSection>
+      />
+      {/* Slider */}
+      <HomeCarousel classes={classes} />
       {/* Numbers */}
       <HomeNumbers classes={classes} />
       {/* As seen on */}

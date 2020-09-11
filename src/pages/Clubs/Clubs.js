@@ -23,7 +23,7 @@ export default function Clubs() {
       />
       <Box pb={3}>
         <PageSection
-          light={true}
+          light
           title="What are YEI EconClubs?"
           imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407419/yei-website/manypixels-isometric/clubsPageImg.png"
           content={

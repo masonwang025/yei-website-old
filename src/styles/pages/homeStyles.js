@@ -94,6 +94,14 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.primary.darker,
     },
   },
+  carouselCard: {
+    width: "500px",
+    maxWidth: "80vw",
+    height: "269px",
+    [theme.breakpoints.down("xs")]: {
+      height: "350px",
+    },
+  },
 }));
 
 export default useStyles;

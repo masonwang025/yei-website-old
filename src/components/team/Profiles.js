@@ -6,7 +6,7 @@ import PageSection from "../PageSection";
 
 export default function Profiles() {
   return (
-    <PageSection centerOnMobile={true} pt={-2} pb={3}>
+    <PageSection centerOnMobile pt={-2} pb={3}>
       <Grid container alignItems="center" justify="center" spacing={2}>
         {team.map((member) => {
           let key = member.name.replace(/\s+/g, "-").toLowerCase();

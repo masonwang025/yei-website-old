@@ -27,10 +27,10 @@ export default function Team() {
       />
       <Profiles />
       <PageSection
-        light={true}
+        light
         title="Join the Team"
         id="join-the-team"
-        forceCenter={true}
+        forceCenter
         content={
           <span>
             Passionate about what we do? Want to join an international team of

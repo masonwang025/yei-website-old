@@ -38,20 +38,20 @@ export default function Programs() {
               In order to ensure we are delivering high-quality workshops,
               participation in FLIP is limited to YEI EconClubs. If you do not
               have a YEI EconClub at your school, you may apply to start one{" "}
-              <OpenForm inline={true}>
+              <OpenForm inline>
                 <span className="underline bold">here</span>
               </OpenForm>
               .
             </b>
           </>
         }
-        light={true}
+        light
       ></PageSection>
       <PageSection
         pt={-5}
         pb={-5}
-        light={true}
-        subsection={true}
+        light
+        subsection
         title="Application Criteria"
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599588332/yei-website/manypixels-isometric/problem_solving.png"
       >
@@ -87,8 +87,8 @@ export default function Programs() {
 
       <PageSection
         pt={-5}
-        light={true}
-        subsection={true}
+        light
+        subsection
         title="FLIP Curriculum"
         content="While EconClubs must apply to be accepted to our FLIP program, every YEI EconClub is provided with the 16-week FLIP curriculum, which can be used to teach club members about financial literacy. The FLIP curriculum has approximately 30 hours worth of content and covers topics such as budgeting, loans, credit and debit cards, 401(k), retirement, interest, savings, investing, and insurance."
       ></PageSection>
@@ -116,7 +116,7 @@ export default function Programs() {
               position. All EARN applicants must be affiliated with a YEI
               EconClub. If you do not have a YEI EconClub at your school, you
               may apply to start one{" "}
-              <OpenForm inline={true}>
+              <OpenForm inline>
                 <span className="underline bold">here</span>
               </OpenForm>
               .
@@ -127,7 +127,7 @@ export default function Programs() {
           </Box>
         </div>
       </PageSection>
-      <PageSection subsection={true} pt={-5} pb={-5} title="EARN benefits">
+      <PageSection subsection pt={-5} pb={-5} title="EARN benefits">
         <Grid container direction="row" spacing={3}>
           {[
             {
@@ -155,7 +155,7 @@ export default function Programs() {
       </PageSection>
       <PageSection
         pt={-5}
-        subsection={true}
+        subsection
         title="What makes a great candidate?"
         content="Researching or interning with EARN is demanding work, and we want to make sure that all program members are up for the challenge. We conduct a holistic review process for all applicants, so no one factor will make or break your application. However, here are some things we look for in great candidates."
       >
