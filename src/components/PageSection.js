@@ -6,15 +6,11 @@ import { Image } from "cloudinary-react";
 export default function PageSection(props) {
   const classes = useStyles();
   let centerContent = window.innerWidth <= 960;
-  let pt = props.pt ? 5 + props.pt : 5;
-  let pb = props.pb ? 5 + props.pb : 5;
+  let pt = props.pt ? 7 + props.pt : 7;
+  let pb = props.pb ? 7 + props.pb : 7;
 
   let titleVariant = "h4";
-  if (props.subsection === true) {
-    titleVariant = "h6";
-  } else if (props.homepage === true) {
-    titleVariant = "h3";
-  }
+  if (props.subsection === true) titleVariant = "h6";
 
   return (
     <Box pt={pt} pb={pb} id={props.id} className={props.light && classes.light}>
@@ -25,17 +21,13 @@ export default function PageSection(props) {
         }`}
       >
         <Box mt={1}>
-          <Grid container alignItems="center" spacing={4}>
+          <Grid container alignItems="center" spacing={5}>
             {/* text column */}
             <Grid item xs={props.imgURL && !centerContent ? 8 : 12}>
-              <Grid container direction="column" justify="center" spacing={1}>
+              <Grid container direction="column" justify="center" spacing={3}>
                 <Grid item>
                   <Typography variant={titleVariant}>
-                    {props.homepage === true ? (
-                      props.title
-                    ) : (
-                      <b>{props.title}</b>
-                    )}
+                    <b>{props.title}</b>
                   </Typography>
                 </Grid>
                 {props.content && (

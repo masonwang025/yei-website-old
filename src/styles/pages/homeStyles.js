@@ -54,6 +54,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
+    fontSize: "4.4em",
     [theme.breakpoints.down("sm")]: {
       fontSize: "4.2em",
       "& > br": {
@@ -66,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   slogan: {
-    fontSize: "2.5em",
+    fontSize: "2.4em",
     color: "#333",
     [theme.breakpoints.down("sm")]: {
       fontSize: "1.8em",

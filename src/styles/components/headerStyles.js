@@ -64,7 +64,6 @@ const useStyles = makeStyles((theme) => ({
   callToAction: {
     color: "white !important",
     background: theme.palette.primary.main,
-    textTransform: "uppercase !important",
     "&:hover, &:active, &:focus": {
       background: theme.palette.primary.darker,
     },
