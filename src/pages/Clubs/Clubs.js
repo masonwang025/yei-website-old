@@ -5,10 +5,15 @@ import PageSection from "../../components/PageSection";
 import ClubBenefits from "../../components/clubs/ClubBenefits";
 import { Link } from "react-router-dom";
 import OpenForm from "../../components/clubs/OpenForm";
+import { Helmet } from "react-helmet";
 
 export default function Clubs() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Clubs - Youth Economics Initiative</title>
+      </Helmet>
       <PageHero
         title="YEI EconClubs"
         paragraph="Take your economics club to the next level."

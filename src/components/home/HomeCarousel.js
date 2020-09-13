@@ -54,14 +54,14 @@ export default function HomeCarousel({ classes }) {
               <Box p={2.5} height="100%">
                 <Grid
                   container
-                  spacing={1}
+                  spacing={3}
                   style={{ height: "100%" }}
                   direction="column"
                   justify="space-between"
                   wrap="nowrap"
                 >
                   <Grid item>
-                    <Box mb={0.5}>
+                    <Box mb={0.69}>
                       <Typography
                         variant={window.innerWidth > 600 ? "h5" : "h6"}
                       >

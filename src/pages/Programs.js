@@ -3,10 +3,15 @@ import PageSection from "../components/PageSection";
 import PageHero from "../components/PageHero";
 import { Button, Box, Typography, Grid } from "@material-ui/core";
 import OpenForm from "../components/clubs/OpenForm";
+import { Helmet } from "react-helmet";
 
 export default function Programs() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Programs - The Youth Economics Initiative</title>
+      </Helmet>
       <PageHero
         title="YEI Programs"
         paragraph="YEI's exclusive programs for EconClubs. Created to prepare aspiring leaders through community service and real work experience."

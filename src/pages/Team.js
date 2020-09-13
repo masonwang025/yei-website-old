@@ -2,11 +2,16 @@ import React from "react";
 import PageHero from "../components/PageHero";
 import PageSection from "../components/PageSection";
 import Profiles from "../components/team/Profiles";
-import { Button, Typography } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { Helmet } from "react-helmet";
 
 export default function Team() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Team - The Youth Economics Initiative</title>
+      </Helmet>
       <PageHero
         title="Meet our team"
         paragraph="Get to know the people who make the magic happen."
@@ -30,6 +35,7 @@ export default function Team() {
         light
         title="Join the Team"
         id="join-the-team"
+        pb={1}
         forceCenter
         content={
           <span>
@@ -54,17 +60,7 @@ export default function Team() {
             </Button>
           </a>
         }
-      >
-        <Typography align="center" variant="body2">
-          Note that this application process is highly competitive with a{" "}
-          <i>{"<10%"} acceptance rate</i> for several positions — not all
-          qualified applicants receive a position because we simply do not have
-          the space! Applicants may be invited to several rounds of interviews
-          before a final decision is made. We employ a holistic review process
-          for each applicant and are looking for students who exhibit high
-          levels of drive, initiative, enthusiasm, and commitment.
-        </Typography>
-      </PageSection>
+      />
     </div>
   );
 }

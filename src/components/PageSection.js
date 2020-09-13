@@ -35,7 +35,9 @@ export default function PageSection(props) {
                     <Typography variant="body1">{props.content}</Typography>
                   </Grid>
                 )}
-                <Grid item>{props.callToAction}</Grid>
+                <Grid item>
+                  <Box mt={0.42}>{props.callToAction}</Box>
+                </Grid>
                 {props.children && <Grid item>{props.children}</Grid>}
               </Grid>
             </Grid>

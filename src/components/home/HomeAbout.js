@@ -41,7 +41,8 @@ export default function HomeAbout({ classes }) {
               <Image
                 cloudName="masonwang"
                 className={classes.aboutImage}
-                publicId="https://res.cloudinary.com/masonwang/image/upload/v1599973170/yei-website/home/lynbrook.png"
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1600014238/yei-website/home/home-about.png"
+                style={{ backgroundColor: "#0d242b" }}
               />
             </Box>
           </Grid>

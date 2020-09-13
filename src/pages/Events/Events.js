@@ -1,10 +1,15 @@
 import React from "react";
 import Page from "../../components/Page";
 import PageHero from "../../components/PageHero";
+import { Helmet } from "react-helmet";
 
 export default function Events() {
   return (
     <Page>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Events - The Youth Economics Initiative</title>
+      </Helmet>
       <PageHero
         title="YEI Events"
         paragraph="Through YEI Events, students gain access to a expansive network of driven and motivated students and professionals, while finding their unique path toward applying their knowledge. Win cash prizes, network with professors and professionals, learn material, find your pathway to a career in economics, finance or business."

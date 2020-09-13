@@ -5,10 +5,15 @@ import { Grid, Button } from "@material-ui/core";
 import clubs from "../../data/clubs";
 import PageSection from "../../components/PageSection";
 import OpenForm from "../../components/clubs/OpenForm";
+import { Helmet } from "react-helmet";
 
 export default function CurrentClubs() {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Current Clubs - The Youth Economics Initiative</title>
+      </Helmet>
       <PageHero
         title="YEI Current Clubs"
         paragraph={`View YEI's current ${clubs.length} clubs.`}
