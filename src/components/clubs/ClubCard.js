@@ -32,7 +32,7 @@ export default function ClubCard(props) {
   const classes = useStyles();
 
   return (
-    <Paper elevation={0} style={{ height: "100%" }}>
+    <Paper style={{ height: "100%" }}>
       <Grid
         container
         style={{ height: "100%" }}

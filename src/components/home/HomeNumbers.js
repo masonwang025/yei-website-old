@@ -4,7 +4,7 @@ import clubs from "../../data/clubs";
 
 export default function HomeNumber({ classes }) {
   return (
-    <Box className={classes.numbers} py={5}>
+    <Box className={classes.numbers} py={10}>
       <Container fixed>
         <Grid container direction="column" alignItems="center" justify="center">
           <Grid item>

@@ -54,29 +54,31 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
-    [theme.breakpoints.up("md")]: {
-      fontSize: "3em",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "4.2em",
+      "& > br": {
+        display: "none",
+      },
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "3.2em",
     },
     fontWeight: "bold",
   },
   slogan: {
-    fontSize: "2em",
+    fontSize: "2.5em",
+    color: "#333",
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1.8em",
+    },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "1.69em",
+      fontSize: "1.72em",
     },
   },
   ctaBtn: {
     fontSize: "1.25em",
     [theme.breakpoints.down("sm")]: {
       fontSize: "1.1em",
-    },
-  },
-  heroGrid: {
-    [theme.breakpoints.down("sm")]: {
-      alignItems: "center",
-      "& > *": {
-        textAlign: "center",
-      },
     },
   },
   aboutContainer: {
@@ -96,6 +98,31 @@ const useStyles = makeStyles((theme) => ({
   },
   carouselCard: {
     marginBottom: "1em",
+  },
+  about: {
+    backgroundColor: theme.palette.white.secondary,
+  },
+  aboutHeading: {
+    fontSize: "3.5em",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "3em",
+    },
+  },
+  aboutImage: {
+    width: "100%",
+    borderTopRightRadius: "4.2em",
+    borderBottomLeftRadius: "4.2em",
+    borderTopLeftRadius: "2.5px",
+    borderBottomRightRadius: "2.5px",
+  },
+  asSeenOn: {
+    backgroundColor: "#141a1c",
+  },
+  asSeenOnLogo: {
+    transition: "0.2s ease-in-out",
+    "&:hover": {
+      filter: "grayscale(25%) brightness(1.5) !important",
+    },
   },
 }));
 

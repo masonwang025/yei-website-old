@@ -12,7 +12,7 @@ export default function PageHero({ title, paragraph, imgURL, callToAction }) {
         <Grid
           style={{
             minHeight: "50vh",
-            padding: window.innerWidth > 960 ? "5.69em 0 4.2em 0" : "4.2em 0",
+            padding: "6em 0 4.2em 0",
           }}
           container
           justify="center"

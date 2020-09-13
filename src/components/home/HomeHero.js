@@ -5,12 +5,16 @@ import OpenForm from "../clubs/OpenForm";
 export default function HomeHero({ classes }) {
   return (
     <Box className={classes.hero}>
-      <Container fixed>
+      <Container
+        fixed
+        style={{
+          paddingTop: `-${window.innerWidth > 600 ? 64 : 56}px`,
+        }}
+      >
         <Grid
           style={{
             minHeight: "100vh",
-            marginTop: `-${window.innerWidth > 600 ? 64 : 56}px`,
-            padding: window.innerWidth > 960 ? "6.42em 0 4.2em 0" : "4.2em 0",
+            padding: "6.5em 0 5em 0",
           }}
           className={classes.heroGrid}
           container
@@ -18,8 +22,9 @@ export default function HomeHero({ classes }) {
           direction="column"
         >
           <Grid item>
-            <Typography variant="h3" className={classes.title}>
-              Launchpad for Student Economists
+            <Typography variant="h1" className={classes.title}>
+              Launchpad for
+              <br /> Student Economists
             </Typography>
             <Typography variant="h4" className={classes.slogan}>
               World's largest coalition of high school economics clubs.

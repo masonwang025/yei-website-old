@@ -38,9 +38,9 @@ export default function Header(props) {
 
   return (
     <React.Fragment>
-      <AppBar className={classes.navbar} elevation={0}>
+      <AppBar id="appbar" className={classes.navbar} elevation={3}>
         <Container fixed>
-          <Toolbar disableGutters>
+          <Toolbar id="back-to-top-anchor" disableGutters>
             <div className={classes.title}>
               <Link to="/">
                 <Image
@@ -62,13 +62,12 @@ export default function Header(props) {
           </Toolbar>
         </Container>
       </AppBar>
-      <Toolbar id="back-to-top-anchor" />
       <BackTop classes={classes} {...props} />
     </React.Fragment>
   );
 }
 
-function BackTop(props) {
+function BackTop() {
   const classes = useStyles();
 
   const trigger = useScrollTrigger({
@@ -143,7 +142,6 @@ function MobileNav({ classes, currPath, drawerOpen, setDrawerOpen }) {
       </IconButton>
 
       <SwipeableDrawer
-        elevation={0}
         anchor="right"
         open={drawerOpen}
         onOpen={() => setDrawerOpen(true)}

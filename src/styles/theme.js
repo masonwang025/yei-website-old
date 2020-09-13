@@ -1,14 +1,13 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
-  shadows: ["none"],
   palette: {
     primary: {
       main: "#279361",
       darker: "#208556",
     },
     secondary: {
-      main: "#174A5A",
+      main: "#293236",
       darkest: "#0d242b",
     },
     text: {
@@ -26,6 +25,7 @@ const theme = createMuiTheme({
       fontSize: "1.1em",
     },
     h1: {
+      fontSize: "4.69em",
       userSelect: "none",
     },
     h2: {

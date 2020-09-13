@@ -49,7 +49,7 @@ export default function HomeCarousel({ classes }) {
         itemClass={classes.carouselCard}
       >
         {featured.map((item) => (
-          <Box key={item.title} mx={1.2}>
+          <Box key={item.title} mx={2}>
             <Paper className={classes.carouselCard}>
               <Box p={2.5} height="100%">
                 <Grid
