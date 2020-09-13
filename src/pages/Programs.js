@@ -136,17 +136,17 @@ export default function Programs() {
         <Grid container direction="row" spacing={3}>
           {[
             {
-              title: "Efficient",
+              title: "🔧 Efficient",
               content:
                 "Think of EARN like a common application for economics internships. Instead of cold emailing hundreds of professors and companies, EARN applicants apply to dozens of internships at once through a single application.",
             },
             {
-              title: "Real-world experience",
+              title: "👨‍💼 Real-world experience",
               content:
                 "EARN is one of the only programs that offer high schoolers the opportunity to gain real-world work experience, whether that’s assisting a professor with research at a world-class university or working as an intern at a top company.",
             },
             {
-              title: "Community",
+              title: "🌍 Community",
               content:
                 "By joining the EARN program, you’ll become part of a curated community of highly motivated economics students. EARN members will have the opportunity to expand their network by connecting with fellow economics enthusiasts, researchers, and interns.",
             },
@@ -167,17 +167,17 @@ export default function Programs() {
         <Grid container direction="row" spacing={3}>
           {[
             {
-              title: "Skillset",
+              title: "🛠 Skillset",
               content:
                 "Are you a data analysis guru? A Python ninja? Have you demonstrated a passion for economics? We’re looking for students with the skills necessary to take on challenging research positions and internships.",
             },
             {
-              title: "Drive",
+              title: "🚀 Drive",
               content:
                 "Do you push yourself out of your comfort zone? Are you willing to work hard and take on challenges?",
             },
             {
-              title: "Collaborative",
+              title: "🙋‍♂️ Collaborative",
               content:
                 "Research assistants and interns often work in group environments. Do you work well with others? Are you a team player?",
             },

@@ -24,7 +24,12 @@ export default function PageSection(props) {
           <Grid container alignItems="center" spacing={5}>
             {/* text column */}
             <Grid item xs={props.imgURL && !centerContent ? 8 : 12}>
-              <Grid container direction="column" justify="center" spacing={3}>
+              <Grid
+                container
+                direction="column"
+                justify="center"
+                spacing={props.spacing ? props.spacing : 3}
+              >
                 <Grid item>
                   <Typography variant={titleVariant}>
                     <b>{props.title}</b>
