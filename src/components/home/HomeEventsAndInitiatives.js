@@ -48,13 +48,6 @@ export default function HomeEventsAndIniatives({ classes }) {
                             </Typography>
                           </Box>
                         </Grid>
-                        <Grid item>
-                          <Link to={item.path}>
-                            <Button variant="contained" color="secondary">
-                              Learn More
-                            </Button>
-                          </Link>
-                        </Grid>
                         <Image
                           cloudName="masonwang"
                           className={classes.featuredCardLogo}
@@ -64,6 +57,13 @@ export default function HomeEventsAndIniatives({ classes }) {
                               : "https://res.cloudinary.com/masonwang/image/upload/v1600056092/yei-website/logo.png"
                           }
                         />
+                        <Grid item>
+                          <Link to={item.path}>
+                            <Button variant="contained" color="secondary">
+                              Learn More
+                            </Button>
+                          </Link>
+                        </Grid>
                       </Grid>
                     </Box>
                   </Card>

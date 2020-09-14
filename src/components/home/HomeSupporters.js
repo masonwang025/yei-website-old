@@ -5,7 +5,7 @@ import { Image } from "cloudinary-react";
 
 export default function HomeSupporters({ classes }) {
   return (
-    <Box className={classes.about} pt={4.2} pb={10.25}>
+    <Box className={classes.about} pt={4} pb={10.25}>
       <Container>
         <Grid container direction="column" spacing={2}>
           <Grid item>

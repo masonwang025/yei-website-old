@@ -111,8 +111,8 @@ const useStyles = makeStyles((theme) => ({
     minWidth: "200px",
     width: "25%",
     maxWidth: "50%",
-    bottom: "5px",
-    right: "0",
+    bottom: "24px",
+    right: "15px",
     filter: "opacity(0.21)",
   },
   about: {

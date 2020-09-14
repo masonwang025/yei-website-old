@@ -37,7 +37,7 @@ export default function HomeNumber({ classes }) {
                 <Box mt={2}>
                   <Typography variant="h2">
                     <b>
-                      <CountUpOnce number={num.number} />
+                      <CountUpOnce number={num.number} duration={1.5} />
                     </b>
                   </Typography>
                   <Typography variant="body1">{num.caption}</Typography>
@@ -54,7 +54,12 @@ export default function HomeNumber({ classes }) {
 function CountUpOnce(props) {
   const countedUp = useRef(false);
   return (
-    <CountUp useEasing={false} start={0} end={props.number} duration={1.738}>
+    <CountUp
+      useEasing={false}
+      start={0}
+      end={props.number}
+      duration={props.duration}
+    >
       {({ countUpRef, start }) => (
         <VisibilitySensor
           onChange={(isVisible) => {
