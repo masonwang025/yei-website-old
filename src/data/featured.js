@@ -32,9 +32,10 @@ const featured = [
     path: "/programs",
   },
   {
-    title: "IAN TODO",
-    description: "PUT DESCRIPTION HERE",
-    path: "put a link here (it won't work if it leads off the website for now)",
+    title: "SELC/WELC",
+    description:
+      "Every Summer and Winter, YEI hosts a leadership conference to help our student leaders and outstanding staff members network, gain valuable leadership experience, and get the up to date information on YEI Programs.",
+    path: "/events",
   },
 ];
 
