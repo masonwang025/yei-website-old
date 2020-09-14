@@ -24,11 +24,8 @@ export default function HomeEventsAndIniatives({ classes }) {
             <Grid container alignItems="stretch" spacing={3}>
               {featured.map((item) => (
                 <Grid key={item.title + item.path} item xs={12} md={6}>
-                  <Card
-                    elevation={0}
-                    style={{ backgroundColor: "#efefef", height: "100%" }}
-                  >
-                    <Box p={3} height="100%">
+                  <Card className={classes.featuredCard}>
+                    <Box p={3}>
                       <Grid
                         container
                         direction="column"
@@ -55,6 +52,10 @@ export default function HomeEventsAndIniatives({ classes }) {
                             </Button>
                           </Link>
                         </Grid>
+                        <img
+                          className={classes.featuredCardLogo}
+                          src={require("./econbowl.png")}
+                        />
                       </Grid>
                     </Box>
                   </Card>

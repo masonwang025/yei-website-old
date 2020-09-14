@@ -97,8 +97,22 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.primary.darker,
     },
   },
-  carouselCard: {
-    marginBottom: "1em",
+  featuredCard: {
+    height: "100%",
+    backgroundColor: "#efefef",
+    position: "relative",
+    overflow: "hidden",
+    "& > *": {
+      height: "100%",
+    },
+  },
+  featuredCardLogo: {
+    position: "absolute",
+    width: "400px",
+    maxWidth: "50%",
+    bottom: "0",
+    right: "0",
+    filter: "opacity(0.2)",
   },
   about: {
     backgroundColor: theme.palette.white.secondary,
