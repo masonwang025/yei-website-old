@@ -4,9 +4,9 @@ import { Image } from "cloudinary-react";
 
 export default function FLIPHero({ classes }) {
   return (
-    <Box pt={13}>
+    <Box pt={window.innerWidth < 960 ? 9 : 13}>
       <Container>
-        <Grid container alignItems="center" justify="center" spacing={5}>
+        <Grid container alignItems="center" justify="center" spacing={4}>
           <Grid item md={5} sm={11} xs={12}>
             <Grid container direction="column" justify="center" spacing={3}>
               <Grid item>

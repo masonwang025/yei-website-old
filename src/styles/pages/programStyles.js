@@ -34,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
     width: "calc(100% - 26px)",
     boxShadow: "-13px 13px #0d242aaa, 13px -13px #279361aa",
   },
+  image2: {
+    width: "calc(100% - 26px)",
+    boxShadow: "-13px -13px #279361aa, 13px 13px #0d242aaa",
+  },
   appNumbers: {
     marginTop: "0.5em",
     borderRadius: "50%",
@@ -46,6 +50,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "1.5em",
     fontWeight: 800,
+  },
+  earnBg: {
+    backgroundColor: "#efefef",
+  },
+  flipBg: {
+    backgroundColor: "white",
   },
 }));
 

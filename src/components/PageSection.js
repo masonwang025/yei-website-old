@@ -21,7 +21,7 @@ export default function PageSection(props) {
         }`}
       >
         <Box mt={1}>
-          <Grid container alignItems="center" spacing={5}>
+          <Grid container alignItems="center" spacing={4}>
             {/* text column */}
             <Grid item xs={props.imgURL && !centerContent ? 8 : 12}>
               <Grid

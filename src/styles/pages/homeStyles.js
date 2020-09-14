@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "50%",
     bottom: "24px",
     right: "15px",
-    filter: "opacity(0.21)",
+    filter: "opacity(0.13)",
   },
   about: {
     backgroundColor: theme.palette.white.secondary,

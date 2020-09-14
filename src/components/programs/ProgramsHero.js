@@ -4,7 +4,7 @@ import { Container, Grid, Typography, Box } from "@material-ui/core";
 export default function ProgramsHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
-    <Box className={classes.hero} py={mdDown ? 6.9 : 13}>
+    <Box className={classes.hero} py={mdDown ? 8 : 13}>
       <Container>
         <Grid
           container

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import OpenForm from "../clubs/OpenForm";
+import ApplyFor from "./ApplyFor";
 
 const appCriteria = [
   "History of club excellence",
@@ -28,7 +29,7 @@ export default function FLIPAbout({ classes }) {
             </Typography>
           </Grid>
         </Grid>
-        <Box pt={9}>
+        <Box pt={8}>
           <Grid container direction="column" spacing={2} alignItems="center">
             <Grid item>
               <Typography align="center" variant="h3">
@@ -59,9 +60,12 @@ export default function FLIPAbout({ classes }) {
                 ))}
               </Grid>
             </Grid>
+            <Grid item>
+              <ApplyFor program="FLIP" color="primary" />
+            </Grid>
           </Grid>
         </Box>
-        <Box pt={9}>
+        <Box pt={7.5} pb={2}>
           <Grid container direction="column" spacing={2}>
             <Grid item>
               <Typography variant="h3">FLIP Curriculum</Typography>
