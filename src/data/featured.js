@@ -29,6 +29,12 @@ const featured = [
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
     path: "/programs",
   },
+  {
+    title: "IAN TODO",
+    description:
+      "PUT DESCRIPTION HERE",
+    path: "put a link here (it won't work if it leads off the website for now)",
+  },
 ];
 
 export default featured;
