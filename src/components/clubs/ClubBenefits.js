@@ -27,7 +27,7 @@ export default function ClubBenefits() {
   ];
   return (
     <div>
-      <PageSection title="Why Join?" pt={1} pb={2} spacing={1}>
+      <PageSection title="Why Join?" pt={-5} pb={2} spacing={1}>
         <Grid container spacing={5}>
           {benefits.map(({ title, content }) => (
             <Grid key={title} item xs={12} sm={6}>

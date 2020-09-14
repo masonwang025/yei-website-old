@@ -1,104 +1,27 @@
 import React from "react";
 import PageSection from "../components/PageSection";
-import PageHero from "../components/PageHero";
 import { Button, Box, Typography, Grid } from "@material-ui/core";
 import OpenForm from "../components/clubs/OpenForm";
+import useStyles from "../styles/pages/programStyles";
 import { Helmet } from "react-helmet";
+import ProgramsHero from "../components/programs/ProgramsHero";
+// import EARNHero from "../components/programs/EARNHero";
+import FLIPHero from "../components/programs/FLIPHero";
+import FLIPAbout from "../components/programs/FLIPAbout";
 
 export default function Programs() {
+  const classes = useStyles();
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Programs - The Youth Economics Initiative</title>
       </Helmet>
-      <PageHero
-        title="YEI Programs"
-        paragraph="YEI's exclusive programs for EconClubs. Created to prepare aspiring leaders through community service and real work experience."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/programsHero.png"
-        callToAction={
-          <span>
-            <ApplyFor program="FLIP" />
-            <Box display="inline-block" component="span" mt={0.69} mx={0.69}>
-              <ApplyFor program="EARN" />
-            </Box>
-          </span>
-        }
-      />
-      <PageSection
-        pb={-5}
-        title="Financial Literacy Introduction Program (FLIP)"
-        content={
-          <>
-            YEI EconClubs have the unique opportunity to apply to offer a
-            Financial Literacy Introduction Program (FLIP) within their
-            community. EconClubs accepted to FLIP will be paired with a partner
-            nonprofit organization to deliver financial literacy workshops to
-            underserved youths. Additionally, YEI will provide FLIP-affiliated
-            EconClubs with year-round FLIP training sessions, our extensive
-            16-week FLIP curriculum including activities and post-session
-            resources, and PVSA-certified volunteer hours for any members who
-            volunteer with FLIP.{" "}
-            <b>
-              In order to ensure we are delivering high-quality workshops,
-              participation in FLIP is limited to YEI EconClubs. If you do not
-              have a YEI EconClub at your school, you may apply to start one{" "}
-              <OpenForm inline>
-                <span className="underline bold">here</span>
-              </OpenForm>
-              .
-            </b>
-          </>
-        }
-        light
-      ></PageSection>
+      <ProgramsHero classes={classes} />
+      <FLIPHero classes={classes} />
+      <FLIPAbout classes={classes} />
       <PageSection
         pt={-5}
-        pb={-5}
-        light
-        subsection
-        title="Application Criteria"
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599588332/yei-website/manypixels-isometric/problem_solving.png"
-      >
-        <Typography variant="body1">
-          EconClub applications for FLIP are evaluated on the following
-          criteria:
-        </Typography>
-        <ol
-          style={{
-            marginTop: 0,
-            fontWeight: "bolder",
-            fontSize: "1.269em",
-          }}
-        >
-          {[
-            "History of club excellence",
-            "Club involvement with YEI activities",
-            "Experience with service and tutoring",
-            "Club volunteer capacity",
-          ].map((criteria) => (
-            <li key={criteria}>
-              <Typography variant="body1" align="left">
-                {criteria}
-              </Typography>
-            </li>
-          ))}
-        </ol>
-        <ApplyFor
-          program="FLIP"
-          link="https://docs.google.com/forms/d/1bjyw2csfGtJRDt4UFgCU1eyrCIV_nKECSY4LNDfvSH4/viewform?edit_requested=true"
-        />
-      </PageSection>
-
-      <PageSection
-        pt={-5}
-        light
-        subsection
-        title="FLIP Curriculum"
-        content="While EconClubs must apply to be accepted to our FLIP program, every YEI EconClub is provided with the 16-week FLIP curriculum, which can be used to teach club members about financial literacy. The FLIP curriculum has approximately 30 hours worth of content and covers topics such as budgeting, loans, credit and debit cards, 401(k), retirement, interest, savings, investing, and insurance."
-      ></PageSection>
-
-      <PageSection
         pb={-5}
         title="Economics Achievement and Research Network (EARN)"
       >

@@ -5,8 +5,8 @@ import { Image } from "cloudinary-react";
 
 export default function HomeSupporters({ classes }) {
   return (
-    <Container className={classes.about}>
-      <Box pt={4} pb={10.25}>
+    <Box className={classes.about} pt={4} pb={10.25}>
+      <Container>
         <Grid container direction="column" spacing={2}>
           <Grid item>
             <Typography gutterBottom align="center" variant="h3">
@@ -16,7 +16,7 @@ export default function HomeSupporters({ classes }) {
           <Grid item>
             <Grid container justify="center" alignContent="center" spacing={3}>
               {supporters.map((supporter) => (
-                <Grid item key={supporter.link} xs={8} sm={5} md={3}>
+                <Grid item key={supporter.link} xs={9} sm={5} md={3}>
                   <a
                     href={supporter.link}
                     target="_blank"
@@ -33,7 +33,7 @@ export default function HomeSupporters({ classes }) {
             </Grid>
           </Grid>
         </Grid>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 }
