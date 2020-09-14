@@ -1,5 +1,6 @@
 import React from "react";
 import HomeHero from "../components/home/HomeHero";
+import { Helmet } from "react-helmet";
 
 import useStyles from "../styles/pages/homeStyles";
 import HomeAsSeenOn from "../components/home/HomeAsSeenOn";
@@ -15,6 +16,10 @@ export default function Home() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>The Youth Economics Initiative</title>
+      </Helmet>
       <OpenForm />
       <HomeHero classes={classes} />
       <HomeAbout classes={classes} />

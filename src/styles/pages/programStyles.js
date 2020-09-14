@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     overflow: "hidden",
     position: "relative",
-    background: "#293236dd",
+    background: "#ffffffdd",
     "&::before": {
       content: '""',
       height: "100%",
@@ -17,14 +17,14 @@ const useStyles = makeStyles((theme) => ({
       backgroundPosition: "0% 50%",
       zIndex: -1,
       backgroundSize: "cover",
-      filter: "blur(2.5px)",
+      filter: "blur(1.4px)",
     },
   },
   title: {
-    color: "white",
+    color: theme.palette.secondary.dark,
   },
   subtitle: {
-    color: "#eee",
+    color: theme.palette.secondary.dark,
     fontSize: "1.5em",
   },
   heroImg: {

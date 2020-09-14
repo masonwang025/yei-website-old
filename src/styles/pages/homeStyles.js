@@ -4,7 +4,6 @@ const useStyles = makeStyles((theme) => ({
   hero: {
     overflow: "hidden",
     position: "relative",
-    background: "#f7f5f5dd",
     "&::before": {
       content: '""',
       height: "100%",
@@ -13,12 +12,11 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       position: "absolute",
       display: "block",
-      background: `#D6DCE2 url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
+      background: `#D6DCE2 url(https://res.cloudinary.com/masonwang/image/upload/v1600115000/yei-website/home/hero.png)`,
       backgroundPosition: "0% 25%",
       backgroundAttachment: "fixed",
       zIndex: -1,
       backgroundSize: "cover",
-      filter: "blur(2.5px)",
     },
   },
   numbers: {

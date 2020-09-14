@@ -1,26 +1,74 @@
 import React from "react";
-import Page from "../../components/Page";
-import PageHero from "../../components/PageHero";
-import { Button } from "@material-ui/core";
+import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 import { Helmet } from "react-helmet";
+import useStyles from "../../styles/pages/eventsStyles";
+import { Link } from "react-router-dom";
 
 export default function EconOlympiad() {
+  const classes = useStyles();
   return (
-    <Page>
+    <Box className={classes.olympiadHero}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>EconOlympiad - The Youth Economics Initiative</title>
+        <title>Events - The Youth Economics Initiative</title>
       </Helmet>
-      <PageHero
-        title="YEI EconOlympiad"
-        paragraph="Here is a short paragraph that has the page's key information."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405238/yei-website/manypixels-isometric/econOlympiadHero.png"
-        callToAction={
-          <Button variant="contained" color="secondary">
-            Join Today
-          </Button>
-        }
-      />
-    </Page>
+      <Container fixed>
+        <Grid
+          style={{
+            minHeight: `100vh`,
+            marginTop: `-${window.innerWidth > 600 ? 64 : 56}px`,
+            padding: window.innerWidth > 960 ? "6.42em 0 4.2em 0" : "4.2em 0",
+          }}
+          className={classes.heroGrid}
+          container
+          justify="center"
+          alignContent="center"
+          direction="column"
+        >
+          <Grid item>
+            <Box py={1}>
+              <Typography
+                align="center"
+                variant="h1"
+                className={classes.olympiadTitle}
+              >
+                <b>EconOlympiad</b>
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item>
+            <Box py={1}>
+              <Typography
+                align="center"
+                variant="h4"
+                className={classes.olympiadSubtitle}
+              >
+                YEI’s Flagship Competition, Spring 2021
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item>
+            <Box py={1}>
+              <Typography
+                align="center"
+                variant="h4"
+                className={classes.olympiadSubtitle}
+              >
+                Information coming Winter 2020
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item>
+            <Box py={2} display="flex" justifyContent="center" mx="auto">
+              <Link to="/events">
+                <Button variant="contained" align="center" color="secondary">
+                  Other Events
+                </Button>
+              </Link>
+            </Box>
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
   );
 }

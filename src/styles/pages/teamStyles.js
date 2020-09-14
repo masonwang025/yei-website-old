@@ -1,6 +1,32 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  hero: {
+    overflow: "hidden",
+    position: "relative",
+    background: "#293236dd",
+    "&::before": {
+      content: '""',
+      height: "100%",
+      width: "100%",
+      bottom: 0,
+      left: 0,
+      position: "absolute",
+      display: "block",
+      background: `#283034 url(https://res.cloudinary.com/masonwang/image/upload/v1600117291/yei-website/page-bg/team-bg.png)`,
+      backgroundPosition: "50% 0%",
+      zIndex: -1,
+      backgroundSize: "cover",
+      filter: "blur(1px)",
+    },
+  },
+  title: {
+    color: "white",
+  },
+  subtitle: {
+    color: "#eee",
+    fontSize: "1.5em",
+  },
   card: {
     backgroundColor: theme.palette.white.secondary,
   },

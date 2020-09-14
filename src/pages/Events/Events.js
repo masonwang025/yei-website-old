@@ -2,8 +2,10 @@ import React from "react";
 import Page from "../../components/Page";
 import PageHero from "../../components/PageHero";
 import { Helmet } from "react-helmet";
+// import useStyles from "../../styles/pages/eventsStyles";
 
 export default function Events() {
+  // const classes = useStyles();
   return (
     <Page>
       <Helmet>

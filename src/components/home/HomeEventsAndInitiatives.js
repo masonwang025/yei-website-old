@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import featured from "../../data/featured";
-// import { Image } from "cloudinary-react";
+import { Image } from "cloudinary-react";
 
 export default function HomeEventsAndIniatives({ classes }) {
   return (
@@ -48,7 +48,7 @@ export default function HomeEventsAndIniatives({ classes }) {
                             </Typography>
                           </Box>
                         </Grid>
-                        {/* <Image
+                        <Image
                           cloudName="masonwang"
                           className={classes.featuredCardLogo}
                           publicId={
@@ -56,7 +56,7 @@ export default function HomeEventsAndIniatives({ classes }) {
                               ? item.imgURL
                               : "https://res.cloudinary.com/masonwang/image/upload/v1600056092/yei-website/logo.png"
                           }
-                        /> */}
+                        />
                         <Grid item>
                           <Link to={item.path}>
                             <Button variant="contained" color="secondary">

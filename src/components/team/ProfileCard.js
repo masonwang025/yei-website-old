@@ -8,7 +8,6 @@ import {
   Chip,
   IconButton,
 } from "@material-ui/core";
-import useStyles from "../../styles/components/profileStyles";
 import { Mail, LinkedIn, GitHub } from "@material-ui/icons";
 
 export default function ProfileCard({
@@ -18,8 +17,8 @@ export default function ProfileCard({
   linkedin,
   github,
   email,
+  classes,
 }) {
-  const classes = useStyles();
   return (
     <Paper className={classes.card}>
       <Grid

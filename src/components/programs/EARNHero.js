@@ -5,7 +5,7 @@ import OpenForm from "../clubs/OpenForm";
 
 export default function EARNHero({ classes }) {
   return (
-    <Box pt={window.innerWidth < 960 ? 9 : 13}>
+    <Box pt={window.innerWidth < 960 ? 9 : 12}>
       <Container>
         <Grid container alignItems="center" justify="center" spacing={4}>
           <Grid item md={7} sm={11} xs={12}>

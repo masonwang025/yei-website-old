@@ -1,41 +1,26 @@
 import React from "react";
-import PageHero from "../components/PageHero";
 import PageSection from "../components/PageSection";
 import Profiles from "../components/team/Profiles";
 import { Button } from "@material-ui/core";
 import { Helmet } from "react-helmet";
+import TeamHero from "../components/team/TeamHero";
+import useStyles from "../styles/pages/teamStyles";
 
 export default function Team() {
+  const classes = useStyles();
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Team - The Youth Economics Initiative</title>
       </Helmet>
-      <PageHero
-        title="Meet our team"
-        paragraph="Get to know the people who make the magic happen."
-        imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/teamHero.png"
-        callToAction={
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={() => {
-              document
-                .querySelector("#join-the-team")
-                .scrollIntoView({ behavior: "smooth", block: "center" });
-            }}
-          >
-            Apply Now
-          </Button>
-        }
-      />
-      <Profiles />
+      <TeamHero classes={classes} />
+      <Profiles classes={classes} />
       <PageSection
         light
         title="Join the Team"
         id="join-the-team"
-        pb={1}
+        pb={2}
         forceCenter
         content={
           <span>
