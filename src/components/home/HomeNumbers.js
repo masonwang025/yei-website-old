@@ -17,7 +17,7 @@ export default function HomeNumber({ classes }) {
           <Grid container align="center" justify="space-around">
             <Grid item xs={12} sm={3} md={2}>
               <Box mt={2}>
-                <Typography variant="h3">
+                <Typography variant="h2">
                   <b>1</b>
                 </Typography>
                 <Typography variant="body1">
@@ -27,7 +27,7 @@ export default function HomeNumber({ classes }) {
             </Grid>
             <Grid item xs={12} sm={3} md={2}>
               <Box mt={2}>
-                <Typography variant="h3">
+                <Typography variant="h2">
                   <b>{clubs.length}</b>
                 </Typography>
                 <Typography variant="body1">Current Clubs</Typography>
@@ -35,7 +35,7 @@ export default function HomeNumber({ classes }) {
             </Grid>
             <Grid item xs={12} sm={3} md={2}>
               <Box mt={2}>
-                <Typography variant="h3">
+                <Typography variant="h2">
                   <b>1300</b>
                 </Typography>
                 <Typography variant="body1">Active Student Members</Typography>

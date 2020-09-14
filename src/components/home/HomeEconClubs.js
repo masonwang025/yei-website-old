@@ -17,13 +17,22 @@ export default function HomeEconClubs({ classes }) {
               <Grid item>
                 <Typography variant="body1">
                   EconClubs is YEI’s signature program and is designed to help
-                  students launch economics clubs at their own schools. Every
-                  YEI EconClub is provided with our custom-designed AP/IB
+                  students launch economics clubs at their own schools.
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="body1">
+                  Every YEI EconClub is provided with our custom-designed AP/IB
                   curriculum, mentorship from our global leadership team,
                   exclusive access to certain YEI events, YEI brand recognition,
                   and support from an international community of aspiring
-                  economists. Existing economics clubs are also welcome to join
-                  the EconClubs program.
+                  economists.{" "}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="body1">
+                  Existing economics clubs are also welcome to join the
+                  EconClubs program.
                 </Typography>
               </Grid>
               <Grid item>

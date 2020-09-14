@@ -19,9 +19,14 @@ export default function HomeAbout({ classes }) {
                 <Typography variant="body1">
                   By promoting cross-collaboration and friendly competition, we
                   open up the ever growing field of economics to students in a
-                  fast-paced world. We provide pathways toward careers in
-                  economics, business, and finance and equip tomorrow's leaders
-                  with the tools necessary to make change.
+                  fast-paced world.{" "}
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography variant="body1">
+                  We provide pathways toward careers in economics, business, and
+                  finance and equip tomorrow's leaders with the tools necessary
+                  to make change.
                 </Typography>
               </Grid>
               <Grid item>
@@ -41,7 +46,7 @@ export default function HomeAbout({ classes }) {
               <Image
                 cloudName="masonwang"
                 className={classes.aboutImage}
-                publicId="https://res.cloudinary.com/masonwang/image/upload/v1600014238/yei-website/home/home-about.png"
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1600040475/yei-website/home/home-about.png"
                 style={{ backgroundColor: "#0d242b" }}
               />
             </Box>

@@ -30,7 +30,6 @@ export default function Clubs() {
         <PageSection
           light
           title="What are YEI EconClubs?"
-          imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407419/yei-website/manypixels-isometric/clubsPageImg.png"
           content={
             <span>
               YEI EconClubs is the premier high school economics club program

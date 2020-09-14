@@ -48,7 +48,7 @@ const theme = createMuiTheme({
       userSelect: "none",
     },
     body1: {
-      fontSize: 18.5,
+      fontSize: 19,
     },
     body2: {
       fontSize: 16,
