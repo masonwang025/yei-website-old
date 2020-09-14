@@ -4,6 +4,8 @@ const featured = [
     description:
       "YEI’s Fall Competition, students compete in teams of 3 or 4 for a $1500 Prize Pool.  Competition consists of a Written Exam and Quiz Bowl Rounds. Presented with the Wen & Yung Family Foundation.",
     path: "/events/econbowl",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/home/econbowl.png",
   },
   {
     title: "EconOlympiad",
@@ -31,8 +33,7 @@ const featured = [
   },
   {
     title: "IAN TODO",
-    description:
-      "PUT DESCRIPTION HERE",
+    description: "PUT DESCRIPTION HERE",
     path: "put a link here (it won't work if it leads off the website for now)",
   },
 ];

@@ -108,11 +108,12 @@ const useStyles = makeStyles((theme) => ({
   },
   featuredCardLogo: {
     position: "absolute",
-    width: "400px",
+    minWidth: "200px",
+    width: "25%",
     maxWidth: "50%",
-    bottom: "0",
+    bottom: "5px",
     right: "0",
-    filter: "opacity(0.2)",
+    filter: "opacity(0.21)",
   },
   about: {
     backgroundColor: theme.palette.white.secondary,
