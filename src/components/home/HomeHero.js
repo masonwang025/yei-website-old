@@ -14,7 +14,8 @@ export default function HomeHero({ classes }) {
         <Grid
           style={{
             minHeight: "100vh",
-            padding: "6.5em 0 5em 0",
+            marginTop: `-${window.innerWidth > 600 ? 64 : 56}px`,
+            padding: window.innerWidth > 960 ? "6.42em 0 4.2em 0" : "4.2em 0",
           }}
           className={classes.heroGrid}
           container

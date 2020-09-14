@@ -8,9 +8,11 @@ import OpenForm from "../components/clubs/OpenForm";
 import HomeAbout from "../components/home/HomeAbout";
 import HomeEconClubs from "../components/home/HomeEconClubs";
 import HomeEventsAndIniatives from "../components/home/HomeEventsAndInitiatives";
+import HomeSupporters from "../components/home/HomeSupporters";
 
 export default function Home() {
   const classes = useStyles();
+
   return (
     <div>
       <OpenForm />
@@ -20,6 +22,7 @@ export default function Home() {
       <HomeEconClubs classes={classes} />
       <HomeNumbers classes={classes} />
       <HomeEventsAndIniatives classes={classes} />
+      <HomeSupporters classes={classes} />
     </div>
   );
 }

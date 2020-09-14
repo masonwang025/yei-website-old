@@ -140,6 +140,9 @@ const useStyles = makeStyles((theme) => ({
       filter: "grayscale(25%) brightness(1.5) !important",
     },
   },
+  supporterLogo: {
+    width: "100%",
+  },
 }));
 
 export default useStyles;

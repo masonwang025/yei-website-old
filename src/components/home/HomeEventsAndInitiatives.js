@@ -36,7 +36,9 @@ export default function HomeEventsAndIniatives({ classes }) {
                       >
                         <Grid item>
                           <Box mb={2}>
-                            <Typography variant="h3">
+                            <Typography
+                              variant={window.innerWidth > 600 ? "h3" : "h5"}
+                            >
                               <b>{item.title}</b>
                             </Typography>
                           </Box>

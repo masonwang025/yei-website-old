@@ -40,7 +40,7 @@ export default function Header(props) {
     <React.Fragment>
       <AppBar id="appbar" className={classes.navbar} elevation={3}>
         <Container fixed>
-          <Toolbar id="back-to-top-anchor" disableGutters>
+          <Toolbar disableGutters>
             <div className={classes.title}>
               <Link to="/">
                 <Image
@@ -62,6 +62,7 @@ export default function Header(props) {
           </Toolbar>
         </Container>
       </AppBar>
+      <Toolbar id="back-to-top-anchor" />
       <BackTop classes={classes} {...props} />
     </React.Fragment>
   );
