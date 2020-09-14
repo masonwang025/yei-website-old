@@ -37,7 +37,7 @@ export default function HomeNumber({ classes }) {
                 <Box mt={2}>
                   <Typography variant="h2">
                     <b>
-                      <CountUpOnce number={num.number} duration={1.5} />
+                      <CountUpOnce number={num.number} duration={1.25} />
                     </b>
                   </Typography>
                   <Typography variant="body1">{num.caption}</Typography>
