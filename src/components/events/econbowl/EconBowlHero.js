@@ -42,9 +42,11 @@ export default function EconBowlHero({ classes }) {
               className={classes.econbowlHeroText}
             >
               <b>
-                <span className={classes.dark}>November 2020</span>{" "}
+                <span className={classes.dark}>November 8th, 2020</span>{" "}
                 <span className={classes.primary}>~</span>{" "}
-                <span className={classes.dark}>Exact date TBD</span>
+                <span className={classes.dark}>
+                  More information coming soon
+                </span>
               </b>
             </Typography>
           </Grid>
