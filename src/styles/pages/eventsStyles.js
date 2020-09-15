@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   econbowlRecap: {
     background: theme.palette.secondary.darkest,
+    borderRadius: "2px",
     boxShadow: "0 0 25px rgba(0, 0, 0, 0.25)",
     [theme.breakpoints.down("lg")]: {
       width: "690px",

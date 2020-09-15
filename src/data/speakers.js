@@ -60,7 +60,7 @@ const speakers = [
     date: "July 17, 2020",
     name: "Thomas White",
     occupation:
-      "CEO of Trnsform Consulting; Host of Business Matters and The Heart of Business Podcasts",
+      "CEO of Transform Consulting; Host of Business Matters and The Heart of Business Podcasts",
     bio:
       "Thomas is an entrepreneur, disruptive innovator, and a teacher. He has served as a trusted advisor for many CEOs and C-Suites of some of the largest companies in the world. He is also the executive producer of two national radio shows named Business Matters and The Heart of Business. He currently has his own leadership training program called Transform, with a purpose to inspire and fuel the leaders inside of us.",
   },

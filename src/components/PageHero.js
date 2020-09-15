@@ -3,7 +3,13 @@ import { Container, Grid, Typography, Box } from "@material-ui/core";
 import useStyles from "../styles/components/pageHeroStyles";
 import { Image } from "cloudinary-react";
 
-export default function PageHero({ title, paragraph, imgURL, callToAction }) {
+export default function PageHero({
+  title,
+  paragraph,
+  imgURL,
+  callToAction,
+  moreText,
+}) {
   const classes = useStyles();
 
   return (
@@ -19,7 +25,7 @@ export default function PageHero({ title, paragraph, imgURL, callToAction }) {
           direction="column"
         >
           <Grid container alignItems="center" spacing={4}>
-            <Grid item xs={12} md={6}>
+            <Grid item xs={12} md={moreText ? 7 : 6}>
               <Grid container direction="column" spacing={2}>
                 <Grid item>
                   <Typography variant="h3">
@@ -43,7 +49,12 @@ export default function PageHero({ title, paragraph, imgURL, callToAction }) {
                 {callToAction && <Grid item>{callToAction}</Grid>}
               </Grid>
             </Grid>
-            <Grid item xs={12} md={6} className={classes.imageCol}>
+            <Grid
+              item
+              xs={12}
+              md={moreText ? 5 : 6}
+              className={classes.imageCol}
+            >
               <Box display="flex" justifyContent="center">
                 <Image
                   cloudName="masonwang"

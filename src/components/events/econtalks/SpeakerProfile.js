@@ -1,7 +1,14 @@
 import { Avatar, Box, Typography, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 
-export default function SpeakerProfile({ name, imgUrl, bio, date, classes }) {
+export default function SpeakerProfile({
+  name,
+  imgUrl,
+  bio,
+  date,
+  classes,
+  occupation,
+}) {
   return (
     <Box m={2.5}>
       <Grid
@@ -16,6 +23,9 @@ export default function SpeakerProfile({ name, imgUrl, bio, date, classes }) {
         </Grid>
         <Grid item>
           <Typography variant="h5">{name}</Typography>
+          <Typography style={{ color: "#333" }} variant="body1">
+            <b>{occupation}</b>
+          </Typography>
           <Typography className={classes.speakerDate} variant="body1">
             <small>{date}</small>
           </Typography>
