@@ -32,7 +32,7 @@ export default function EconBowlContent({ classes }) {
           <Grid item>
             <iframe
               title="EconBowl Recap"
-              src="https://www.youtube.com/embed/9oB8_GaiD5o"
+              src="https://www.youtube.com/embed/Ambi1SPjp4U"
               className={classes.econbowlRecap}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,25 +1,23 @@
 import { Avatar, Box, Typography, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 
-export default function SpeakerProfile({ name, imgURL, bio, date, classes }) {
+export default function SpeakerProfile({ name, imgUrl, bio, date, classes }) {
   return (
     <Box m={2.5}>
       <Grid
         container
         direction="column"
         justify="center"
-        spacing={2}
+        spacing={1}
         alignItems="center"
       >
         <Grid item>
-          <Avatar className={classes.avatar} alt={name} src={imgURL} />
+          <Avatar className={classes.avatar} alt={name} src={imgUrl} />
         </Grid>
         <Grid item>
           <Typography variant="h5">{name}</Typography>
-        </Grid>
-        <Grid item>
           <Typography className={classes.speakerDate} variant="body1">
-            {date}
+            <small>{date}</small>
           </Typography>
         </Grid>
         <Grid item>
