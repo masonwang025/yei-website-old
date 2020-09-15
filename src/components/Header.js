@@ -44,6 +44,7 @@ export default function Header(props) {
             <div className={classes.title}>
               <Link to="/">
                 <Image
+                  alt="seo-alt"
                   cloudName="masonwang"
                   publicId="https://res.cloudinary.com/masonwang/image/upload/v1599113467/yei-website/yeilogo-full.png"
                   height={36}
@@ -104,6 +105,7 @@ function DesktopNav({ classes, currPath }) {
           return (
             <Link to={route.path} key={route.path + route.name}>
               <Button
+                aria-label="button"
                 disableRipple
                 className={`${classes.navLink} ${
                   currPath === route.path && "active"
@@ -223,6 +225,7 @@ function DropdownMenu({ route, classes, currPath }) {
     <div>
       <div>
         <Button
+          aria-label="button"
           ref={anchorRef}
           aria-controls={open ? "menu-list-grow" : undefined}
           aria-haspopup="true"
@@ -326,7 +329,11 @@ function CallToActionButton({ classes }) {
   return (
     <Box ml={2}>
       <OpenForm>
-        <Button variant="contained" className={classes.callToAction}>
+        <Button
+          aria-label="button"
+          variant="contained"
+          className={classes.callToAction}
+        >
           Register a Club
         </Button>
       </OpenForm>

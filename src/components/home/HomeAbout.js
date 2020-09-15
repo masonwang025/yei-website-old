@@ -31,7 +31,12 @@ export default function HomeAbout({ classes }) {
               </Grid>
               <Grid item>
                 <Link to="/events">
-                  <Button variant="contained" color="primary" size="large">
+                  <Button
+                    aria-label="button"
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                  >
                     Our Events
                   </Button>
                 </Link>
@@ -44,6 +49,7 @@ export default function HomeAbout({ classes }) {
               className={classes.aboutImageWrapper}
             >
               <Image
+                alt="seo-alt"
                 cloudName="masonwang"
                 className={classes.aboutImage}
                 publicId="https://res.cloudinary.com/masonwang/image/upload/v1600040475/yei-website/home/home-about.png"

@@ -95,6 +95,7 @@ export default function EconBowlContent({ classes }) {
                     rel="noopener noreferrer"
                   >
                     <Image
+                      alt="seo-alt"
                       className={classes.econbowlSupporter}
                       cloudName="masonwang"
                       publicId="https://res.cloudinary.com/masonwang/image/upload/v1600059435/yei-website/supporters/wen.png"
@@ -144,6 +145,7 @@ export default function EconBowlContent({ classes }) {
                   title="View Sponsorship Prospectus"
                 >
                   <Button
+                    aria-label="button"
                     style={{
                       margin: mdDown ? "0 auto" : "0",
                       display: "block",
@@ -164,6 +166,7 @@ export default function EconBowlContent({ classes }) {
                 title="View Sponsorship Prospectus"
               >
                 <Image
+                  alt="seo-alt"
                   cloudName="masonwang"
                   publicId="https://res.cloudinary.com/masonwang/image/upload/v1600128612/yei-website/supporters/econbowl-sponsorship-prospectus.png"
                   className={classes.econbowlProspectusLogo}

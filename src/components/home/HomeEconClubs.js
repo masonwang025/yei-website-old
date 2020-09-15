@@ -37,7 +37,12 @@ export default function HomeEconClubs({ classes }) {
               </Grid>
               <Grid item>
                 <Link to="/clubs">
-                  <Button variant="contained" color="primary" size="large">
+                  <Button
+                    aria-label="button"
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                  >
                     Learn More
                   </Button>
                 </Link>

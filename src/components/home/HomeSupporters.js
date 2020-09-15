@@ -23,6 +23,7 @@ export default function HomeSupporters({ classes }) {
                     rel="noopener noreferrer"
                   >
                     <Image
+                      alt="seo-alt"
                       className={classes.supporterLogo}
                       cloudName="masonwang"
                       publicId={supporter.imgURL}

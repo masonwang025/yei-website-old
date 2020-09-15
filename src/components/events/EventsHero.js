@@ -54,6 +54,7 @@ export default function EventsHero({ classes }) {
           </Grid>
           <Grid item>
             <Button
+              aria-label="button"
               onClick={() => {
                 document
                   .querySelector("#events-sections")

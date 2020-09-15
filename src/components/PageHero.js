@@ -57,6 +57,7 @@ export default function PageHero({
             >
               <Box display="flex" justifyContent="center">
                 <Image
+                  alt="seo-alt"
                   cloudName="masonwang"
                   className={classes.image}
                   publicId={imgURL}

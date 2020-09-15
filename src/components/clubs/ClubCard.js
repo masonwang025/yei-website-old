@@ -43,6 +43,7 @@ export default function ClubCard(props) {
         <Grid item>
           <div className={classes.imgWrapper}>
             <Image
+              alt="seo-alt"
               className={classes.cardImg}
               cloudName="masonwang"
               publicId={props.imgURL}
@@ -73,7 +74,7 @@ export default function ClubCard(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="small" variant="contained">
+              <Button aria-label="button" size="small" variant="contained">
                 Contact
               </Button>
             </a>

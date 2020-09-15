@@ -57,6 +57,7 @@ export default function HomeAsSeenOn({ classes }) {
                 style={logo.style}
               >
                 <Image
+                  alt="seo-alt"
                   cloudName="masonwang"
                   publicId={logo.imgURL}
                   className={classes.asSeenOnLogo}

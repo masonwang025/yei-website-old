@@ -36,6 +36,7 @@ export default function Team() {
             href="https://docs.google.com/document/d/1VBmep4hRFlc_m34zoB3PrCpR41UnlAKgH2r-k3FBrAM/edit"
           >
             <Button
+              aria-label="button"
               align="center"
               variant="contained"
               color="primary"

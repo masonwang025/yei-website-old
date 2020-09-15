@@ -59,6 +59,7 @@ export default function PageSection(props) {
                   }
                 >
                   <Image
+                    alt="seo-alt"
                     cloudName="masonwang"
                     className={classes.image}
                     publicId={props.imgURL}

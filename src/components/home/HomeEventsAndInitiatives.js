@@ -49,6 +49,7 @@ export default function HomeEventsAndIniatives({ classes }) {
                           </Box>
                         </Grid>
                         <Image
+                          alt="seo-alt"
                           cloudName="masonwang"
                           className={classes.featuredCardLogo}
                           publicId={
@@ -59,7 +60,11 @@ export default function HomeEventsAndIniatives({ classes }) {
                         />
                         <Grid item>
                           <Link to={item.path}>
-                            <Button variant="contained" color="secondary">
+                            <Button
+                              aria-label="button"
+                              variant="contained"
+                              color="secondary"
+                            >
                               Learn More
                             </Button>
                           </Link>

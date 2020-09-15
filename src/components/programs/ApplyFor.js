@@ -12,7 +12,11 @@ export default function ApplyFor({ program, color }) {
 
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
-      <Button variant="contained" color={color ? color : "secondary"}>
+      <Button
+        aria-label="button"
+        variant="contained"
+        color={color ? color : "secondary"}
+      >
         Apply for {program}
       </Button>
     </a>

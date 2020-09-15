@@ -70,6 +70,7 @@ export default function EventsSection(props) {
                   }
                 >
                   <Image
+                    alt="seo-alt"
                     cloudName="masonwang"
                     publicId={props.imgURL}
                     style={{ width: "90%" }}

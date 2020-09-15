@@ -36,6 +36,7 @@ export default function HomeHero({ classes }) {
               <Box display="inline-block" mr={1} mb={1}>
                 <OpenForm>
                   <Button
+                    aria-label="button"
                     className={`${classes.ctaBtn} ${classes.mainCta}`}
                     variant="contained"
                     size="large"
@@ -45,6 +46,7 @@ export default function HomeHero({ classes }) {
                 </OpenForm>
               </Box>
               <Button
+                aria-label="button"
                 className={classes.ctaBtn}
                 variant="contained"
                 color="secondary"

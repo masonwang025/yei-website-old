@@ -30,6 +30,7 @@ export default function TeamHero({ classes }) {
           </Grid>
           <Grid item>
             <Button
+              aria-label="button"
               variant="contained"
               onClick={() => {
                 document

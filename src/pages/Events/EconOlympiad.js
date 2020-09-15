@@ -61,7 +61,12 @@ export default function EconOlympiad() {
           <Grid item>
             <Box py={2} display="flex" justifyContent="center" mx="auto">
               <Link to="/events">
-                <Button variant="contained" align="center" color="secondary">
+                <Button
+                  aria-label="button"
+                  variant="contained"
+                  align="center"
+                  color="secondary"
+                >
                   Other Events
                 </Button>
               </Link>
