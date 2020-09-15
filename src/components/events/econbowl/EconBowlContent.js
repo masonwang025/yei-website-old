@@ -60,7 +60,7 @@ export default function EconBowlContent({ classes }) {
               {numberContent.map((num) => (
                 <Grid key={num.number} item xs={12} sm={6} md={2}>
                   <Box mt={3}>
-                    <Typography variant="h2" className={classes.econbowlPrize}>
+                    <Typography variant="h2" className={classes.dark}>
                       <b>
                         $<CountUpOnce number={num.number} duration={1.5} />
                       </b>

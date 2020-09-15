@@ -4,6 +4,12 @@ const useStyles = makeStyles((theme) => ({
   darkerBg: {
     background: theme.palette.white.dark,
   },
+  primary: {
+    color: theme.palette.primary.main,
+  },
+  dark: {
+    color: theme.palette.secondary.darkest,
+  },
   econbowlHeroText: {
     fontSize: 23,
     [theme.breakpoints.down("md")]: {
@@ -11,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   econbowlRecap: {
+    background: theme.palette.secondary.darkest,
     boxShadow: "0 0 25px rgba(0, 0, 0, 0.25)",
     [theme.breakpoints.down("lg")]: {
       width: "690px",
@@ -39,9 +46,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       paddingBottom: 36,
     },
-  },
-  econbowlPrize: {
-    color: theme.palette.secondary.darkest,
   },
   econbowlProspectusLogo: {
     width: "100%",

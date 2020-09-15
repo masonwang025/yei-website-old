@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import { Image } from "cloudinary-react";
 
-export default function EconBowlHero({ classes }) {
+export default function EconTalksHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
     <Box className={classes.econbowlHero} pt={9}>
@@ -27,7 +27,6 @@ export default function EconBowlHero({ classes }) {
               align={mdDown ? "center" : "left"}
               variant="body1"
               className={classes.econbowlHeroText}
-              gutterBottom
             >
               The Youth Economics Initiative is proud to present our flagship
               program, EconBowl 2020-2021, in collaboration with the Wen & Yung
@@ -35,17 +34,6 @@ export default function EconBowlHero({ classes }) {
               chance to compete against like-minded individuals and apply real
               world economics knowledge in a fast-paced environment. Compete for
               glory, represent your high school, and win cash prizes!
-            </Typography>
-            <Typography
-              align={mdDown ? "center" : "left"}
-              variant="body1"
-              className={classes.econbowlHeroText}
-            >
-              <b>
-                <span className={classes.dark}>May 30, 2020</span>{" "}
-                <span className={classes.primary}>~</span>{" "}
-                <span className={classes.dark}>2:30 - 7:00 PM</span>
-              </b>
             </Typography>
           </Grid>
         </Grid>
