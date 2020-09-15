@@ -129,7 +129,7 @@ const team = [
     name: "Darion Phan",
     positions: ["Testing Developer"],
     linkedin: "https://www.linkedin.com/in/darion-phan/",
-    imgURl:
+    imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/darion-phan.jpg",
   },
   {

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export default function SpeakerProfile({
   name,
-  imgUrl,
+  imgURL,
   bio,
   date,
   classes,
@@ -19,7 +19,7 @@ export default function SpeakerProfile({
         alignItems="center"
       >
         <Grid item>
-          <Avatar className={classes.avatar} alt={name} src={imgUrl} />
+          <Avatar className={classes.avatar} alt={name} src={imgURL} />
         </Grid>
         <Grid item>
           <Typography variant="h5">{name}</Typography>

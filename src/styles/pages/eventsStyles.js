@@ -23,6 +23,16 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 19,
     },
   },
+  firstOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 0,
+    },
+  },
+  secondOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 10,
+    },
+  },
   eventsHero: {
     overflow: "hidden",
     position: "relative",

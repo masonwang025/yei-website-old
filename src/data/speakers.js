@@ -70,7 +70,7 @@ const speakers = [
     occupation: "Lecturer @ Stanford; Author",
     bio:
       "Dr. Schramm is a lecturer in organizational behavior at Stanford’s Graduate School of Business. He joined their faculty in 2007. Before that, he was a part of Columbia University and NYU’s faculty. In 2012, he co-founded the LOWKeynote program for students to create and deliver inspiring talks to enroll others in their vision to change lives, organizations, and the world. In 2019, he was also appointed the inaugural director of the King Global Leadership Program for Stanford’s Knight Hennessy Scholars. Then this february, he published his first book, Communicate with Mastery: Speak With Conviction and Write for Impact.",
-    imgUrl:
+    imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/j-d-schramm.jpg",
   },
   {
@@ -100,7 +100,7 @@ const speakers = [
     occupation: "Clinical Professor of Accounting @ NYU Stern",
     bio:
       "Dan Gode is a professor at the Stern School of Business at NYU. He teaches and consults extensively in the areas of business drivers, financial reporting and analysis, data analytics, modeling, and taxation. He has been at Stern since 1998 and was voted “Professor of the Year” twice and has been nominated for the award seven times.",
-    imgUrl:
+    imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/dhanjanay-dan-gode.jpg",
   },
 ];

@@ -24,6 +24,8 @@ export default function Events() {
           content={event.content}
           ctaBtn={event.ctaBtn}
           darkerBg={index % 2 !== 0}
+          imgURL={event.imgURL}
+          firstOnDesktop={event.firstOnDesktop}
         />
       ))}
     </Page>

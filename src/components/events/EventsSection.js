@@ -22,7 +22,11 @@ export default function EventsSection(props) {
         <Box mt={1}>
           <Grid container alignItems="center" spacing={4}>
             {/* text column */}
-            <Grid item xs={props.imgURL && !centerContent ? 8 : 12}>
+            <Grid
+              item
+              className={props.firstOnDesktop ? props.classes.secondOrder : ""}
+              xs={props.imgURL && !centerContent ? 8 : 12}
+            >
               <Grid
                 container
                 direction="column"
@@ -44,20 +48,22 @@ export default function EventsSection(props) {
             </Grid>
             {/* possible image column */}
             {props.imgURL && (
-              <Grid item xs>
+              <Grid
+                item
+                className={props.firstOnDesktop ? props.classes.firstOrder : ""}
+                xs
+              >
                 <Box
                   display="flex"
                   justifyContent={
-                    (props.forceCenter ||
-                      !centerContent ||
-                      (props.centerOnMobile && centerContent)) &&
+                    (props.forceCenter || !centerContent || centerContent) &&
                     "center"
                   }
                 >
                   <Image
                     cloudName="masonwang"
-                    className={classes.image}
                     publicId={props.imgURL}
+                    style={{ width: "90%" }}
                   />
                 </Box>
               </Grid>

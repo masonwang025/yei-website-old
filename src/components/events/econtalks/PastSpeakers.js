@@ -15,8 +15,8 @@ export default function PastSpeakers({ classes }) {
         <Grid container justify="center" align="center" spacing={4}>
           {speakers.reverse().map((speaker) => {
             let key = speaker.name.replace(/[\W_]+/g, "-").toLowerCase();
-            let imgUrl = speaker.imgUrl
-              ? speaker.imgUrl
+            let imgURL = speaker.imgURL
+              ? speaker.imgURL
               : `https://res.cloudinary.com/masonwang/image/upload/v1600135590/yei-website/speakers/${key}.jpg`;
             return (
               <Grid key={key} item xs={12} sm={6} md={4}>
@@ -25,7 +25,7 @@ export default function PastSpeakers({ classes }) {
                   classes={classes}
                   bio={speaker.bio}
                   date={speaker.date}
-                  imgUrl={imgUrl}
+                  imgURL={imgURL}
                   occupation={speaker.occupation}
                 />
               </Grid>
