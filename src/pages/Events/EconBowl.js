@@ -12,6 +12,10 @@ export default function EconBowl() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>EconBowl - The Youth Economics Initiative</title>
+        <meta
+          name="description"
+          content="The Youth Economics Initiative's (YEI) Fall Competition, students compete in teams of 3 or 4 for a $1500 Prize Pool.  Competition consists of a Written Exam and Quiz Bowl Rounds. Presented with the Wen & Yung Family Foundation."
+        />
       </Helmet>
       <EconBowlHero classes={classes} />
       <EconBowlContent classes={classes} />

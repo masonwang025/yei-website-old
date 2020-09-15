@@ -13,6 +13,10 @@ export default function Events() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Events - The Youth Economics Initiative</title>
+        <meta
+          name="description"
+          content="The Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
+        />
       </Helmet>
       <EventsHero classes={classes} />
       <div id="events-sections"></div>

@@ -11,6 +11,10 @@ export default function EconOlympiad() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Events - The Youth Economics Initiative</title>
+        <meta
+          name="description"
+          content="The Youth Economics Initiative's (YEI) Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members."
+        />
       </Helmet>
       <Container fixed>
         <Grid

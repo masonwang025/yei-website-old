@@ -13,6 +13,10 @@ export default function CurrentClubs() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Current Clubs - The Youth Economics Initiative</title>
+        <meta
+          name="description"
+          content="YEI EconClubs is the premier high school economics club program for students who want to supercharge their economics journey. View YEI's current list of clubs."
+        />
       </Helmet>
       <PageHero
         title="YEI Current Clubs"

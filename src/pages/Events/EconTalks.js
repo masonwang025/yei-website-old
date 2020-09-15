@@ -11,7 +11,11 @@ export default function EconTalks() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>EconTalks - The Youth Economics Initiative</title>
+        <title>EconTalks - The Youth Economics Initiative</title>{" "}
+        <meta
+          name="description"
+          content="Hear from Youth Economics Initiative's (YEI) invited speakers from institutions such as NYU Stern, UPenn, EPA & UVA about the impact current events or trends have on the economy."
+        />
       </Helmet>
       <PageHero
         title="YEI EconTalks"
