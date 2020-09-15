@@ -26,26 +26,18 @@ const theme = createMuiTheme({
     },
     h1: {
       fontSize: "4.69em",
-      userSelect: "none",
-    },
-    h2: {
-      userSelect: "none",
     },
     h3: {
       fontSize: "2.625em",
-      userSelect: "none",
     },
     h4: {
       fontSize: "2.21em",
-      userSelect: "none",
     },
     h5: {
       fontSize: "2.05em",
-      userSelect: "none",
     },
     h6: {
       fontSize: "1.7em",
-      userSelect: "none",
     },
     body1: {
       fontSize: 19,

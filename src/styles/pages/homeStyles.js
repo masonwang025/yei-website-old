@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       position: "absolute",
       display: "block",
-      background: `#D6DCE2 url(https://res.cloudinary.com/masonwang/image/upload/v1600115000/yei-website/home/hero.png)`,
+      background: `#174A5A url(https://res.cloudinary.com/masonwang/image/upload/v1600185246/yei-website/home/hero.png)`,
       backgroundPosition: "50% 50%",
       backgroundAttachment: "fixed",
       zIndex: -1,
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
       left: 0,
       position: "absolute",
       display: "block",
-      background: `#174A5A url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
+      background: `#012326 url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
       backgroundPosition: "50% 50%",
       backgroundAttachment: "fixed",
       zIndex: -1,
@@ -52,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   title: {
+    color: "white",
     fontSize: "4.4em",
     [theme.breakpoints.down("sm")]: {
       fontSize: "4.2em",
@@ -65,8 +66,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
   },
   slogan: {
+    color: "white",
     fontSize: "2.4em",
-    color: "#333",
     [theme.breakpoints.down("sm")]: {
       fontSize: "1.8em",
     },
@@ -140,6 +141,9 @@ const useStyles = makeStyles((theme) => ({
   },
   supporterLogo: {
     width: "100%",
+  },
+  supporters: {
+    background: theme.palette.white.dark,
   },
 }));
 

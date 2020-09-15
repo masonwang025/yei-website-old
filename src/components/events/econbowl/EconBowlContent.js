@@ -32,7 +32,7 @@ export default function EconBowlContent({ classes }) {
           <Grid item>
             <iframe
               title="EconBowl Recap"
-              src="https://www.youtube.com/embed/Ambi1SPjp4U"
+              src="https://www.youtube.com/embed/EEYM5cice9U"
               className={classes.econbowlRecap}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -136,7 +136,7 @@ export default function EconBowlContent({ classes }) {
                   We are a 501(c)(3) nonprofit—all donations are tax-deductible!
                 </b>
               </Typography>
-              <Box mt={2} display="flex">
+              <Box mt={2}>
                 <a
                   href={SponsorshipProspectus}
                   target="_blank"
@@ -144,7 +144,10 @@ export default function EconBowlContent({ classes }) {
                   title="View Sponsorship Prospectus"
                 >
                   <Button
-                    style={{ margin: mdDown ? "0 auto" : "0" }}
+                    style={{
+                      margin: mdDown ? "0 auto" : "0",
+                      display: "block",
+                    }}
                     variant="contained"
                     color="primary"
                   >

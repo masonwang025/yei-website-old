@@ -53,7 +53,6 @@ const useStyles = makeStyles((theme) => ({
       backgroundPosition: "50% 50%",
       zIndex: -1,
       backgroundSize: "cover",
-      filter: "blur(1.4px)",
     },
   },
   eventsTitle: {
@@ -73,8 +72,10 @@ const useStyles = makeStyles((theme) => ({
     background: theme.palette.secondary.darkest,
     borderRadius: "2px",
     boxShadow: "0 0 25px rgba(0, 0, 0, 0.25)",
+    width: "725px",
+    height: "408px",
     [theme.breakpoints.down("lg")]: {
-      width: "690px",
+      width: "699px",
       height: "393px",
     },
     [theme.breakpoints.down("md")]: {

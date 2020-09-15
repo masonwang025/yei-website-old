@@ -13,7 +13,7 @@ import { Image } from "cloudinary-react";
 
 export default function HomeEventsAndIniatives({ classes }) {
   return (
-    <Box className={classes.about} py={8}>
+    <Box className={classes.about} pt={8} pb={9}>
       <Container fixed>
         <Grid container direction="column" spacing={4}>
           <Grid item>

@@ -5,8 +5,15 @@ import { Image } from "cloudinary-react";
 export default function EventsSection(props) {
   const classes = props.classes;
   let centerContent = window.innerWidth <= 960;
-  let pt = props.pt ? props.pt : 7;
-  let pb = props.pb ? props.pb : 7;
+  let pt = props.pt ? props.pt : 15;
+  let pb = props.pb ? props.pb : 15;
+
+  const mdDown = window.innerWidth <= 960;
+
+  if (mdDown) {
+    pt = props.pt ? props.pt : 7;
+    pb = props.pb ? props.pb : 7;
+  }
 
   return (
     <Box
@@ -34,7 +41,9 @@ export default function EventsSection(props) {
                 spacing={props.spacing ? props.spacing : 2}
               >
                 <Grid item>
-                  <Typography variant="h3">{props.title}</Typography>
+                  <Typography variant={mdDown ? "h3" : "h2"}>
+                    {props.title}
+                  </Typography>
                 </Grid>
                 {props.content && (
                   <Grid item>
