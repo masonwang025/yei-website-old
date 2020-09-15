@@ -6,7 +6,7 @@ import { Image } from "cloudinary-react";
 export default function HomeAbout({ classes }) {
   return (
     <Box id="home-about" className={classes.about} py={8}>
-      <Container>
+      <Container fixed>
         <Grid container alignItems="center" spacing={4}>
           <Grid item md={6} sm={11} xs={12}>
             <Grid container direction="column" spacing={3}>

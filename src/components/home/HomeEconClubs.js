@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function HomeEconClubs({ classes }) {
   return (
     <Box className={classes.about} py={8}>
-      <Container>
+      <Container fixed>
         <Grid container alignItems="center" spacing={4}>
           <Grid item>
             <Grid container direction="column" spacing={3}>

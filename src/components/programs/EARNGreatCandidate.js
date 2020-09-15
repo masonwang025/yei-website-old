@@ -22,7 +22,7 @@ const reasons = [
 export default function EARNGreatCandidate({ classes }) {
   return (
     <Box pb={window.innerWidth < 960 ? 9 : 13}>
-      <Container>
+      <Container fixed>
         <Box mb={3}>
           <Typography variant="h3">What Makes a Great Candidate?</Typography>
         </Box>

@@ -10,7 +10,7 @@ export default function Profiles({ classes }) {
       pt={window.innerWidth < 960 ? 7 : 9}
       pb={8}
     >
-      <Container>
+      <Container fixed>
         <Grid container alignItems="center" justify="center" spacing={2}>
           {team.map((member) => {
             let key = member.name.replace(/\s+/g, "-").toLowerCase();

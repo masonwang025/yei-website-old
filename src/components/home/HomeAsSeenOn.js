@@ -34,7 +34,7 @@ export default function HomeAsSeenOn({ classes }) {
   ];
   return (
     <Box py={5} className={classes.asSeenOn}>
-      <Container>
+      <Container fixed>
         <Grid container alignItems="center" justify="center" spacing={4}>
           <Grid item md={2} xs={12}>
             <Typography

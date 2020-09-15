@@ -74,7 +74,7 @@ export default function EconBowlContent({ classes }) {
         </Container>
       </Box>
       <Box pt={9} pb={5}>
-        <Container>
+        <Container fixed>
           <Grid container direction="column">
             <Grid item>
               <Typography gutterBottom align="center" variant="h3">
@@ -107,7 +107,7 @@ export default function EconBowlContent({ classes }) {
         </Container>
       </Box>
       <Box className={classes.econbowlHero} pb={9}>
-        <Container>
+        <Container fixed>
           <Grid
             container
             direction={mdDown ? "column" : "row"}

@@ -4,7 +4,7 @@ import { Container, Grid, Typography, Box } from "@material-ui/core";
 export default function EarnBenefits() {
   return (
     <Box py={8}>
-      <Container>
+      <Container fixed>
         <Box mb={3}>
           <Typography variant="h3">EARN Benefits</Typography>
         </Box>

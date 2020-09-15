@@ -6,7 +6,7 @@ export default function EconBowlHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
     <Box className={classes.econbowlHero} pt={9}>
-      <Container>
+      <Container fixed>
         <Grid
           container
           direction={mdDown ? "column" : "row"}

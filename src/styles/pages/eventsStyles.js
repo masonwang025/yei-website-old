@@ -23,6 +23,42 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 19,
     },
   },
+  eventsHero: {
+    overflow: "hidden",
+    position: "relative",
+    background: "#ffffffdd",
+    minHeight: "calc(100vh - 64px)",
+    [theme.breakpoints.down("md")]: {
+      minHeight: "calc(100vh - 56px)",
+    },
+    "&::before": {
+      content: '""',
+      height: "100%",
+      width: "100%",
+      bottom: 0,
+      left: 0,
+      position: "absolute",
+      display: "block",
+      background: `#283034 url(https://res.cloudinary.com/masonwang/image/upload/v1600145196/yei-website/page-bg/events_bg.jpg)`,
+      backgroundPosition: "50% 50%",
+      zIndex: -1,
+      backgroundSize: "cover",
+      filter: "blur(1.4px)",
+    },
+  },
+  eventsTitle: {
+    color: theme.palette.secondary.dark,
+    [theme.breakpoints.down("md")]: {
+      fontSize: "2.5em",
+    },
+  },
+  eventsSubtitle: {
+    color: theme.palette.secondary.dark,
+    fontSize: "1.4em",
+    [theme.breakpoints.down("md")]: {
+      fontSize: 18,
+    },
+  },
   econbowlRecap: {
     background: theme.palette.secondary.darkest,
     borderRadius: "2px",

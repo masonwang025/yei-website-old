@@ -6,7 +6,7 @@ import SpeakerProfile from "./SpeakerProfile";
 export default function PastSpeakers({ classes }) {
   return (
     <Box py={9}>
-      <Container>
+      <Container fixed>
         <Box mb={5}>
           <Typography variant="h3" align="center">
             Previous Speakers

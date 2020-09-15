@@ -13,7 +13,7 @@ const appCriteria = [
 export default function FLIPAbout({ classes }) {
   return (
     <Box pt={4.69} pb={10}>
-      <Container>
+      <Container fixed>
         <Grid container direction="column" alignItems="center">
           <Grid item>
             <Typography variant="body1">

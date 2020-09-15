@@ -14,7 +14,7 @@ import { Image } from "cloudinary-react";
 export default function HomeEventsAndIniatives({ classes }) {
   return (
     <Box className={classes.about} py={8}>
-      <Container>
+      <Container fixed>
         <Grid container direction="column" spacing={4}>
           <Grid item>
             <Typography className={classes.aboutHeading} variant="h2">

@@ -5,7 +5,7 @@ export default function ProgramsHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
     <Box className={classes.hero} py={mdDown ? 8 : 13}>
-      <Container>
+      <Container fixed>
         <Grid
           container
           direction="column"
