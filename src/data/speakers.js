@@ -99,7 +99,7 @@ const speakers = [
     name: "Dhanjanay (Dan) Gode",
     occupation: "Clinical Professor of Accounting @ NYU Stern",
     bio:
-      "Dan Gode is a professor at the Stern School of Business at NYU. He teaches and consults extensively in the areas of business drivers, financial reporting and analysis, data analytics, modeling, and taxation. He has been at Stern since 1998 and was voted “Professor of the Year” twice and has been nominated for the award seven times",
+      "Dan Gode is a professor at the Stern School of Business at NYU. He teaches and consults extensively in the areas of business drivers, financial reporting and analysis, data analytics, modeling, and taxation. He has been at Stern since 1998 and was voted “Professor of the Year” twice and has been nominated for the award seven times.",
     imgUrl:
       "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/dhanjanay-dan-gode.jpg",
   },
