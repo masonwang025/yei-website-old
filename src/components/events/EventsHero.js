@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 
 export default function EventsHero({ classes }) {
-  //   const mdDown = window.innerWidth <= 960;
+  const mdDown = window.innerWidth <= 960;
   return (
     <Box className={classes.eventsHero}>
       <Container fixed style={{ height: "100%" }}>
@@ -11,7 +11,7 @@ export default function EventsHero({ classes }) {
           direction="column"
           justify="center"
           wrap="nowrap"
-          spacing={2}
+          spacing={mdDown ? 2 : 3}
           style={{
             padding: "3em 0",
             minHeight: `calc(100vh - ${window.innerWidth > 600 ? 64 : 56}px)`,
@@ -38,6 +38,8 @@ export default function EventsHero({ classes }) {
               range of events, from competitions, to EconTalks, to socials and
               conferences!
             </Typography>
+          </Grid>
+          <Grid item>
             <Typography
               align="left"
               variant="body1"
