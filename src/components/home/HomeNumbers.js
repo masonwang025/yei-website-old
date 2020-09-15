@@ -1,8 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import clubs from "../../data/clubs";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
+import CountUpOnce from "../CountUpOnce";
 
 const numberContent = [
   {
@@ -48,26 +47,5 @@ export default function HomeNumber({ classes }) {
         </Grid>
       </Container>
     </Box>
-  );
-}
-
-function CountUpOnce(props) {
-  const countedUp = useRef(false);
-  return (
-    <CountUp start={0} end={props.number} duration={props.duration}>
-      {({ countUpRef, start }) => (
-        <VisibilitySensor
-          onChange={(isVisible) => {
-            if (!countedUp.current && isVisible) {
-              countedUp.current = true;
-              start();
-            }
-          }}
-          delayedCall
-        >
-          <span ref={countUpRef} />
-        </VisibilitySensor>
-      )}
-    </CountUp>
   );
 }

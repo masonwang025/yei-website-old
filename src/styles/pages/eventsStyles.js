@@ -1,6 +1,52 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  darkerBg: {
+    background: theme.palette.white.dark,
+  },
+  econbowlHeroText: {
+    fontSize: 23,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 19,
+    },
+  },
+  econbowlRecap: {
+    boxShadow: "0 0 25px rgba(0, 0, 0, 0.25)",
+    [theme.breakpoints.down("lg")]: {
+      width: "690px",
+      height: "393px",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "640px",
+      height: "360px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      width: "525px",
+      height: "295px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: "300px",
+      height: "169px",
+    },
+  },
+  econbowlHeroLogo: {
+    maxWidth: "100%",
+  },
+  econbowlSupporter: {
+    marginTop: "-10px",
+    width: "100%",
+
+    [theme.breakpoints.up("md")]: {
+      paddingBottom: 36,
+    },
+  },
+  econbowlPrize: {
+    color: theme.palette.secondary.darkest,
+  },
+  econbowlProspectusLogo: {
+    width: "100%",
+    boxShadow: "0 0 13px rgba(0, 0, 0, 0.25)",
+  },
   olympiadHero: {
     overflow: "hidden",
     position: "relative",

@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       position: "absolute",
       display: "block",
       background: `#174A5A url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
-      backgroundPosition: "0% 25%",
+      backgroundPosition: "0% 50%",
       backgroundAttachment: "fixed",
       zIndex: -1,
       backgroundSize: "cover",
