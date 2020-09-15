@@ -1,10 +1,12 @@
 import React from "react";
 import Page from "../../components/Page";
 import PageHero from "../../components/PageHero";
-import { Button } from "@material-ui/core";
 import { Helmet } from "react-helmet";
+import PastSpeakers from "../../components/events/econtalks/PastSpeakers";
+import useStyles from "../../styles/pages/eventsStyles";
 
 export default function EconTalks() {
+  const classes = useStyles();
   return (
     <Page>
       <Helmet>
@@ -13,14 +15,10 @@ export default function EconTalks() {
       </Helmet>
       <PageHero
         title="YEI EconTalks"
-        paragraph="Here is a short paragraph that has the page's key information."
+        paragraph="Hear from guest speakers from institutions such as NYU Stern, UPenn, EPA & UVA about the impact current events or trends have on the economy."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/econTalksHero.png"
-        callToAction={
-          <Button variant="contained" color="secondary">
-            Join Today
-          </Button>
-        }
       />
+      <PastSpeakers classes={classes} />
     </Page>
   );
 }

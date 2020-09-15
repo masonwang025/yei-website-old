@@ -10,6 +10,13 @@ const useStyles = makeStyles((theme) => ({
   dark: {
     color: theme.palette.secondary.darkest,
   },
+  speakerDate: {
+    color: "#666",
+  },
+  avatar: {
+    height: "169px",
+    width: "169px",
+  },
   econbowlHeroText: {
     fontSize: 23,
     [theme.breakpoints.down("md")]: {
@@ -64,8 +71,7 @@ const useStyles = makeStyles((theme) => ({
       position: "absolute",
       display: "block",
       background: `#D6DCE2 url(https://res.cloudinary.com/masonwang/image/upload/v1599092121/yei-website/page-bg/homepage-bg.jpg)`,
-      backgroundPosition: "0% 25%",
-      backgroundAttachment: "fixed",
+      backgroundPosition: "50% 50%",
       zIndex: -1,
       backgroundSize: "cover",
       filter: "blur(2.5px)",
