@@ -12,10 +12,10 @@ export default function Events() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Events - The Youth Economics Initiative</title>
+        <title>Events - Youth Economics Initiative (YEI)</title>
         <meta
           name="description"
-          content="The Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
+          content="Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
         />
       </Helmet>
       <EventsHero classes={classes} />

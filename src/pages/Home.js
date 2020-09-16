@@ -18,7 +18,7 @@ export default function Home() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>The Youth Economics Initiative</title>
+        <title>Youth Economics Initiative (YEI)</title>
       </Helmet>
       <OpenForm />
       <HomeHero classes={classes} />

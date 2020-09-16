@@ -12,7 +12,7 @@ export default function CurrentClubs() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Current Clubs - The Youth Economics Initiative</title>
+        <title>Current Clubs - Youth Economics Initiative (YEI)</title>
         <meta
           name="description"
           content="YEI EconClubs is the premier high school economics club program for students who want to supercharge their economics journey. View YEI's current list of clubs."

@@ -12,10 +12,10 @@ export default function Clubs() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Clubs - Youth Economics Initiative</title>
+        <title>Clubs - Youth Economics Initiative (YEI)</title>
         <meta
           name="description"
-          content="EconClubs is the Youth Economics Initiative's (YEI) premier high school economics club program for students who want to supercharge their economics journey."
+          content="EconClubs is Youth Economics Initiative's (YEI) premier high school economics club program for students who want to supercharge their economics journey."
         />
       </Helmet>
       <PageHero

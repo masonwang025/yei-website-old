@@ -10,10 +10,10 @@ export default function EconOlympiad() {
     <Box className={classes.olympiadHero}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Events - The Youth Economics Initiative</title>
+        <title>Events - Youth Economics Initiative (YEI)</title>
         <meta
           name="description"
-          content="The Youth Economics Initiative's (YEI) Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members."
+          content="Youth Economics Initiative's (YEI) Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members."
         />
       </Helmet>
       <Container fixed>

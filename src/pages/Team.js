@@ -12,7 +12,7 @@ export default function Team() {
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Team - The Youth Economics Initiative</title>{" "}
+        <title>Team - Youth Economics Initiative (YEI)</title>{" "}
         <meta
           name="description"
           content="Get to know the people who make the magic happen at the Youth Economics Initiative. Learn how you can apply to join YEI's team."

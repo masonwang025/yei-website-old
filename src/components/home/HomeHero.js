@@ -49,7 +49,6 @@ export default function HomeHero({ classes }) {
                 aria-label="button"
                 className={classes.ctaBtn}
                 variant="contained"
-                color="secondary"
                 size="large"
                 onClick={() => {
                   document
