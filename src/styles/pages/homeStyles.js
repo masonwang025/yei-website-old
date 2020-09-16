@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
       background: `#101B27 url(https://res.cloudinary.com/masonwang/image/upload/v1600185246/yei-website/home/hero.png)`,
       backgroundPosition: "50% 50%",
-      backgroundAttachment: "fixed",
       zIndex: -1,
       backgroundSize: "cover",
     },
