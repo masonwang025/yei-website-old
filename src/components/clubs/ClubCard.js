@@ -59,9 +59,9 @@ export default function ClubCard(props) {
             {props.founding && (
               <Typography variant="body2" color="textSecondary">
                 {props.primaryFounding ? (
-                  <i>Primary Founding Chapter</i>
+                  <i>Primary Founding Club</i>
                 ) : (
-                  <i>Founding Chapter</i>
+                  <i>Founding Club</i>
                 )}
               </Typography>
             )}
