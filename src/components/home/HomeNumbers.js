@@ -13,7 +13,7 @@ const numberContent = [
     caption: "​Current Clubs",
   },
   {
-    number: 1300,
+    number: 1600,
     caption: "Active Student Numbers",
   },
 ];
@@ -36,7 +36,7 @@ export default function HomeNumber({ classes }) {
                 <Box mt={2}>
                   <Typography variant="h2">
                     <b>
-                      <CountUpOnce number={num.number} duration={1.42} />
+                      <CountUpOnce number={num.number} duration={1.5} />
                     </b>
                   </Typography>
                   <Typography variant="body1">{num.caption}</Typography>

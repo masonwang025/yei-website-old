@@ -10,13 +10,13 @@ export default function HomeSupporters({ classes }) {
         <Grid container direction="column" spacing={2}>
           <Grid item>
             <Typography gutterBottom align="center" variant="h3">
-              Supported By
+              Sponsored By
             </Typography>
           </Grid>
           <Grid item>
             <Grid container justify="center" alignContent="center" spacing={3}>
               {supporters.map((supporter) => (
-                <Grid item key={supporter.link} xs={9} sm={5} md={3}>
+                <Grid item key={supporter.link} xs={9} md={4} lg={3}>
                   <a
                     href={supporter.link}
                     target="_blank"

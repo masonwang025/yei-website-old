@@ -139,6 +139,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   supporterLogo: {
+    padding: "0 2em",
     width: "100%",
   },
   supporters: {
