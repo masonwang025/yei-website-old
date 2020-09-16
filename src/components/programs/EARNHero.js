@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import { Image } from "cloudinary-react";
 import OpenForm from "../clubs/OpenForm";
+import ApplyFor from "./ApplyFor";
 
 export default function EARNHero({ classes }) {
   return (
@@ -32,6 +33,9 @@ export default function EARNHero({ classes }) {
                   there, EARN students may be contacted by these organizations
                   with internship opportunities.
                 </Typography>
+              </Grid>
+              <Grid item>
+                <ApplyFor program="EARN" color="primary" />
               </Grid>
             </Grid>
           </Grid>
