@@ -13,7 +13,7 @@ const reasons = [
       "Do you push yourself out of your comfort zone? Are you willing to work hard and take on challenges?",
   },
   {
-    title: "🙋‍♂️ Collaborative",
+    title: "🙋‍♂️ Collaboration",
     content:
       "Research assistants and interns often work in group environments. Do you work well with others? Are you a team player?",
   },
