@@ -16,7 +16,7 @@ const featured = [
   {
     title: "EconTalks",
     description:
-      "YEI’s Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members.",
+      "YEI offers public, free speaker events and workshops featuring industry professionals, professors at prestigious universities, business leaders, and policymakers.",
     path: "/events/econtalks",
   },
   {
