@@ -19,6 +19,10 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Youth Economics Initiative (YEI)</title>
+        <meta
+          name="description"
+          content="Exploring economics. Empowering leaders. Official page for the Youth Economics Intitiative (YEI)."
+        />
       </Helmet>
       <OpenForm />
       <HomeHero classes={classes} />
