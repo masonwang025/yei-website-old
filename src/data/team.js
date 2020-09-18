@@ -170,7 +170,7 @@ const team = [
   },
   {
     name: "Danny Shao",
-    positions: ["Regional Ambassador", "Chapter Director"],
+    positions: ["Regional Ambassador", "Regional Director"],
     linkedin: "https://www.linkedin.com/in/danny-shao-5b84261b1/ ",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1599677464/yei-website/team/danny-shao.jpg",
