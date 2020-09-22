@@ -1,16 +1,16 @@
 import React from "react";
-import { Container, Grid, Typography, Box } from "@material-ui/core";
+import { Container, Grid, Typography, Box, Paper } from "@material-ui/core";
 
 export default function EarnBenefits() {
   return (
     <Box py={8}>
       <Container fixed>
-        <Box mb={3}>
+        <Box mb={4.2}>
           <Typography variant="h3">EARN Benefits</Typography>
         </Box>
         <Grid container direction="column" justify="center" alignItems="center">
           <Grid item>
-            <Grid container direction="row" spacing={3}>
+            <Grid container direction="row" spacing={4}>
               {[
                 {
                   title: "🔧 Efficient",
@@ -29,8 +29,14 @@ export default function EarnBenefits() {
                 },
               ].map((reason) => (
                 <Grid key={reason.title} item xs={12} md={4}>
-                  <Typography variant="h6">{reason.title}</Typography>
-                  <Typography variant="body1">{reason.content}</Typography>
+                  <Paper style={{ height: "100%" }}>
+                    <Box p={3}>
+                      <Typography gutterBottom variant="h6">
+                        {reason.title}
+                      </Typography>
+                      <Typography variant="body1">{reason.content}</Typography>
+                    </Box>
+                  </Paper>
                 </Grid>
               ))}
             </Grid>

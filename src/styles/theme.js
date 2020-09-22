@@ -7,6 +7,7 @@ const theme = createMuiTheme({
       darker: "#208556",
     },
     secondary: {
+      brighter: "#113b47",
       main: "#293236",
       darkest: "#0d242b",
     },
@@ -40,7 +41,7 @@ const theme = createMuiTheme({
       fontSize: "1.7em",
     },
     body1: {
-      fontSize: 19,
+      fontSize: 20,
     },
     body2: {
       fontSize: 16,

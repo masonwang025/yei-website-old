@@ -29,7 +29,7 @@ export default function Programs() {
       <Box className={classes.earnBg}>
         <EARNHero classes={classes} />
         <EARNBenefits />
-        <EARNGreatCandidate />
+        <EARNGreatCandidate classes={classes} />
       </Box>
     </div>
   );

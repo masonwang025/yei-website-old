@@ -12,7 +12,7 @@ const appCriteria = [
 
 export default function FLIPAbout({ classes }) {
   return (
-    <Box pt={4.69} pb={10}>
+    <Box pt={4.69}>
       <Container fixed>
         <Grid container direction="column" alignItems="center">
           <Grid item>
@@ -29,7 +29,7 @@ export default function FLIPAbout({ classes }) {
             </Typography>
           </Grid>
         </Grid>
-        <Box pt={8}>
+        <Box pt={8} pb={9.5}>
           <Grid container direction="column" spacing={2} alignItems="center">
             <Grid item>
               <Typography align="center" variant="h3">
@@ -65,7 +65,9 @@ export default function FLIPAbout({ classes }) {
             </Grid>
           </Grid>
         </Box>
-        <Box pt={7.5} pb={2}>
+      </Container>
+      <Box className={classes.darkMode} pt={7.5} pb={8.5}>
+        <Container>
           <Grid container direction="column" spacing={2}>
             <Grid item>
               <Typography variant="h3">FLIP Curriculum</Typography>
@@ -82,8 +84,8 @@ export default function FLIPAbout({ classes }) {
               </Typography>
             </Grid>
           </Grid>
-        </Box>
-      </Container>
+        </Container>
+      </Box>
     </Box>
   );
 }
