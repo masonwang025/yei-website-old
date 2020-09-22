@@ -5,7 +5,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 
-import routes, { redirectRoutes } from "./data/routes";
+import routes from "./data/routes";
+import redirectRoutes from "./data/redirectRoutes";
 
 function App() {
   // window resizing
