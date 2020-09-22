@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 
-import routes from "./data/routes";
+import routes, { redirectRoutes } from "./data/routes";
 
 function App() {
   // window resizing
@@ -42,35 +42,49 @@ function App() {
 
   return (
     <div className="App">
-      <RegisterFormContextProvider>
-        <ScrollToTop />
-        <Header />
-        <div className="App">
-          <Switch>
-            {routes.map(({ path, Component, dropRoutes }) => {
-              if (!dropRoutes)
-                return (
-                  <Route key={path} exact path={path}>
-                    <Component />
-                  </Route>
-                );
-              else {
-                return dropRoutes.map((dropRoute) => (
-                  <Route
-                    key={path + dropRoute.path}
-                    exact
-                    path={path + dropRoute.path}
-                  >
-                    <dropRoute.Component />
-                  </Route>
-                ));
-              }
-            })}
-            <Redirect to="/" />
-          </Switch>
-        </div>
-        <Footer />
-      </RegisterFormContextProvider>
+      <Switch>
+        {redirectRoutes.map((redirect) => (
+          <Route
+            exact
+            key={redirect.path}
+            path={redirect.path}
+            render={() => (window.location = redirect.redirectLink)}
+          />
+        ))}
+
+        <Route path="/">
+          <RegisterFormContextProvider>
+            <ScrollToTop />
+            <Header />
+            <div className="App">
+              <Switch>
+                {routes.map(({ path, Component, dropRoutes }) => {
+                  if (!dropRoutes)
+                    return (
+                      <Route key={path} exact path={path}>
+                        <Component />
+                      </Route>
+                    );
+                  else {
+                    return dropRoutes.map((dropRoute) => (
+                      <Route
+                        key={path + dropRoute.path}
+                        exact
+                        path={path + dropRoute.path}
+                      >
+                        <dropRoute.Component />
+                      </Route>
+                    ));
+                  }
+                })}
+
+                <Redirect to="/" />
+              </Switch>
+            </div>
+            <Footer />
+          </RegisterFormContextProvider>
+        </Route>
+      </Switch>
     </div>
   );
 }
