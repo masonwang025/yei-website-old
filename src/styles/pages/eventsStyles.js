@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   eventsHero: {
     overflow: "hidden",
     position: "relative",
-    background: "#ffffffdd",
+    background: "#0d242bdd",
     minHeight: "calc(100vh - 64px)",
     [theme.breakpoints.down("md")]: {
       minHeight: "calc(100vh - 56px)",
@@ -56,13 +56,13 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   eventsTitle: {
-    color: theme.palette.secondary.dark,
+    color: "white",
     [theme.breakpoints.down("md")]: {
       fontSize: "2.5em",
     },
   },
   eventsSubtitle: {
-    color: theme.palette.secondary.dark,
+    color: "white",
     fontSize: "1.4em",
     [theme.breakpoints.down("md")]: {
       fontSize: 18,

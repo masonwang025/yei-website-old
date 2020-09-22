@@ -61,7 +61,6 @@ export default function EventsHero({ classes }) {
                   .scrollIntoView({ behavior: "smooth", block: "center" });
               }}
               variant="contained"
-              color="primary"
             >
               Learn More
             </Button>
