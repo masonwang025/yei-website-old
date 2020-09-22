@@ -66,7 +66,7 @@ export default function EconOlympiad() {
             <Box py={2} display="flex" justifyContent="center" mx="auto">
               <Link to="/events">
                 <Button
-                  aria-label="button"
+                  aria-label="other events"
                   variant="contained"
                   align="center"
                   color="secondary"

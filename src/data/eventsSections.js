@@ -9,7 +9,7 @@ const events = [
       "EconBowl takes place annually, every Fall.  Students compete, in teams of 3-4, for two rounds, one Written Examination and one Quiz Bowl round for over $1500 in prizes. YEI’s EconBowl, allows students who are exploring an interest in economics, to apply their knowledge to help build a stronger network and win prizes and awards.  This day long competition is free and open to all students ages 13-18.",
     ctaBtn: (
       <Link to="/events/econbowl">
-        <Button aria-label="button" variant="contained" color="secondary">
+        <Button aria-label="econbowl" variant="contained" color="secondary">
           Learn More
         </Button>
       </Link>
@@ -23,7 +23,7 @@ const events = [
       "YEI’s flagship competition, EconOlympiad, gives students the opportunity to apply what they’ve learned in a critical thinking and application focused environment. Over 3 weeks, students work to answer free response questions and create complex and in-depth solutions to economic problems in the fields of Macroeconomics, Microeconomics, and Global Trade. EconOlympiad is exclusively available to members of YEI EconClubs and takes place every spring.  ",
     ctaBtn: (
       <Link to="/events/econolympiad">
-        <Button aria-label="button" variant="contained" color="secondary">
+        <Button aria-label="econolympiad" variant="contained" color="secondary">
           Learn More
         </Button>
       </Link>
@@ -35,7 +35,7 @@ const events = [
       "Every year, YEI invites dozens of leading economists, professors, industry professionals, and business and political leaders to give talks.  Students have an opportunity to gain valuable insight and build a stronger understanding of economics through these workshops and talks.  YEI EconTalks are open to the public and 100% free.  Past Speakers have included professors at NYU & UPenn, senior executives at Fortune 500 companies, business owners, and policymakers.",
     ctaBtn: (
       <Link to="/events/econtalks">
-        <Button aria-label="button" variant="contained" color="secondary">
+        <Button aria-label="econtalks" variant="contained" color="secondary">
           Learn More
         </Button>
       </Link>
@@ -54,7 +54,7 @@ const events = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Button aria-label="button" variant="contained" color="secondary">
+        <Button aria-label="selc" variant="contained" color="secondary">
           Watch SELC 2020
         </Button>
       </a>

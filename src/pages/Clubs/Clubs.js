@@ -24,7 +24,11 @@ export default function Clubs() {
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599500302/yei-website/manypixels-isometric/clubsHero.png"
         callToAction={
           <Link to="/clubs/current-clubs">
-            <Button aria-label="button" variant="contained" color="secondary">
+            <Button
+              aria-label="current clubs"
+              variant="contained"
+              color="secondary"
+            >
               View Current Clubs
             </Button>
           </Link>
@@ -46,7 +50,7 @@ export default function Clubs() {
           callToAction={
             <OpenForm>
               <Button
-                aria-label="button"
+                aria-label="register your club"
                 variant="contained"
                 color="primary"
                 size="large"

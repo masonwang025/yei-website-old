@@ -57,7 +57,7 @@ export default function PageHero({
             >
               <Box display="flex" justifyContent="center">
                 <Image
-                  alt="seo-alt"
+                  alt="YEI - Youth Economics Initiative"
                   cloudName="masonwang"
                   className={classes.image}
                   publicId={imgURL}

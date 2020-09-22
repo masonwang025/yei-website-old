@@ -23,7 +23,7 @@ export default function HomeSupporters({ classes }) {
                     rel="noopener noreferrer"
                   >
                     <Image
-                      alt="seo-alt"
+                      alt="YEI - Youth Economics Initiative"
                       className={classes.supporterLogo}
                       cloudName="masonwang"
                       publicId={supporter.imgURL}

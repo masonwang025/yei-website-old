@@ -70,7 +70,7 @@ export default function EventsSection(props) {
                   }
                 >
                   <Image
-                    alt="seo-alt"
+                    alt="YEI - Youth Economics Initiative"
                     cloudName="masonwang"
                     publicId={props.imgURL}
                     style={{ width: "90%" }}

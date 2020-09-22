@@ -37,7 +37,7 @@ export default function FLIPHero({ classes }) {
           <Grid item md={7} sm={8} xs={11}>
             <Box display="flex" justifyContent="center">
               <Image
-                alt="seo-alt"
+                alt="YEI FLIP"
                 cloudName="masonwang"
                 className={classes.image}
                 publicId="https://res.cloudinary.com/masonwang/image/upload/v1600099715/yei-website/programs/flip.jpg"

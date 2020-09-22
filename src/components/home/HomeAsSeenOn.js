@@ -57,7 +57,7 @@ export default function HomeAsSeenOn({ classes }) {
                 style={logo.style}
               >
                 <Image
-                  alt="seo-alt"
+                  alt="YEI - Youth Economics Initiative"
                   cloudName="masonwang"
                   publicId={logo.imgURL}
                   className={classes.asSeenOnLogo}

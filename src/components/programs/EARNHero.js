@@ -42,7 +42,7 @@ export default function EARNHero({ classes }) {
           <Grid item md={5} sm={8} xs={11}>
             <Box display="flex" justifyContent="center">
               <Image
-                alt="seo-alt"
+                alt="YEI EARN"
                 cloudName="masonwang"
                 className={classes.image2}
                 publicId="https://res.cloudinary.com/masonwang/image/upload/v1600097563/yei-website/programs/earn.png"

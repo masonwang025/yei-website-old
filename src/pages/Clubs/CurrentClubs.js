@@ -24,7 +24,11 @@ export default function CurrentClubs() {
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/currentClubsHero.png"
         callToAction={
           <OpenForm>
-            <Button aria-label="button" variant="contained" color="secondary">
+            <Button
+              aria-label="join the list"
+              variant="contained"
+              color="secondary"
+            >
               Join the List
             </Button>
           </OpenForm>

@@ -59,7 +59,7 @@ export default function PageSection(props) {
                   }
                 >
                   <Image
-                    alt="seo-alt"
+                    alt="YEI - Youth Economics Initiative"
                     cloudName="masonwang"
                     className={classes.image}
                     publicId={props.imgURL}
