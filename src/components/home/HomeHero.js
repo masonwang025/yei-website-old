@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 import OpenForm from "../clubs/OpenForm";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function HomeHero({ classes }) {
   return (
@@ -45,19 +46,17 @@ export default function HomeHero({ classes }) {
                   </Button>
                 </OpenForm>
               </Box>
-              <Button
-                aria-label="about us"
-                className={classes.ctaBtn}
-                variant="contained"
-                size="large"
-                onClick={() => {
-                  document
-                    .querySelector("#home-about")
-                    .scrollIntoView({ behavior: "smooth", block: "center" });
-                }}
-              >
-                About Us
-              </Button>
+
+              <AnchorLink href="#home-about" offset="26.9px">
+                <Button
+                  aria-label="about us"
+                  className={classes.ctaBtn}
+                  variant="contained"
+                  size="large"
+                >
+                  About Us
+                </Button>
+              </AnchorLink>
             </Grid>
           </Box>
         </Grid>

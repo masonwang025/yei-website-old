@@ -5,15 +5,14 @@ import { Image } from "cloudinary-react";
 
 export default function HomeAbout({ classes }) {
   return (
-    <Box className={classes.about} py={8}>
+    <Box className={classes.about} py={8} id="home-about">
       <Container fixed>
         <Grid container alignItems="center" spacing={4}>
           <Grid item md={6} sm={11} xs={12}>
             <Grid container direction="column" spacing={3}>
               <Grid item>
                 <Typography className={classes.aboutHeading} variant="h2">
-                  We're not just a collective of Economics{" "}
-                  <span id="home-about">Clubs.</span>
+                  We're not just a collective of economics clubs.
                 </Typography>
               </Grid>
               <Grid item>

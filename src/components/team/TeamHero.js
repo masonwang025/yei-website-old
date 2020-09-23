@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export default function TeamHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
@@ -29,17 +30,11 @@ export default function TeamHero({ classes }) {
             </Typography>
           </Grid>
           <Grid item>
-            <Button
-              aria-label="apply now"
-              variant="contained"
-              onClick={() => {
-                document
-                  .querySelector("#join-the-team")
-                  .scrollIntoView({ behavior: "smooth", block: "center" });
-              }}
-            >
-              Apply Now
-            </Button>
+            <AnchorLink href="#join-the-team">
+              <Button aria-label="apply now" variant="contained">
+                Apply Now
+              </Button>
+            </AnchorLink>
           </Grid>
         </Grid>
       </Container>

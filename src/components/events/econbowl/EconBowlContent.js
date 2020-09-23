@@ -27,20 +27,6 @@ export default function EconBowlContent({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
     <>
-      <Box pt={5} pb={9}>
-        <Grid container justify="center">
-          <Grid item>
-            <iframe
-              title="EconBowl Recap"
-              src="https://www.youtube.com/embed/EEYM5cice9U"
-              className={classes.econbowlRecap}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Grid>
-        </Grid>
-      </Box>
       <Box className={classes.darkerBg} py={9}>
         <Container fixed>
           <Grid
@@ -48,11 +34,12 @@ export default function EconBowlContent({ classes }) {
             direction="column"
             alignItems="center"
             justify="center"
+            spacing={4}
           >
             <Grid item>
-              <Box>
+              <Box pb={0.13}>
                 <Typography align="center" variant="h3">
-                  EconBowl 2020 Prizes
+                  2nd Annual EconBowl
                 </Typography>
               </Box>
             </Grid>
@@ -69,6 +56,13 @@ export default function EconBowlContent({ classes }) {
                   </Box>
                 </Grid>
               ))}
+            </Grid>
+            <Grid item>
+              <Box pt={3}>
+                <Typography align="center" variant="h6">
+                  Plus non-cash prizes!
+                </Typography>
+              </Box>
             </Grid>
           </Grid>
         </Container>
@@ -107,7 +101,11 @@ export default function EconBowlContent({ classes }) {
           </Grid>
         </Container>
       </Box>
-      <Box className={classes.econbowlHero} pb={9}>
+      <Box
+        className={classes.econbowlHero}
+        pb={mdDown ? 10 : 13}
+        pt={mdDown ? 0 : 4.2}
+      >
         <Container fixed>
           <Grid
             container
@@ -174,6 +172,25 @@ export default function EconBowlContent({ classes }) {
               </a>
             </Grid>
           </Grid>
+          <Box pt={mdDown ? 8.1 : 13}>
+            <Box pb={4.69}>
+              <Typography align="center" variant="h3">
+                First Annual EconBowl Recap
+              </Typography>
+            </Box>
+            <Grid container justify="center">
+              <Grid item>
+                <iframe
+                  title="EconBowl Recap"
+                  src="https://www.youtube.com/embed/EEYM5cice9U"
+                  className={classes.econbowlRecap}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </Grid>
+            </Grid>
+          </Box>
         </Container>
       </Box>
     </>
