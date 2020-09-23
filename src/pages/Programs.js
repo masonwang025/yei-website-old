@@ -16,6 +16,7 @@ export default function Programs() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Programs - Youth Economics Initiative (YEI)</title>
+        <link rel="icon" href="../assets/favicon.ico" />
         <meta
           name="description"
           content="The Youth Economics Initiative (YEI) offers a number of exclusive supplemental programs for our EconClubs and members created to prepare aspiring leaders through community service and real work experience. Learn more about YEI programs such as FLIP and EARN."

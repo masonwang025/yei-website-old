@@ -17,6 +17,7 @@ export default function Events() {
           name="description"
           content="Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
         />
+        <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <EventsHero classes={classes} />
       <div id="events-sections"></div>

@@ -16,6 +16,7 @@ export default function EconTalks() {
           name="description"
           content="Hear from Youth Economics Initiative's (YEI) invited speakers from institutions such as NYU Stern, UPenn, EPA & UVA about the impact current events or trends have on the economy."
         />
+        <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <PageHero
         title="YEI EconTalks"

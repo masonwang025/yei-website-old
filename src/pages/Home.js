@@ -19,8 +19,9 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>
-          Youth Economics Initiative (YEI) | Launchpad for Student Economists”
+          Youth Economics Initiative (YEI) | Launchpad for Student Economists
         </title>
+        <link rel="icon" href="../assets/favicon.ico" />
         <meta
           name="description"
           content="Exploring economics. Empowering leaders. Official page for the Youth Economics Intitiative (YEI)."

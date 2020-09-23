@@ -17,6 +17,7 @@ export default function Clubs() {
           name="description"
           content="EconClubs is Youth Economics Initiative's (YEI) premier high school economics club program for students who want to supercharge their economics journey."
         />
+        <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <PageHero
         title="YEI EconClubs"

@@ -13,6 +13,7 @@ export default function Team() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Team - Youth Economics Initiative (YEI)</title>{" "}
+        <link rel="icon" href="../assets/favicon.ico" />
         <meta
           name="description"
           content="Get to know the people who make the magic happen at the Youth Economics Initiative. Learn how you can apply to join YEI's team."

@@ -15,6 +15,7 @@ export default function EconOlympiad() {
           name="description"
           content="Youth Economics Initiative's (YEI) Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members."
         />
+        <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <Container fixed>
         <Grid
