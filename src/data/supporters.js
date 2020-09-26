@@ -19,15 +19,15 @@ const supporters = [
   },
   {
     imgURL: `${upload2}/costco.png`,
-    link: "https://costco.com/",
+    link: "https://www.costco.com/",
   },
   {
     imgURL: `${upload2}/walmart.png`,
-    link: "https://walmart.com/",
+    link: "https://www.walmart.com/",
   },
   {
     imgURL: `${upload2}/qualcomm.png`,
-    link: "https://qualcomm.com/",
+    link: "https://www.qualcomm.com/",
   },
   {
     imgURL: `${upload2}/chipotle.png`,
