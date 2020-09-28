@@ -10,7 +10,7 @@ export default function HomeSupporters({ classes }) {
         <Grid container direction="column" spacing={2}>
           <Grid item>
             <Typography gutterBottom align="center" variant="h3">
-              Sponsored By
+              Supported By
             </Typography>
           </Grid>
           <Grid item>
