@@ -25,10 +25,10 @@ const supporters = [
     imgURL: `${upload2}/walmart.png`,
     link: "https://www.walmart.com/",
   },
-  {
+  /*{
     imgURL: `${upload2}/qualcomm.png`,
     link: "https://www.qualcomm.com/",
-  },
+  },*/
   {
     imgURL: `${upload2}/chipotle.png`,
     link: "https://chipotle.com/",
