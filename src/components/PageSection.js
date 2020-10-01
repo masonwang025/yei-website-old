@@ -13,7 +13,12 @@ export default function PageSection(props) {
   if (props.subsection === true) titleVariant = "h6";
 
   return (
-    <Box pt={pt} pb={pb} id={props.id} className={props.light && classes.light}>
+    <Box
+      pt={pt}
+      pb={pb}
+      id={props.id}
+      className={props.light ? classes.light : props.dark && classes.darkerBg}
+    >
       <Container
         fixed
         className={`${props.centerOnMobile && classes.centerOnMobile} ${
@@ -40,9 +45,11 @@ export default function PageSection(props) {
                     <Typography variant="body1">{props.content}</Typography>
                   </Grid>
                 )}
-                <Grid item>
-                  <Box mt={0.42}>{props.callToAction}</Box>
-                </Grid>
+                {props.callToAction && (
+                  <Grid item>
+                    <Box mt={0.42}>{props.callToAction}</Box>
+                  </Grid>
+                )}
                 {props.children && <Grid item>{props.children}</Grid>}
               </Grid>
             </Grid>
