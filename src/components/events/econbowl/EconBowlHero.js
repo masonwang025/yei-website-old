@@ -47,6 +47,9 @@ export default function EconBowlHero({ classes }) {
                 <span className={classes.primary}>~</span>{" "}
                 <span className={classes.dark}>Fully online</span>
               </b>
+              <br />
+              Register by 9/1/20, 11:59pm PDT. Written Round: 9:00 am PDT to
+              11:30 am PDT. Quizbowl round: 11:40 am PDT to 1:30 pm PDT.
             </Typography>
             <Box pt={2}>
               <Grid
