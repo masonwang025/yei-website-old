@@ -38,7 +38,7 @@ export default function Clubs() {
         }
       />
       <PageSection
-        pt={4.2}
+        pt={4}
         light
         title="What are YEI EconClubs?"
         content={
@@ -63,10 +63,11 @@ export default function Clubs() {
         }
       />
       <ClubBenefits />
-      <Box mt={5} className={classes.darkerBg}>
+      <Box mt={7.2} className={classes.darkerBg}>
         <PageSection
           dark
-          pb={5}
+          pt={6}
+          pb={6}
           title="Start Your Economics Club in 3 Steps"
           forceCenter
         >
