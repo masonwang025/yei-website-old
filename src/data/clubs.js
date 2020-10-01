@@ -224,6 +224,27 @@ const clubs = [
     email: "ishaanbansal1001@gmail.com",
     region: "Norcal",
   },
+  {
+    chapter: "Skyline High School",
+    email: "pradumna.sachdeva@gmail.com",
+    region: "Washington",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1601574555/yei-website/clubs/skyline-high-school.jpg",
+  },
+  {
+    chapter: "Allen High School",
+    email: "nikki.shah@student.allenisd.org",
+    region: "Texas",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1601574555/yei-website/clubs/allen-high-school.jpg",
+  },
+  {
+    chapter: "Brothell High School",
+    email: "1118836@apps.nsd.org",
+    region: "Washington",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1601574733/yei-website/clubs/bothell-high-school.jpg",
+  },
 ];
 
 export default clubs;
