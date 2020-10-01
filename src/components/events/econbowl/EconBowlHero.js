@@ -79,7 +79,7 @@ export default function EconBowlHero({ classes }) {
                 </Grid>
                 <Grid item>
                   <a
-                    href="https://www.classmarker.com/online-test/"
+                    href="http://tinyurl.com/practiceset1"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
