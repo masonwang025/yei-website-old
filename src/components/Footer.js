@@ -8,6 +8,8 @@ import {
 } from "@material-ui/core";
 import { Instagram, Facebook, LinkedIn, Mail } from "@material-ui/icons";
 import useStyles from "../styles/components/footerStyles.js";
+import { Icon } from "@iconify/react";
+import discordIcon from "@iconify/icons-mdi/discord";
 
 export default function Footer() {
   const classes = useStyles();
@@ -61,6 +63,15 @@ export default function Footer() {
               >
                 <IconButton>
                   <Instagram className={classes.socialIcon} />
+                </IconButton>
+              </a>
+              <a
+                href="https://discord.gg/RC588cv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconButton>
+                  <Icon icon={discordIcon} color="white" />
                 </IconButton>
               </a>
               <a
