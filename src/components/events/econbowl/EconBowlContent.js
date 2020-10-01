@@ -67,7 +67,7 @@ export default function EconBowlContent({ classes }) {
           </Grid>
         </Container>
       </Box>
-      <Box pt={9} pb={5}>
+      <Box pt={9} pb={mdDown ? 5 : 4}>
         <Container fixed>
           <Grid container direction="column">
             <Grid item>
@@ -84,7 +84,7 @@ export default function EconBowlContent({ classes }) {
               >
                 <Grid item xs={11} sm={8} md={5}>
                   <a
-                    href="https://wenyungff.weebly.com/?fbclid=IwAR3wFQNOc9qProsz0IgUmXto8ykihsa0sQyZIpAVcfjMDDKiFkjPPWzH3Rg"
+                    href="https://wenyungff.weebly.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,6 +96,37 @@ export default function EconBowlContent({ classes }) {
                     />
                   </a>
                 </Grid>
+              </Grid>
+            </Grid>
+            <Grid item>
+              <Box mt={mdDown ? 1 : 6} mb={2}>
+                <Typography align="center" variant="h5">
+                  Prizes Sponsored By
+                </Typography>
+              </Box>
+            </Grid>
+            <Grid item>
+              <Grid container justify="center" alignContent="center">
+                {["magoosh", "clickup"].map((prizeSponsor) => {
+                  return (
+                    <Grid key={prizeSponsor} item xs={7} sm={5} md={3}>
+                      <Box px={4.2}>
+                        <a
+                          href={`https://${prizeSponsor}.com/`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            alt={`${prizeSponsor}`}
+                            className={classes.econbowlSupporter}
+                            cloudName="masonwang"
+                            publicId={`https://res.cloudinary.com/masonwang/image/upload/v1600059435/yei-website/supporters/${prizeSponsor}.png`}
+                          />
+                        </a>
+                      </Box>
+                    </Grid>
+                  );
+                })}
               </Grid>
             </Grid>
           </Grid>
