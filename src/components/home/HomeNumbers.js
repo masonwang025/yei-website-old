@@ -13,7 +13,7 @@ const numberContent = [
     caption: "​Current Clubs",
   },
   {
-    number: 1600,
+    number: Math.floor(clubs.length * 47.3),
     caption: "Active Student Numbers",
   },
 ];

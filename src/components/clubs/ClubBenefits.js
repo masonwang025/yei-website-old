@@ -32,7 +32,7 @@ export default function ClubBenefits() {
           rel="noopener noreferrer"
         >
           <Button color="secondary" variant="outlined">
-            Join our Discord
+            Join Our Discord
           </Button>
         </a>
       ),

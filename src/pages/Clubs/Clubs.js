@@ -73,16 +73,16 @@ export default function Clubs() {
         >
           {[
             {
-              title: "Register your Club!",
+              title: "Register Your Club",
               content:
                 "Let’s get acquainted! Fill out the registration form below!",
             },
             {
-              title: "Onboarding Call!",
-              content: "Our Expansion Team will call you over zoom!",
+              title: "Onboarding Call",
+              content: "Our expansion team will call you over Zoom!",
             },
             {
-              title: "Launch your Club!",
+              title: "Launch your Club",
               content: "Receive your Launch Package and get started!",
             },
           ].map((step, index) => (
