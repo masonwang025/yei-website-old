@@ -20,6 +20,15 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     width: "45px",
   },
+  stepsImage: {
+    width: "90%",
+  },
+  firstOrder: {
+    order: 0,
+  },
+  secondOrder: {
+    order: 10,
+  },
 }));
 
 export default useStyles;

@@ -1,12 +1,13 @@
 import React from "react";
 import PageHero from "../../components/PageHero";
-import { Button, Box, Typography } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 import PageSection from "../../components/PageSection";
 import ClubBenefits from "../../components/clubs/ClubBenefits";
 import { Link } from "react-router-dom";
 import OpenForm from "../../components/clubs/OpenForm";
 import { Helmet } from "react-helmet";
 import useStyles from "../../styles/pages/clubStyles";
+import ClubProcess from "../../components/clubs/ClubProcess";
 
 export default function Clubs() {
   const classes = useStyles();
@@ -51,60 +52,17 @@ export default function Clubs() {
           </span>
         }
         callToAction={
-          <OpenForm>
-            <Button
-              aria-label="register your club"
-              variant="contained"
-              color="primary"
-            >
-              Register Your Club
-            </Button>
-          </OpenForm>
+          <Button
+            aria-label="register your club"
+            variant="contained"
+            color="primary"
+          >
+            <OpenForm>Register Your Club</OpenForm>
+          </Button>
         }
       />
       <ClubBenefits />
-      <Box mt={7.2} className={classes.darkerBg}>
-        <PageSection
-          dark
-          pt={6}
-          pb={6}
-          title="Start Your Economics Club in 3 Steps"
-          forceCenter
-        >
-          {[
-            {
-              title: "Register Your Club",
-              content:
-                "Let’s get acquainted! Fill out the registration form below!",
-            },
-            {
-              title: "Onboarding Call",
-              content: "Our expansion team will call you over Zoom!",
-            },
-            {
-              title: "Launch your Club",
-              content: "Receive your Launch Package and get started!",
-            },
-          ].map((step, index) => (
-            <Box key={index} pb={4.2}>
-              <Typography gutterBottom variant="h4">
-                <span className={classes.appNumbers}>{index + 1}</span>{" "}
-                {step.title}
-              </Typography>
-              <Typography variant="body1">{step.content}</Typography>
-            </Box>
-          ))}
-          <OpenForm>
-            <Button
-              aria-label="register your club"
-              variant="contained"
-              color="primary"
-            >
-              Register Your Club
-            </Button>
-          </OpenForm>
-        </PageSection>
-      </Box>
+      <ClubProcess classes={classes} />
     </div>
   );
 }

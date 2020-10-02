@@ -35,16 +35,14 @@ export default function HomeHero({ classes }) {
           <Box mt={2}>
             <Grid item>
               <Box display="inline-block" mr={1} mb={1}>
-                <OpenForm>
-                  <Button
-                    aria-label="register a club"
-                    className={`${classes.ctaBtn} ${classes.mainCta}`}
-                    variant="contained"
-                    size="large"
-                  >
-                    Register a Club
-                  </Button>
-                </OpenForm>
+                <Button
+                  aria-label="register a club"
+                  className={`${classes.ctaBtn} ${classes.mainCta}`}
+                  variant="contained"
+                  size="large"
+                >
+                  <OpenForm>Register a Club</OpenForm>
+                </Button>
               </Box>
 
               <AnchorLink href="#home-about" offset="26.9px">

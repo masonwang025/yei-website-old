@@ -24,15 +24,13 @@ export default function CurrentClubs() {
         paragraph={`View YEI's current ${clubs.length} clubs.`}
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599407913/yei-website/manypixels-isometric/currentClubsHero.png"
         callToAction={
-          <OpenForm>
-            <Button
-              aria-label="join the list"
-              variant="contained"
-              color="secondary"
-            >
-              Join the List
-            </Button>
-          </OpenForm>
+          <Button
+            aria-label="join the list"
+            variant="contained"
+            color="secondary"
+          >
+            <OpenForm>Join the List</OpenForm>
+          </Button>
         }
       />
 

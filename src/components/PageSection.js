@@ -36,7 +36,10 @@ export default function PageSection(props) {
                 spacing={props.spacing ? props.spacing : 3}
               >
                 <Grid item>
-                  <Typography variant={titleVariant}>
+                  <Typography
+                    align={props.titleCenter ? "center" : "inherit"}
+                    variant={titleVariant}
+                  >
                     <b>{props.title}</b>
                   </Typography>
                 </Grid>
