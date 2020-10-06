@@ -9,6 +9,7 @@ export default function CallToActionButton({ classes }) {
         <Button
           aria-label="register your club"
           variant="contained"
+          color="primary"
           className={classes.callToAction}
         >
           Register a Club
