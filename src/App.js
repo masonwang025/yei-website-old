@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 
