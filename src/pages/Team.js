@@ -45,7 +45,6 @@ export default function Team() {
               align="center"
               variant="contained"
               color="primary"
-              size="large"
             >
               Apply Now
             </Button>

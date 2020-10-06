@@ -41,7 +41,6 @@ export default function HomeEconClubs({ classes }) {
                     aria-label="learn more about clubs"
                     variant="contained"
                     color="primary"
-                    size="large"
                   >
                     Learn More
                   </Button>

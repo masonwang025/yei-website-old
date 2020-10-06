@@ -35,7 +35,6 @@ export default function HomeAbout({ classes }) {
                     aria-label="our events"
                     variant="contained"
                     color="primary"
-                    size="large"
                   >
                     Our Events
                   </Button>
