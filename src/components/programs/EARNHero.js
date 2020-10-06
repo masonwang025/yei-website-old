@@ -6,7 +6,7 @@ import ApplyFor from "./ApplyFor";
 
 export default function EARNHero({ classes }) {
   return (
-    <Box pt={window.innerWidth < 960 ? 9 : 12}>
+    <Box id="EARN" pt={window.innerWidth < 960 ? 9 : 12}>
       <Container fixed>
         <Grid container alignItems="center" justify="center" spacing={4}>
           <Grid item md={7} sm={11} xs={12}>

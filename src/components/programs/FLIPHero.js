@@ -4,7 +4,7 @@ import { Image } from "cloudinary-react";
 
 export default function FLIPHero({ classes }) {
   return (
-    <Box pt={window.innerWidth < 960 ? 9 : 13}>
+    <Box id="FLIP" pt={window.innerWidth < 960 ? 9 : 13}>
       <Container fixed>
         <Grid container alignItems="center" justify="center" spacing={4}>
           <Grid item md={5} sm={11} xs={12}>

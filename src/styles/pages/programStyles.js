@@ -6,6 +6,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.brighter,
   },
   hero: {
+    minHeight: "calc(100vh - 64px)",
+    [theme.breakpoints.down("md")]: {
+      minHeight: "calc(100vh - 56px)",
+    },
     overflow: "hidden",
     position: "relative",
     background: "#ffffffdd",
@@ -29,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     color: theme.palette.secondary.dark,
-    fontSize: "1.5em",
+    fontSize: "1.42em",
   },
   heroImg: {
     width: "100%",

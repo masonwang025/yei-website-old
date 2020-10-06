@@ -12,24 +12,32 @@ const featured = [
     description:
       "YEI’s Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members.",
     path: "/events/econolympiad",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png",
   },
   {
     title: "EconTalks",
     description:
       "YEI offers public, free speaker events and workshops featuring industry professionals, professors at prestigious universities, business leaders, and policymakers.",
     path: "/events/econtalks",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econtalks.png",
   },
   {
     title: "FLIP",
     description:
       "YEI’s Financial Literacy Introduction Program (FLIP) is the service arm of our organization.  Through FLIP, our members are empowered to educate their community on Financial Literacy with our comprehensive curriculum and support network.",
     path: "/programs",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/flip.png",
   },
   {
     title: "EARN",
     description:
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
     path: "/programs",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/earn.png",
   },
   {
     title: "SELC/WELC",

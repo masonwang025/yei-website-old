@@ -1,12 +1,29 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
+import { Image } from "cloudinary-react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const programs = [
+  {
+    name: "FLIP",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/flip.png",
+  },
+  {
+    name: "EARN",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/earn.png",
+  },
+];
 
 export default function ProgramsHero({ classes }) {
-  const mdDown = window.innerWidth <= 960;
   return (
-    <Box className={classes.hero} py={mdDown ? 8 : 13}>
+    <Box className={classes.hero}>
       <Container fixed>
         <Grid
+          style={{
+            minHeight: `calc(100vh - ${window.innerWidth > 600 ? 64 : 56}px)`,
+          }}
           container
           direction="column"
           justify="center"
@@ -29,6 +46,22 @@ export default function ProgramsHero({ classes }) {
               members created to prepare aspiring leaders through community
               service and real work experience.
             </Typography>
+          </Grid>
+          <Grid item>
+            <Grid container justify="center" alignContent="center" spacing={4}>
+              {programs.map((program) => (
+                <Grid item lg={2} xs={5} key={program.name}>
+                  <AnchorLink href={`#${program.name}`}>
+                    <Image
+                      style={{ width: "100%" }}
+                      cloudName="masonwang"
+                      alt={`YEI ${program.name}`}
+                      publicId={program.imgURL}
+                    />
+                  </AnchorLink>
+                </Grid>
+              ))}
+            </Grid>
           </Grid>
         </Grid>
       </Container>

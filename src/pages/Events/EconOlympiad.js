@@ -3,6 +3,7 @@ import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 import { Helmet } from "react-helmet";
 import useStyles from "../../styles/pages/eventsStyles";
 import { Link } from "react-router-dom";
+import { Image } from "cloudinary-react";
 
 export default function EconOlympiad() {
   const classes = useStyles();
@@ -32,36 +33,33 @@ export default function EconOlympiad() {
         >
           <Grid item>
             <Box py={1}>
-              <Typography
-                align="center"
-                variant="h1"
-                className={classes.olympiadTitle}
+              <Grid
+                container
+                justify="center"
+                alignContent="center"
+                direction="column"
+                spacing={4}
               >
-                <b>EconOlympiad</b>
-              </Typography>
+                <Grid item xs={8} md={7} lg={6}>
+                  <Image
+                    style={{ width: "100%" }}
+                    cloudName="masonwang"
+                    alt="YEI EconOlympiad"
+                    publicId="https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png"
+                  />
+                </Grid>
+              </Grid>
             </Box>
           </Grid>
           <Grid item>
-            <Box py={1}>
-              <Typography
-                align="center"
-                variant="h4"
-                className={classes.olympiadSubtitle}
-              >
-                YEI’s Flagship Competition, Spring 2021
-              </Typography>
-            </Box>
+            <Typography align="center" variant="h5">
+              YEI’s Flagship Competition, Spring 2021
+            </Typography>
           </Grid>
           <Grid item>
-            <Box py={1}>
-              <Typography
-                align="center"
-                variant="h4"
-                className={classes.olympiadSubtitle}
-              >
-                Information coming Winter 2020
-              </Typography>
-            </Box>
+            <Typography align="center" variant="h6">
+              Information coming Winter 2020
+            </Typography>
           </Grid>
           <Grid item>
             <Box py={2} display="flex" justifyContent="center" mx="auto">
