@@ -28,6 +28,9 @@ const events = [
         </Button>
       </Link>
     ),
+    firstOnDesktop: true,
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png",
   },
   {
     title: "EconTalks",
@@ -41,8 +44,7 @@ const events = [
       </Link>
     ),
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1600147890/yei-website/home/speakers.jpg",
-    firstOnDesktop: true,
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econtalks.png",
   },
   {
     title: "Summer & Winter Economics Leadership Conferences",

@@ -5,8 +5,8 @@ import { Image } from "cloudinary-react";
 export default function EventsSection(props) {
   const classes = props.classes;
   let centerContent = window.innerWidth <= 960;
-  let pt = props.pt ? props.pt : 15;
-  let pb = props.pb ? props.pb : 15;
+  let pt = props.pt ? props.pt : 12;
+  let pb = props.pb ? props.pb : 12;
 
   const mdDown = window.innerWidth <= 960;
 

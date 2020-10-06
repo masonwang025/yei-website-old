@@ -20,7 +20,7 @@ export default function Events() {
         <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <EventsHero classes={classes} />
-      <div id="events-sections"></div>
+      <div id="events"></div>
       {events.map((event, index) => (
         <EventsSection
           key={index}

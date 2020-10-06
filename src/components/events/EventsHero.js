@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 export default function EventsHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
@@ -53,17 +55,11 @@ export default function EventsHero({ classes }) {
             </Typography>
           </Grid>
           <Grid item>
-            <Button
-              aria-label="events sections"
-              onClick={() => {
-                document
-                  .querySelector("#events-sections")
-                  .scrollIntoView({ behavior: "smooth", block: "center" });
-              }}
-              variant="contained"
-            >
-              Learn More
-            </Button>
+            <AnchorLink href="#events">
+              <Button aria-label="events sections" variant="contained">
+                Learn More
+              </Button>
+            </AnchorLink>
           </Grid>
         </Grid>
       </Container>
