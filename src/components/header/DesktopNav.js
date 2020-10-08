@@ -15,7 +15,7 @@ export default function DesktopNav({ classes, currPath }) {
               <Button
                 aria-label={`navigate to ${route.name}`}
                 disableRipple
-                className={`${classes.navLink} ${
+                className={`${classes.navLink} makeStyles-navLink-6 ${
                   currPath === route.path && "active"
                 }`}
               >
