@@ -4,7 +4,7 @@ import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 export default function EconBowlPrep({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
-    <Box pt={8} pb={9} className={classes.lightMode}>
+    <Box pt={8} pb={9}>
       <Container fixed>
         <Grid
           container
@@ -15,18 +15,10 @@ export default function EconBowlPrep({ classes }) {
           spacing={4}
         >
           <Grid item>
-            <Typography
-              align={mdDown ? "center" : "left"}
-              variant="h3"
-              gutterBottom
-            >
+            <Typography variant="h3" gutterBottom>
               Preparation Resources
             </Typography>
-            <Typography
-              align={mdDown ? "center" : "left"}
-              variant="body1"
-              gutterBottom
-            >
+            <Typography variant="body1" gutterBottom>
               Take our{" "}
               <a
                 href="http://tinyurl.com/practiceset1"
@@ -40,11 +32,7 @@ export default function EconBowlPrep({ classes }) {
               practice tests for both the written and QuizBowl rounds closer to
               competition date.
             </Typography>
-            <Typography
-              align={mdDown ? "center" : "left"}
-              variant="body1"
-              gutterBottom
-            >
+            <Typography variant="body1" gutterBottom>
               For more resources, we’d suggest the YEI curriculum, other AP prep
               material, or{" "}
               <a
@@ -58,12 +46,7 @@ export default function EconBowlPrep({ classes }) {
               .
             </Typography>
             <Box pt={2}>
-              <Grid
-                container
-                spacing={1}
-                justify={mdDown ? "center" : "flex-start"}
-                alignItems="center"
-              >
+              <Grid container spacing={1} alignItems="center">
                 <Grid item>
                   <a
                     href="http://tinyurl.com/practiceset1"

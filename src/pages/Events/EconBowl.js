@@ -9,6 +9,7 @@ import EconBowlTeaser from "../../components/events/econbowl/EconBowlTeaser";
 import EconBowlPrizes from "../../components/events/econbowl/EconBowlPrizes";
 import EconBowlSponsors from "../../components/events/econbowl/EconBowlSponsors";
 import EconBowlSponsorUs from "../../components/events/econbowl/EconBowlSponsorUs";
+import EconBowlSpeaker from "../../components/events/econbowl/EconBowlSpeaker";
 
 export default function EconBowl() {
   const classes = useStyles();
@@ -26,6 +27,7 @@ export default function EconBowl() {
       <EconBowlHero classes={classes} />
       <EconBowlTeaser classes={classes} />
       <EconBowlPrep classes={classes} />
+      <EconBowlSpeaker classes={classes} />
       <EconBowlPrizes classes={classes} />
       <EconBowlSponsors classes={classes} />
       <EconBowlSponsorUs classes={classes} />

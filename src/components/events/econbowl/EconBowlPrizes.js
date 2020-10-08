@@ -36,7 +36,7 @@ export default function EconBowlPrizes({ classes }) {
           <Grid item>
             <Box pb={0.13}>
               <Typography gutterBottom align="center" variant="h3">
-                2nd Annual EconBowl
+                EconBowl Prizes
               </Typography>
               <Typography align="center" variant="body1">
                 Each person will have the change to be entered into a raffle for

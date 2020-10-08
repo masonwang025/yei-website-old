@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   mobileFull: {
     [theme.breakpoints.down("xs")]: {
-      height: "calc(100vh - 56px)",
+      minHeight: "calc(100vh - 56px)",
     },
   },
   dark: {
@@ -44,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
   },
   darkGreen: {
     color: "rgb(27, 102, 67)",
+  },
+  econbowlSpeaker: {
+    borderRadius: "13%",
   },
   econbowlRecap: {
     background: theme.palette.secondary.darkest,
