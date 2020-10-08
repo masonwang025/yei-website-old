@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
 
 export default function EconBowlTeaser({ classes }) {
-  const mdDown = window.innerWidth <= 960;
   return (
     <Grid container alignContent="center" className={classes.darkMode}>
       <Container fixed>

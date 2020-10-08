@@ -39,6 +39,12 @@ const useStyles = makeStyles((theme) => ({
       height: "calc(100vh - 56px)",
     },
   },
+  dark: {
+    color: theme.palette.secondary.darkest,
+  },
+  darkGreen: {
+    color: "rgb(27, 102, 67)",
+  },
   econbowlRecap: {
     background: theme.palette.secondary.darkest,
     borderRadius: "2px",

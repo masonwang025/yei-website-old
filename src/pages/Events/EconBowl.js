@@ -4,8 +4,11 @@ import { Helmet } from "react-helmet";
 import useStyles from "../../styles/pages/econbowlStyles";
 import EconBowlHero from "../../components/events/econbowl/EconBowlHero";
 import EconBowlContent from "../../components/events/econbowl/EconBowlContent";
-import EconBowlIntro from "../../components/events/econbowl/EconBowlIntro";
+import EconBowlPrep from "../../components/events/econbowl/EconBowlPrep";
 import EconBowlTeaser from "../../components/events/econbowl/EconBowlTeaser";
+import EconBowlPrizes from "../../components/events/econbowl/EconBowlPrizes";
+import EconBowlSponsors from "../../components/events/econbowl/EconBowlSponsors";
+import EconBowlSponsorUs from "../../components/events/econbowl/EconBowlSponsorUs";
 
 export default function EconBowl() {
   const classes = useStyles();
@@ -22,7 +25,10 @@ export default function EconBowl() {
       </Helmet>
       <EconBowlHero classes={classes} />
       <EconBowlTeaser classes={classes} />
-      <EconBowlIntro classes={classes} />
+      <EconBowlPrep classes={classes} />
+      <EconBowlPrizes classes={classes} />
+      <EconBowlSponsors classes={classes} />
+      <EconBowlSponsorUs classes={classes} />
       <EconBowlContent classes={classes} />
     </Page>
   );
