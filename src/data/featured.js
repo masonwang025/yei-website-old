@@ -5,7 +5,7 @@ const featured = [
       "YEI’s Fall Competition, students compete in teams of 3 or 4 for a $1500 Prize Pool.  Competition consists of a Written Exam and Quiz Bowl Rounds. Presented with the Wen & Yung Family Foundation.",
     path: "/events/econbowl",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/home/econbowl.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/logos/econbowl.png",
   },
   {
     title: "EconOlympiad",
@@ -13,7 +13,7 @@ const featured = [
       "YEI’s Flagship Competition takes place every Spring.  Students compete in small teams to create comprehensive solutions and answer open ended questions. Exclusively available to YEI Members.",
     path: "/events/econolympiad",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econolympiad.png",
   },
   {
     title: "EconTalks",
@@ -21,7 +21,7 @@ const featured = [
       "YEI offers public, free speaker events and workshops featuring industry professionals, professors at prestigious universities, business leaders, and policymakers.",
     path: "/events/econtalks",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econtalks.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econtalks.png",
   },
   {
     title: "FLIP",
@@ -29,7 +29,7 @@ const featured = [
       "YEI’s Financial Literacy Introduction Program (FLIP) is the service arm of our organization.  Through FLIP, our members are empowered to educate their community on Financial Literacy with our comprehensive curriculum and support network.",
     path: "/programs",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/flip.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/flip.png",
   },
   {
     title: "EARN",
@@ -37,7 +37,7 @@ const featured = [
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
     path: "/programs",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/earn.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/earn.png",
   },
   {
     title: "SELC/WELC",

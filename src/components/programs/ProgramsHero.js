@@ -7,12 +7,12 @@ const programs = [
   {
     name: "FLIP",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/flip.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/flip.png",
   },
   {
     name: "EARN",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/earn.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/earn.png",
   },
 ];
 

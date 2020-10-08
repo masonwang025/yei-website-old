@@ -24,7 +24,7 @@ export default function EconBowlHero({ classes }) {
               <Image
                 alt="YEI - Youth Economics Initiative"
                 cloudName="masonwang"
-                publicId="yei-website/logos/econbowl-white.png"
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1602113541/yei-website/logos/econbowl-white.png"
                 className={classes.heroLogo}
               />
             </Grid>

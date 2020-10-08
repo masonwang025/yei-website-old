@@ -45,7 +45,7 @@ export default function EconOlympiad() {
                     style={{ width: "100%" }}
                     cloudName="masonwang"
                     alt="YEI EconOlympiad"
-                    publicId="https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png"
+                    publicId="https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econolympiad.png"
                   />
                 </Grid>
               </Grid>

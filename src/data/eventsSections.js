@@ -15,7 +15,7 @@ const events = [
       </Link>
     ),
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/home/econbowl.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/logos/econbowl.png",
   },
   {
     title: "EconOlympiad",
@@ -30,7 +30,7 @@ const events = [
     ),
     firstOnDesktop: true,
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econolympiad.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econolympiad.png",
   },
   {
     title: "EconTalks",
@@ -44,7 +44,7 @@ const events = [
       </Link>
     ),
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/home/econtalks.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econtalks.png",
   },
   {
     title: "Summer & Winter Economics Leadership Conferences",
