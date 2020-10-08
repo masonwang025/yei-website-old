@@ -39,7 +39,7 @@ export default function Clubs() {
         }
       />
       <PageSection
-        pt={4}
+        pt={2}
         light
         title="What are YEI EconClubs?"
         content={
