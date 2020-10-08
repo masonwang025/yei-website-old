@@ -11,7 +11,7 @@ export default function EconBowlHero({ classes }) {
       className={`${classes.heroBlack} ${classes.mobileFull}`}
     >
       <Container fixed>
-        <Box pt={mdDown ? 2 : 6} pb={mdDown ? 3 : 8}>
+        <Box pt={mdDown ? 5 : 6} pb={mdDown ? 7 : 8}>
           <Grid
             container
             direction={mdDown ? "column" : "row"}

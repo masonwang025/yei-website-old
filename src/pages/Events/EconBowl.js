@@ -5,6 +5,7 @@ import useStyles from "../../styles/pages/econbowlStyles";
 import EconBowlHero from "../../components/events/econbowl/EconBowlHero";
 import EconBowlContent from "../../components/events/econbowl/EconBowlContent";
 import EconBowlIntro from "../../components/events/econbowl/EconBowlIntro";
+import EconBowlTeaser from "../../components/events/econbowl/EconBowlTeaser";
 
 export default function EconBowl() {
   const classes = useStyles();
@@ -20,22 +21,9 @@ export default function EconBowl() {
         <link rel="icon" href="../../assets/favicon.ico" />
       </Helmet>
       <EconBowlHero classes={classes} />
+      <EconBowlTeaser classes={classes} />
       <EconBowlIntro classes={classes} />
       <EconBowlContent classes={classes} />
-      {/* <Box pt={6.9}>
-          <Grid container justify="center">
-            <Grid item>
-              <iframe
-                title="Second Annual EconBowl Teaser"
-                src="https://www.youtube.com/embed/3oiKAa7IIpc"
-                className={classes.econbowlRecap}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </Grid>
-          </Grid>
-        </Box> */}
     </Page>
   );
 }
