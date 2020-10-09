@@ -39,7 +39,7 @@ export default function EconBowlPrizes({ classes }) {
                 EconBowl Prizes
               </Typography>
               <Typography align="center" variant="body1">
-                Each person will have the change to be entered into a raffle for
+                Each person will have the chance to be entered into a raffle for
                 Google Home Minis just for competing!
               </Typography>
             </Box>
