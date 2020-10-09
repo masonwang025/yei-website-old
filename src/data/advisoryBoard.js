@@ -3,12 +3,6 @@ import React from "react";
 
 const advisoryBoard = [
   {
-    name: "George Bian",
-    title: "Co-founder & Former CEO, YEI; Student, MIT",
-    bio: "",
-    imgURL: "",
-  },
-  {
     name: "Dhananjay (Dan) Gode",
     title: "Clinical Professor of Accounting, NYU Stern",
     bio: (
@@ -77,6 +71,15 @@ const advisoryBoard = [
         </Typography>
       </>
     ),
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/j-d-schramm.jpg",
+  },
+  {
+    name: "George Bian",
+    title: "Co-founder & Former CEO, YEI; Student, MIT",
+    bio: "",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1602262759/yei-website/speakers/george-bian.png",
   },
 ];
 

@@ -1,6 +1,25 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  heroAdvisory: {
+    overflow: "hidden",
+    position: "relative",
+    background: "#293236dd",
+    "&::before": {
+      content: '""',
+      height: "100%",
+      width: "100%",
+      bottom: 0,
+      left: 0,
+      position: "absolute",
+      display: "block",
+      background: `#283034 url(https://res.cloudinary.com/masonwang/image/upload/v1600127326/yei-website/page-bg/general-bg.jpg)`,
+      backgroundPosition: "50% 50%",
+      zIndex: -1,
+      backgroundSize: "cover",
+      filter: "blur(1px)",
+    },
+  },
   hero: {
     overflow: "hidden",
     position: "relative",
