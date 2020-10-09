@@ -1,10 +1,10 @@
 import React from "react";
-import PageSection from "../components/PageSection";
-import Profiles from "../components/team/Profiles";
+import PageSection from "../../components/PageSection";
+import Profiles from "../../components/team/Profiles";
 import { Button } from "@material-ui/core";
 import { Helmet } from "react-helmet";
-import TeamHero from "../components/team/TeamHero";
-import useStyles from "../styles/pages/teamStyles";
+import TeamHero from "../../components/team/TeamHero";
+import useStyles from "../../styles/pages/teamStyles";
 
 export default function Team() {
   const classes = useStyles();

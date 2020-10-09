@@ -1,6 +1,7 @@
 // Page components
 import Home from "../pages/Home";
-import Team from "../pages/Team";
+import Team from "../pages/About/Team";
+import AdvisoryBoard from "../pages/About/AdvisoryBoard";
 import Events from "../pages/Events/Events";
 import EconTalks from "../pages/Events/EconTalks";
 import EconBowl from "../pages/Events/EconBowl";
@@ -23,7 +24,18 @@ const routes = [
       },
     ],
   },
-  { path: "/team", Component: Team, name: "Team" },
+  {
+    path: "/team",
+    name: "About",
+    dropRoutes: [
+      { path: "/team", Component: Team, name: "Team" },
+      {
+        path: "/advisory-board",
+        Component: AdvisoryBoard,
+        name: "Advisory Board",
+      },
+    ],
+  },
   {
     path: "/events",
     name: "Events",
