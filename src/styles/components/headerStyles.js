@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
       transition: "0.25s ease-in-out",
       backgroundColor: theme.palette.secondary.dark,
       content: '""',
-      zIndex: -10,
+      zIndex: 1,
       display: "block",
       bottom: "0",
       position: "absolute",
@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottomRightRadius: "4px",
     },
     "&:hover": {
-      backgroundColor: "inherit",
+      backgroundColor: "white",
       "&::before": {
         width: "100%",
       },

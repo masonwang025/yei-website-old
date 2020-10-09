@@ -28,3 +28,9 @@ button {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+navLink {
+  &:hover {
+    background-color: white !important;
+  }
+}
