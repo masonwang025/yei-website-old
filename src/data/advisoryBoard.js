@@ -4,7 +4,7 @@ import React from "react";
 const advisoryBoard = [
   {
     name: "Dhananjay (Dan) Gode",
-    title: "Clinical Professor of Accounting, NYU Stern",
+    title: "Clinical Professor of Accounting at NYU Stern",
     bio: (
       <>
         <Typography variant="body1" gutterBottom>
@@ -43,7 +43,7 @@ const advisoryBoard = [
   {
     name: "J.D. Schramm",
     title:
-      "Lecturer, Stanford University; Founder of the Mastery in Communication Initiative, Stanford’s Graduate School of Business, Author",
+      "Lecturer at Stanford University, Founder of the Mastery in Communication Initiative, Author",
     bio: (
       <>
         <Typography variant="body1" gutterBottom>
@@ -76,8 +76,18 @@ const advisoryBoard = [
   },
   {
     name: "George Bian",
-    title: "Co-founder & Former CEO, YEI; Student, MIT",
-    bio: (<Typography variant="body1" gutterBottom>George Bian is a first year student at Massachusetts Institute of Technology, studying Computer Science, Economics, and Management. He graduated from Saratoga High School in 2020 and was the former co-founded and CEO of YEI from 2018 until 2020.</Typography>),
+    title: "Co-founder & Former CEO of YEI, Student at MIT",
+    bio: (
+      <Typography variant="body1" gutterBottom>
+        George Bian is a first-year student at Massachusetts Institute of
+        Technology, studying Computer Science, Economics, and Management. He
+        graduated from Saratoga High School in 2020 and was the former
+        co-founder and CEO of YEI from 2018 until 2020. George was also the ASB
+        Student Body President at Saratoga High School, was ranked 5th in
+        Economics at FBLA Nationals, and worked as a Bank of America Student
+        Leader.
+      </Typography>
+    ),
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1602262759/yei-website/speakers/george-bian.png",
   },
