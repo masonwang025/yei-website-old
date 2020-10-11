@@ -19,7 +19,12 @@ export default function SpeakerProfile({
         alignItems="center"
       >
         <Grid item>
-          <Avatar className={classes.avatar} alt={name} src={imgURL} />
+          <Avatar
+            className={classes.avatar}
+            alt={name}
+            src={imgURL}
+            style={{ background: "#0d242b" }}
+          />
         </Grid>
         <Grid item>
           <Typography variant="h5">{name}</Typography>

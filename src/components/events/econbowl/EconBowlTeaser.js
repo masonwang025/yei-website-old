@@ -14,9 +14,24 @@ export default function EconBowlTeaser({ classes }) {
             spacing={2}
           >
             <Grid item>
-              <Typography gutterBottom align="center" variant="h3">
+              <Typography align="center" variant="h3">
                 2nd Annual EconBowl{" "}
               </Typography>
+            </Grid>
+            <Grid item>
+              <Typography align="center" variant="h5">
+                November 8th, 2020
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Box mb={2.69}>
+                <Typography gutterBottom variant="body1" align="center">
+                  The entire competition runs from{" "}
+                  <b>9:00am PST to 1:15pm PST</b> with written round going from
+                  9:00am PST to 11:30am PST and the QuizBowl round going from
+                  11:45am PST to 1:15pm PST.
+                </Typography>
+              </Box>
             </Grid>
             <Grid item>
               <iframe
