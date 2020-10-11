@@ -77,7 +77,7 @@ const advisoryBoard = [
   {
     name: "George Bian",
     title: "Co-founder & Former CEO, YEI; Student, MIT",
-    bio: "",
+    bio: (<Typography variant="body1" gutterBottom>George Bian is a first year student at Massachusetts Institute of Technology, studying Computer Science, Economics, and Management. He graduated from Saratoga High School in 2020 and was the former co-founded and CEO of YEI from 2018 until 2020.</Typography>),
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1602262759/yei-website/speakers/george-bian.png",
   },
