@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import OpenForm from "../clubs/OpenForm";
 import ApplyFor from "./ApplyFor";
+import { Image } from "cloudinary-react";
 
 const appCriteria = [
   "History of club excellence",
@@ -29,6 +30,30 @@ export default function FLIPAbout({ classes }) {
             </Typography>
           </Grid>
         </Grid>
+
+        <Box pt={8}>
+          <Grid
+            container
+            direction="column"
+            spacing={3}
+            alignItems="center"
+            justify="center"
+          >
+            <Grid item>
+              <Typography align="center" variant="h3">
+                Developed in Partnership With
+              </Typography>
+            </Grid>
+            <Grid item xs={10} sm={8} md={8} lg={4}>
+              <Image
+                alt="YEI EARN"
+                cloudName="masonwang"
+                style={{ width: "100%" }}
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1602732343/yei-website/supporters/boa.png"
+              />
+            </Grid>
+          </Grid>
+        </Box>
         <Box pt={8} pb={9.5}>
           <Grid container direction="column" spacing={2} alignItems="center">
             <Grid item>
