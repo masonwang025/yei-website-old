@@ -43,9 +43,32 @@ export default function FLIPHero({ classes }) {
                 publicId="https://res.cloudinary.com/masonwang/image/upload/v1600099715/yei-website/programs/flip.jpg"
                 style={{ backgroundColor: "#0d242b" }}
               />
-            </Box>
+            </Box>{" "}
           </Grid>
         </Grid>
+        <Box pt={6.9} pb={2.5}>
+          <Grid
+            container
+            direction="column"
+            spacing={3}
+            alignItems="center"
+            justify="center"
+          >
+            <Grid item>
+              <Typography align="center" variant="h3">
+                Developed in Partnership With
+              </Typography>
+            </Grid>
+            <Grid item xs={10} sm={8} md={8} lg={4}>
+              <Image
+                alt="YEI EARN"
+                cloudName="masonwang"
+                style={{ width: "100%" }}
+                publicId="https://res.cloudinary.com/masonwang/image/upload/v1602732343/yei-website/supporters/boa.png"
+              />
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
     </Box>
   );
