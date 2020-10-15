@@ -47,8 +47,8 @@ export default function EconBowlSpeaker({ classes }) {
               He received his Ph.D. in Economics from Harvard University and now
               holds the Robert Kavesh Professorship in Economics. His primary
               research interests are financial regulation, antitrust, and
-              applied macroeconomics. He will come talk with us at the written
-              round.
+              applied macroeconomics. He will come talk with us at the end of
+              the written round.
             </Typography>
           </Grid>
         </Grid>

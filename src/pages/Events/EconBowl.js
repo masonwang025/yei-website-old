@@ -3,13 +3,14 @@ import Page from "../../components/Page";
 import { Helmet } from "react-helmet";
 import useStyles from "../../styles/pages/econbowlStyles";
 import EconBowlHero from "../../components/events/econbowl/EconBowlHero";
-import EconBowlContent from "../../components/events/econbowl/EconBowlContent";
+import EconBowlRecap from "../../components/events/econbowl/EconBowlRecap";
 import EconBowlPrep from "../../components/events/econbowl/EconBowlPrep";
 import EconBowlTeaser from "../../components/events/econbowl/EconBowlTeaser";
 import EconBowlPrizes from "../../components/events/econbowl/EconBowlPrizes";
 import EconBowlSponsors from "../../components/events/econbowl/EconBowlSponsors";
 import EconBowlSponsorUs from "../../components/events/econbowl/EconBowlSponsorUs";
 import EconBowlSpeaker from "../../components/events/econbowl/EconBowlSpeaker";
+import EconBowlAgenda from "../../components/events/econbowl/EconBowlAgenda";
 
 export default function EconBowl() {
   const classes = useStyles();
@@ -26,12 +27,13 @@ export default function EconBowl() {
       </Helmet>
       <EconBowlHero classes={classes} />
       <EconBowlTeaser classes={classes} />
+      <EconBowlAgenda classes={classes} />
       <EconBowlPrep classes={classes} />
       <EconBowlSpeaker classes={classes} />
       <EconBowlPrizes classes={classes} />
       <EconBowlSponsors classes={classes} />
       <EconBowlSponsorUs classes={classes} />
-      <EconBowlContent classes={classes} />
+      <EconBowlRecap classes={classes} />
     </Page>
   );
 }

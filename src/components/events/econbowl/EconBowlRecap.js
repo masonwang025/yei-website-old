@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 
-export default function EconBowlContent({ classes }) {
+export default function EconBowlRecap({ classes }) {
   return (
     <Box pt={8.1} pb={8.42} className={classes.lightMode}>
       <Container fixed>
