@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       borderBottomRightRadius: "4px",
     },
     "&:hover": {
-      backgroundColor: "white",
+      backgroundColor: "white !important",
       "&::before": {
         width: "100%",
       },
