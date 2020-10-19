@@ -8,7 +8,18 @@ import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 import routes from "./data/routes";
 import redirectRoutes from "./data/redirectRoutes";
 
+import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("UA-180848278-1");
+
 function App() {
+  const location = useLocation();
+  // Fired on every route change
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
   // window resizing
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
