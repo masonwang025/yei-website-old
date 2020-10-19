@@ -252,6 +252,20 @@ const clubs = [
     imgURL:
       "https://www.fox46.com/wp-content/uploads/sites/109/2020/03/Charlotte-Country-Day-School.jpg",
   },
+  {
+    chapter: "GEMS Modern Academy",
+    email: "zahidahmed1420@gmail.com",
+    region: "United Arab Emirates",
+    imgURL:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5Uc0RM1zV5NFD4SnwA5d5FIzxbddXWyIKdQ&usqp=CAU",
+  },
+  {
+    chapter: "Obra D. Tompkins High School",
+    email: "othsyei@gmail.com",
+    region: "Texas",
+    imgURL:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Obra_D._Tompkins_High_School.jpg",
+  },
 ];
 
 export default clubs;
