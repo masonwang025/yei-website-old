@@ -239,11 +239,18 @@ const clubs = [
       "https://res.cloudinary.com/masonwang/image/upload/v1601574555/yei-website/clubs/allen-high-school.jpg",
   },
   {
-    chapter: "Brothell High School",
+    chapter: "Bothell High School",
     email: "1118836@apps.nsd.org",
     region: "Washington",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1601574733/yei-website/clubs/bothell-high-school.jpg",
+  },
+  {
+    chapter: "Charlotte Country Day",
+    email: "MKoya21@charlottecountryday.org",
+    region: "North Carolina",
+    imgURL:
+      "https://www.fox46.com/wp-content/uploads/sites/109/2020/03/Charlotte-Country-Day-School.jpg",
   },
 ];
 
