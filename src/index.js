@@ -9,6 +9,18 @@ import theme from "./styles/theme";
 import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider } from "@material-ui/core/styles";
 
+import { createBrowserHistory } from "history";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("UA-180848278-1");
+
+const history = createBrowserHistory();
+
+history.listen((location) => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(window.location.pathname + window.location.search); // Record a pageview for the given page
+});
+
 ReactDOM.render(
   <Router>
     <ThemeProvider theme={theme}>
