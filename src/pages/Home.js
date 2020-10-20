@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import HomeHero from "../components/home/HomeHero";
 import { Helmet } from "react-helmet";
 
@@ -7,12 +7,27 @@ import HomeAsSeenOn from "../components/home/HomeAsSeenOn";
 import HomeNumbers from "../components/home/HomeNumbers";
 import OpenForm from "../components/clubs/OpenForm";
 import HomeAbout from "../components/home/HomeAbout";
+import HomeCtaModal from "../components/home/HomeCtaModal";
 import HomeEconClubs from "../components/home/HomeEconClubs";
 import HomeEventsAndIniatives from "../components/home/HomeEventsAndInitiatives";
 import HomeSupporters from "../components/home/HomeSupporters";
+import { CtaPopupContext } from "../contexts/CtaPopupContext";
 
 export default function Home() {
   const classes = useStyles();
+
+  const { popupShown, updatePopupShown, setOpen } = useContext(CtaPopupContext);
+
+  useEffect(() => {
+    if (!popupShown) {
+      setTimeout(() => {
+        setOpen(true);
+        updatePopupShown(true);
+      }, 3000);
+    } else {
+      setOpen(false);
+    } // eslint-disable-next-line
+  }, []);
 
   return (
     <div>
@@ -29,6 +44,7 @@ export default function Home() {
       </Helmet>
       <OpenForm />
       <HomeHero classes={classes} />
+      <HomeCtaModal />
       <HomeAbout classes={classes} />
       <HomeAsSeenOn classes={classes} />
       <HomeEconClubs classes={classes} />

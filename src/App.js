@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer";
 import RegisterFormContextProvider from "./contexts/RegisterFormContext";
+import CtaPopupContextProvider from "./contexts/CtaPopupContext";
 
 import routes from "./data/routes";
 import redirectRoutes from "./data/redirectRoutes";
@@ -65,36 +66,38 @@ function App() {
         ))}
 
         <Route path="/">
-          <RegisterFormContextProvider>
-            <ScrollToTop />
-            <Header />
-            <div className="App">
-              <Switch>
-                {routes.map(({ path, Component, dropRoutes }) => {
-                  if (!dropRoutes)
-                    return (
-                      <Route key={path} exact path={path}>
-                        <Component />
-                      </Route>
-                    );
-                  else {
-                    return dropRoutes.map((dropRoute) => (
-                      <Route
-                        key={path + dropRoute.path}
-                        exact
-                        path={path + dropRoute.path}
-                      >
-                        <dropRoute.Component />
-                      </Route>
-                    ));
-                  }
-                })}
+          <CtaPopupContextProvider>
+            <RegisterFormContextProvider>
+              <ScrollToTop />
+              <Header />
+              <div className="App">
+                <Switch>
+                  {routes.map(({ path, Component, dropRoutes }) => {
+                    if (!dropRoutes)
+                      return (
+                        <Route key={path} exact path={path}>
+                          <Component />
+                        </Route>
+                      );
+                    else {
+                      return dropRoutes.map((dropRoute) => (
+                        <Route
+                          key={path + dropRoute.path}
+                          exact
+                          path={path + dropRoute.path}
+                        >
+                          <dropRoute.Component />
+                        </Route>
+                      ));
+                    }
+                  })}
 
-                <Redirect to="/" />
-              </Switch>
-            </div>
-            <Footer />
-          </RegisterFormContextProvider>
+                  <Redirect to="/" />
+                </Switch>
+              </div>
+              <Footer />
+            </RegisterFormContextProvider>
+          </CtaPopupContextProvider>
         </Route>
       </Switch>
     </div>
