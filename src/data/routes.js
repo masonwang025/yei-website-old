@@ -36,6 +36,7 @@ const routes = [
       },
     ],
   },
+  { path: "/econbowl", Component: EconBowl },
   {
     path: "/events",
     name: "Events",

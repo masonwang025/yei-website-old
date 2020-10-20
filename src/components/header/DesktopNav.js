@@ -9,7 +9,7 @@ export default function DesktopNav({ classes, currPath }) {
   return (
     <Hidden smDown>
       {routes.map((route) => {
-        if (!route.dropRoutes)
+        if (!route.dropRoutes && route.name)
           return (
             <Link to={route.path} key={route.path + route.name}>
               <Button
@@ -23,7 +23,7 @@ export default function DesktopNav({ classes, currPath }) {
               </Button>
             </Link>
           );
-        else
+        else if (route.name)
           return (
             <DropdownMenu
               key={route.name + route.path}
@@ -32,6 +32,7 @@ export default function DesktopNav({ classes, currPath }) {
               currPath={currPath}
             />
           );
+        else return <></>;
       })}
       <CallToActionButton classes={classes} />
     </Hidden>
