@@ -8,10 +8,10 @@ import CallToActionButton from "./CallToActionButton";
 export default function DesktopNav({ classes, currPath }) {
   return (
     <Hidden smDown>
-      {routes.map((route) => {
+      {routes.map((route, index) => {
         if (!route.dropRoutes && route.name)
           return (
-            <Link to={route.path} key={route.path + route.name}>
+            <Link to={route.path} key={index + route.path + route.name}>
               <Button
                 aria-label={`navigate to ${route.name}`}
                 disableRipple
@@ -26,13 +26,13 @@ export default function DesktopNav({ classes, currPath }) {
         else if (route.name)
           return (
             <DropdownMenu
-              key={route.name + route.path}
+              key={route.name + route.path + index}
               route={route}
               classes={classes}
               currPath={currPath}
             />
           );
-        else return <></>;
+        else return <span key={index}></span>;
       })}
       <CallToActionButton classes={classes} />
     </Hidden>

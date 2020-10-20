@@ -11,6 +11,7 @@ import EconBowlSponsors from "../../components/events/econbowl/EconBowlSponsors"
 import EconBowlSponsorUs from "../../components/events/econbowl/EconBowlSponsorUs";
 import EconBowlSpeaker from "../../components/events/econbowl/EconBowlSpeaker";
 import EconBowlAgenda from "../../components/events/econbowl/EconBowlAgenda";
+import EconBowlFAQ from "../../components/events/econbowl/EconBowlFAQ";
 
 export default function EconBowl() {
   const classes = useStyles();
@@ -31,6 +32,7 @@ export default function EconBowl() {
       <EconBowlPrep classes={classes} />
       <EconBowlSpeaker classes={classes} />
       <EconBowlPrizes classes={classes} />
+      <EconBowlFAQ classes={classes} />
       <EconBowlSponsors classes={classes} />
       <EconBowlSponsorUs classes={classes} />
       <EconBowlRecap classes={classes} />

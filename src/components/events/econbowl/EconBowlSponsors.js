@@ -5,7 +5,7 @@ import { Image } from "cloudinary-react";
 export default function EconBowlSponsors({ classes }) {
   const mdDown = window.innerWidth <= 960;
   return (
-    <Box pt={8} pb={mdDown ? 6 : 3.25} className={classes.lightMode}>
+    <Box pt={8} pb={mdDown ? 6 : 3.25}>
       <Container fixed>
         <Grid container direction="column">
           <Grid item>

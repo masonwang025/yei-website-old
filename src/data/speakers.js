@@ -103,6 +103,33 @@ const speakers = [
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/dhanjanay-dan-gode.jpg",
   },
+  {
+    date: "October 10, 2020",
+    name: "George J. Mailath",
+    occupation: "Professorof Economics @ UPENN",
+    bio:
+      "George J. Mailath is Walter H. Annenberg Professor in the Social Sciences and Professor of Economics at the University of Pennsylvania, and Goldsmith Professor in the Research School of Economics, Australian National University. Professor Mailath’s published research in microeconomics includes papers on pricing, noncooperative game theory, evolutionary game theory, repeated games, social norms, and the theory of reputations.  He is a Fellow of the American Academy of Arts & Sciences, the Econometric Society, the Society for the Advancement of Economic Theory, and the Game Theory Society.",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1603224877/yei-website/speakers/george-j-mailath.jpg",
+  },
+  {
+    date: "October 10, 2020",
+    name: "Leeat Yariv",
+    occupation: "Professor of Economics @ Princeton",
+    bio:
+      "Leeat Yariv is the Uwe E. Reinhardt Professor of Economics at Princeton University, a Research Fellow of CEPR, and a Research Associate of NBER. She is the founder and director of the Princeton Experimental Laboratory for the Social Sciences (PExL). Yariv is a fellow of the Econometric Society and the Society for the Advancement of Economic Theory. She has served on various journal editorial boards, including the American Economic Review, Econometrica, Games and Economic Behavior, Journal of Economic Literature, and Quantitative Economics.",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1603224875/yei-website/speakers/leeat-yariv.jpg",
+  },
+  {
+    date: "October 10, 2020",
+    name: "Paul R. Milgrom",
+    occupation: "2020 Nobel Prize Laureate & Professor @ Stanford",
+    bio:
+      "Milgrom is best known for his contributions to the theory of auctions and auction design, for which he won the 2020 Nobel Prize in Economics. Much of his work on auction theory is summarized in his book, Putting Auction Theory to Work, published by Cambridge University Press. He is the Shirley and Leonard Ely professor of Humanities and Sciences in the department of economics and professor by courtesy at Stanford Graduate School of Business. He is also a member of the National Academy of Sciences, a fellow of the American Academy of Arts and Sciences, and director of the Market Design program at SIEPR.  ",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1603224875/yei-website/speakers/paul-r-milgrom.jpg",
+  },
 ];
 
 export default speakers;

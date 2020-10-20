@@ -41,10 +41,10 @@ export default function MobileNav({
       >
         <div role="presentation" onKeyDown={() => setDrawerOpen(false)}>
           <List className={classes.list}>
-            {routes.map((route) => {
+            {routes.map((route, index) => {
               if (!route.dropRoutes && route.name)
                 return (
-                  <Link key={route.path} to={route.path}>
+                  <Link key={index + route.path} to={route.path}>
                     <ListItem
                       className={`${classes.listItem} ${
                         currPath === route.path && "active"
@@ -59,14 +59,14 @@ export default function MobileNav({
               else if (route.name)
                 return (
                   <NestedListNav
-                    key={route.path + route.name}
+                    key={route.path + index}
                     route={route}
                     classes={classes}
                     currPath={currPath}
                     setDrawerOpen={setDrawerOpen}
                   />
                 );
-              else return <></>;
+              else return <span key={index}></span>;
             })}
           </List>
         </div>

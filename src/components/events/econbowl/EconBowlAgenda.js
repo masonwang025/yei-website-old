@@ -63,6 +63,22 @@ export default function EconBowlAgenda({ classes }) {
             </Box>
           </Grid>
         </Grid>
+        <Box pt={3}>
+          <Typography variant="body1">
+            <b>
+              For competition structure and round details, see the{" "}
+              <a
+                href="https://docs.google.com/document/d/1PsFf-NWwelRNSfVdKcW2rn-mTQvF39fIOiDQjzzx-kM/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline bold"
+              >
+                rulebook
+              </a>
+            </b>
+            .
+          </Typography>
+        </Box>
       </Container>
     </Box>
   );
