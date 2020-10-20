@@ -78,15 +78,15 @@ export default function HomeCtaModal() {
                   </Grid>
                   <Grid item>
                     <Box mt={1}>
-                      <Button
-                        onClick={() => setOpen(false)}
-                        color="primary"
-                        variant="contained"
-                      >
-                        <Link className="white" to="/events/econbowl">
+                      <Link className="white" to="/events/econbowl">
+                        <Button
+                          onClick={() => setOpen(false)}
+                          color="primary"
+                          variant="contained"
+                        >
                           Sign Up Now
-                        </Link>
-                      </Button>
+                        </Button>
+                      </Link>
                     </Box>
                   </Grid>
                 </Grid>
