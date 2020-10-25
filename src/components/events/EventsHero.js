@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
+import { Container, Grid, Typography, Box } from "@material-ui/core";
 
 export default function EventsHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
