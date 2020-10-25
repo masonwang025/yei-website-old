@@ -61,7 +61,10 @@ function App() {
             exact
             key={redirect.path}
             path={redirect.path}
-            render={() => (window.location.href = redirect.redirectLink)}
+            render={() => {
+              window.location.href = redirect.redirectLink;
+              return <></>;
+            }}
           />
         ))}
 
