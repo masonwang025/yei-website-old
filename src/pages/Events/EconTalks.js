@@ -20,7 +20,7 @@ export default function EconTalks() {
       </Helmet>
       <PageHero
         title="YEI EconTalks"
-        paragraph="Hear from guest speakers from institutions such as NYU Stern, UPenn, EPA & UVA about the impact current events or trends have on the economy."
+        paragraph="Hear from our guest speakers."
         imgURL="https://res.cloudinary.com/masonwang/image/upload/v1599405239/yei-website/manypixels-isometric/econTalksHero.png"
       />
       <PastSpeakers classes={classes} />
