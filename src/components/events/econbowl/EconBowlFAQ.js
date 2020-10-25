@@ -51,7 +51,7 @@ const faqs = [
         <a
           href="mailto:events@theyei.org"
           target="_blank"
-          class="underline"
+          className="underline"
           rel="noopener noreferrer"
         >
           events@theyei.org
@@ -119,6 +119,7 @@ export default function EconBowlFAQ({ classes }) {
         </Box>
         {faqs.map((faq, index) => (
           <Accordion
+            key={faq + " " + index}
             expanded={expanded === "panel" + index}
             onChange={handleChange("panel" + index)}
           >

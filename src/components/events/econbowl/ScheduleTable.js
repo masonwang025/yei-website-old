@@ -42,8 +42,8 @@ export default function ScheduleTable({ rows }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
+          {rows.map((row, index) => (
+            <StyledTableRow key={row.name + " " + index}>
               <StyledTableCell align="left">{row.time}</StyledTableCell>
               <StyledTableCell align="left">{row.event}</StyledTableCell>
             </StyledTableRow>

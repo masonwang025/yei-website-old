@@ -36,11 +36,7 @@ const useStyles = makeStyles((theme) => ({
   eventsHero: {
     overflow: "hidden",
     position: "relative",
-    background: "#0d242bdd",
-    minHeight: "calc(100vh - 64px)",
-    [theme.breakpoints.down("md")]: {
-      minHeight: "calc(100vh - 56px)",
-    },
+    background: "#0d242bf1",
     "&::before": {
       content: '""',
       height: "100%",

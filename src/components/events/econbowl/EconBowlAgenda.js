@@ -71,7 +71,7 @@ export default function EconBowlAgenda({ classes }) {
                 href="https://docs.google.com/document/d/1PsFf-NWwelRNSfVdKcW2rn-mTQvF39fIOiDQjzzx-kM/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="underline bold"
+                className="underline bold"
               >
                 rulebook
               </a>
