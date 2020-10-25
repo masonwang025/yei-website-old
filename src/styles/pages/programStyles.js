@@ -6,10 +6,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.brighter,
   },
   hero: {
-    minHeight: "calc(100vh - 64px)",
-    [theme.breakpoints.down("md")]: {
-      minHeight: "calc(100vh - 56px)",
-    },
     overflow: "hidden",
     position: "relative",
     background: "#ffffffdd",
