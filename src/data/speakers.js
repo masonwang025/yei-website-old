@@ -20,7 +20,7 @@ const speakers = [
   {
     date: "October 10, 2020",
     name: "George J. Mailath",
-    occupation: "Professor of Economics @ UPENN",
+    occupation: "Professor of Economics @ University of Pennsylvania",
     bio:
       "George J. Mailath is Walter H. Annenberg Professor in the Social Sciences and Professor of Economics at the University of Pennsylvania, and Goldsmith Professor in the Research School of Economics, Australian National University. Professor Mailath’s published research in microeconomics includes papers on pricing, noncooperative game theory, evolutionary game theory, repeated games, social norms, and the theory of reputations.  He is a Fellow of the American Academy of Arts & Sciences, the Econometric Society, the Society for the Advancement of Economic Theory, and the Game Theory Society.",
     imgURL:

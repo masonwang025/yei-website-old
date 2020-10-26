@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   eventsHero: {
     overflow: "hidden",
     position: "relative",
-    background: "#0d242bf1",
+    background: "#0d242bf0",
     "&::before": {
       content: '""',
       height: "100%",
