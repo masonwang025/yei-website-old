@@ -64,15 +64,14 @@ function App() {
             render={() => {
               window.location.href = redirect.redirectLink;
               return (
-                <span
+                <div
                   style={{
                     padding: "0.25em 0.3em",
                     fontSize: "1.25em",
-                    display: "block",
                   }}
                 >
                   Redirecting you...
-                </span>
+                </div>
               );
             }}
           />
