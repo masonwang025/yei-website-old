@@ -21,7 +21,7 @@ export default function EconBowlPrep({ classes }) {
             <Typography variant="body1" gutterBottom>
               Take our{" "}
               <a
-                href="http://tinyurl.com/practiceset1"
+                href="https://docs.google.com/document/d/1ad3zJGWHnOFBCEzOVY3OZL6N3R4I4t79rmFC5PtCoXs/edit?usp=sharing"
                 style={{ color: "black" }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function EconBowlPrep({ classes }) {
               <Grid container spacing={1} alignItems="center">
                 <Grid item>
                   <a
-                    href="http://tinyurl.com/practiceset1"
+                    href="https://docs.google.com/document/d/1ad3zJGWHnOFBCEzOVY3OZL6N3R4I4t79rmFC5PtCoXs/edit?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
