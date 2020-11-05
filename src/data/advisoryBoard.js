@@ -75,6 +75,42 @@ const advisoryBoard = [
       "https://res.cloudinary.com/masonwang/image/upload/v1600135591/yei-website/speakers/j-d-schramm.jpg",
   },
   {
+    name: "Ted Tucker",
+    title: "Executive Director of FTE",
+    bio: (
+      <>
+        <Typography variant="body1" gutterBottom>
+          Ted Tucker has more than 20 years of management and marketing
+          experience in the education leadership space. A firm believer in the
+          power of the economic way of thinking, Ted continuously looks for
+          innovative opportunities to educate individuals, both Americans and
+          citizens from around the world, on how embracing this thinking will
+          enrich their lives.
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          As the executive director of TFAS’s high school programs, the
+          Foundation for Teaching Economics (FTE), Ted has delivered significant
+          revenue and enrollment growth by incorporating data driven marketing,
+          diversifying programming, and most importantly, managing a highly
+          motivated and productive team. Before joining FTE, he served as the
+          associate director of the Center for Language Studies at Beloit
+          College.
+        </Typography>
+        <Typography variant="body1" gutterBottom>
+          Ted received his master’s degree from Kansas State University, his
+          bachelor’s from UC Davis and his teaching certificate from Rockford
+          College. In addition to his work at FTE, he serves on the Davis Joint
+          Unified School District’s $150 million Bond Oversight Committee, and
+          is the President of the Willett Elementary Site Council. He and his
+          wife, Jennifer, are currently raising two young boys, which Ted
+          considers his most important responsibility.
+        </Typography>
+      </>
+    ),
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604595069/yei-website/speakers/ted-tucker.png",
+  },
+  {
     name: "George Bian",
     title: "Co-founder & Former CEO of YEI, Student at MIT",
     bio: (
