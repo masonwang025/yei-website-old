@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import { Image } from "cloudinary-react";
-import OpenForm from "../clubs/OpenForm";
-import ApplyFor from "./ApplyFor";
+import OpenForm from "../../clubs/OpenForm";
+import ApplyFor from "../ApplyFor";
 
-export default function EARNHero({ classes }) {
+export default function EarnIntro({ classes }) {
   return (
     <Box id="EARN" pt={window.innerWidth < 960 ? 9 : 12}>
       <Container fixed>

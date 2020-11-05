@@ -56,9 +56,6 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     width: "55px",
   },
-  earnBg: {
-    backgroundColor: "#efefef",
-  },
   flipBg: {
     backgroundColor: "white",
   },

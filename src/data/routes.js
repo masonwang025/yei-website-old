@@ -8,7 +8,8 @@ import EconBowl from "../pages/Events/EconBowl";
 import EconOlympiad from "../pages/Events/EconOlympiad";
 import Clubs from "../pages/Clubs/Clubs";
 import CurrentClubs from "../pages/Clubs/CurrentClubs";
-import Programs from "../pages/Programs";
+import FLIP from "../pages/Programs/FLIP";
+import EARN from "../pages/Programs/EARN";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
@@ -51,7 +52,14 @@ const routes = [
       },
     ],
   },
-  { path: "/programs", Component: Programs, name: "Programs" },
+  {
+    path: "/programs",
+    name: "Programs",
+    dropRoutes: [
+      { path: "/flip", Component: FLIP, name: "FLIP" },
+      { path: "/earn", Component: EARN, name: "EARN" },
+    ],
+  },
 ];
 
 export default routes;

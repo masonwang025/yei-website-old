@@ -28,8 +28,11 @@ export default function EarnBenefits() {
                     "By joining the EARN program, you’ll become part of a curated community of highly motivated economics students. EARN members will have the opportunity to expand their network by connecting with fellow economics enthusiasts, researchers, and interns.",
                 },
               ].map((reason) => (
-                <Grid key={reason.title} item xs={12} md={4}>
-                  <Paper style={{ height: "100%" }}>
+                <Grid key={reason.title} item xs={12}>
+                  <Paper
+                    style={{ height: "100%", background: "#efefef" }}
+                    elevation={0}
+                  >
                     <Box p={3}>
                       <Typography gutterBottom variant="h6">
                         {reason.title}

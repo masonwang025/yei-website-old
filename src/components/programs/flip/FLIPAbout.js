@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
-import OpenForm from "../clubs/OpenForm";
-import ApplyFor from "./ApplyFor";
+import OpenForm from "../../clubs/OpenForm";
+import ApplyFor from "../ApplyFor";
 import { Image } from "cloudinary-react";
 
 const appCriteria = [
@@ -31,7 +31,7 @@ export default function FLIPAbout({ classes }) {
           </Grid>
         </Grid>
 
-        <Box pt={8}>
+        <Box pt={8} pb={8}>
           <Grid
             container
             direction="column"
@@ -54,44 +54,48 @@ export default function FLIPAbout({ classes }) {
             </Grid>
           </Grid>
         </Box>
-        <Box pt={8} pb={9.5}>
-          <Grid container direction="column" spacing={2} alignItems="center">
-            <Grid item>
-              <Typography align="center" variant="h3">
-                Application Criteria
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Typography align="center" variant="h6">
-                EconClub applications for FLIP are evaluated on the following
-                criteria:
-              </Typography>
-            </Grid>
-            <Grid item>
-              <Grid container justify="center" alignItems="flex-start">
-                {appCriteria.map((criteria, index) => (
-                  <Grid key={index} item sm={6} md={3}>
-                    <Grid container direction="column" spacing={1}>
-                      <Grid align="center" item>
-                        <div className={classes.appNumbers}>{index + 1}</div>
-                      </Grid>
-                      <Grid align="center" item>
-                        <Typography gutterBottom variant="body1">
-                          {criteria}
-                        </Typography>
+      </Container>
+      <Box style={{ background: "#efefef" }}>
+        <Container>
+          <Box pt={8} pb={9.5}>
+            <Grid container direction="column" spacing={2} alignItems="center">
+              <Grid item>
+                <Typography align="center" variant="h3">
+                  Application Criteria
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Typography align="center" variant="h6">
+                  EconClub applications for FLIP are evaluated on the following
+                  criteria:
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Grid container justify="center" alignItems="flex-start">
+                  {appCriteria.map((criteria, index) => (
+                    <Grid key={index} item sm={6} md={3}>
+                      <Grid container direction="column" spacing={1}>
+                        <Grid align="center" item>
+                          <div className={classes.appNumbers}>{index + 1}</div>
+                        </Grid>
+                        <Grid align="center" item>
+                          <Typography gutterBottom variant="body1">
+                            {criteria}
+                          </Typography>
+                        </Grid>
                       </Grid>
                     </Grid>
-                  </Grid>
-                ))}
+                  ))}
+                </Grid>
+              </Grid>
+              <Grid item>
+                <ApplyFor program="FLIP" color="primary" />
               </Grid>
             </Grid>
-            <Grid item>
-              <ApplyFor program="FLIP" color="primary" />
-            </Grid>
-          </Grid>
-        </Box>
-      </Container>
-      <Box className={classes.darkMode} pt={7.5} pb={8.5}>
+          </Box>
+        </Container>
+      </Box>
+      <Box pt={7.5} pb={8.5}>
         <Container>
           <Grid container direction="column" spacing={2}>
             <Grid item>
