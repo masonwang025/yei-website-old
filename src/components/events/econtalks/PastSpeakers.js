@@ -27,6 +27,7 @@ export default function PastSpeakers({ classes }) {
                   date={speaker.date}
                   imgURL={imgURL}
                   occupation={speaker.occupation}
+                  vid={speaker.vids ? speaker.vids[0] : null}
                 />
               </Grid>
             );

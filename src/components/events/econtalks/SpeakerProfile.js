@@ -1,6 +1,9 @@
 import { Avatar, Box, Typography, Grid } from "@material-ui/core";
 import React, { useState } from "react";
 
+import Chip from "@material-ui/core/Chip";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+
 export default function SpeakerProfile({
   name,
   imgURL,
@@ -8,6 +11,7 @@ export default function SpeakerProfile({
   date,
   classes,
   occupation,
+  vid,
 }) {
   return (
     <Box m={2.5}>
@@ -35,6 +39,19 @@ export default function SpeakerProfile({
             <small>{date}</small>
           </Typography>
         </Grid>
+        {vid && (
+          <Grid item>
+            <a href={vid} target="_blank" rel="noopener noreferrer">
+              <Chip
+                icon={<YouTubeIcon />}
+                label="View Talk"
+                clickable
+                color="primary"
+                variant="outlined"
+              />
+            </a>
+          </Grid>
+        )}
         <Grid item>
           <Typography variant="body1">
             <Truncate str={bio} n={169} classes={classes} />

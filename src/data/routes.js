@@ -25,8 +25,8 @@ const routes = [
     ],
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/people",
+    name: "People",
     dropRoutes: [
       { path: "/team", Component: Team, name: "Team" },
       {
