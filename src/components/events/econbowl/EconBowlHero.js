@@ -1,9 +1,20 @@
-import React from "react";
-import { Container, Grid, Typography, Box, Button } from "@material-ui/core";
+import React, { useState } from "react";
+import {
+  Container,
+  Grid,
+  Typography,
+  Box,
+  Button,
+  Collapse,
+  IconButton,
+} from "@material-ui/core";
 import { Image } from "cloudinary-react";
+import Alert from "@material-ui/lab/Alert";
+import CloseIcon from "@material-ui/icons/Close";
 
 export default function EconBowlHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
+  const [open, setOpen] = useState(true);
   return (
     <Grid
       container
@@ -12,6 +23,29 @@ export default function EconBowlHero({ classes }) {
     >
       <Container fixed>
         <Box pt={mdDown ? 5 : 6} pb={mdDown ? 7 : 8}>
+          <Collapse in={open}>
+            <Box mb={2.5}>
+              <Alert
+                variant="filled"
+                severity="success"
+                action={
+                  <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => {
+                      setOpen(false);
+                    }}
+                  >
+                    <CloseIcon fontSize="inherit" />
+                  </IconButton>
+                }
+              >
+                EconBowl 2020-2021 took place on November 8th, 2020, with over
+                330 competitors.
+              </Alert>
+            </Box>
+          </Collapse>
           <Grid
             container
             direction={mdDown ? "column" : "row"}
@@ -64,17 +98,17 @@ export default function EconBowlHero({ classes }) {
               </Typography>
               <Box pt={2}>
                 <Grid container spacing={1} alignItems="center">
-                  <Grid item>
+                  {/* <Grid item>
                     <a
                       href="https://docs.google.com/forms/d/e/1FAIpQLSf8OZcjjx16mYpXKyfSjOY63UeTDgy_KK_8-l6nkhgYDZJivw/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button variant="contained" color="primary">
+                      <Button noRipple variant="contained" color="primary">
                         Register Now
                       </Button>
                     </a>
-                  </Grid>
+                  </Grid> */}
                   <Grid item>
                     <a
                       href="https://docs.google.com/document/d/1PsFf-NWwelRNSfVdKcW2rn-mTQvF39fIOiDQjzzx-kM/edit?usp=sharing"
