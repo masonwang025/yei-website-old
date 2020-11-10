@@ -11,6 +11,7 @@ import HomeCtaModal from "../components/home/HomeCtaModal";
 import HomeEconClubs from "../components/home/HomeEconClubs";
 import HomeEventsAndIniatives from "../components/home/HomeEventsAndInitiatives";
 import HomeSupporters from "../components/home/HomeSupporters";
+import HomePartners from "../components/home/HomePartners";
 // import { CtaPopupContext } from "../contexts/CtaPopupContext";
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
       <HomeEconClubs classes={classes} />
       <HomeNumbers classes={classes} />
       <HomeEventsAndIniatives classes={classes} />
+      <HomePartners classes={classes} />
       <HomeSupporters classes={classes} />
     </div>
   );

@@ -5,11 +5,6 @@ const upload2 =
 
 const supporters = [
   {
-    imgURL: `${upload1}/wen.png`,
-    link:
-      "https://wenyungff.weebly.com/?fbclid=IwAR3wFQNOc9qProsz0IgUmXto8ykihsa0sQyZIpAVcfjMDDKiFkjPPWzH3Rg",
-  },
-  {
     imgURL: `${upload1}/clickup.png`,
     link: "https://clickup.com/",
   },
