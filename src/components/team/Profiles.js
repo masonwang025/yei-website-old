@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Box, Container } from "@material-ui/core";
 import ProfileCard from "./ProfileCard";
-import team from "../../data/team";
+import team from "../../data/people/team";
 
 export default function Profiles({ classes }) {
   return (

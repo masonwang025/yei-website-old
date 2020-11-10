@@ -1,15 +1,15 @@
 // Page components
-import Home from "../pages/Home";
-import Team from "../pages/About/Team";
-import AdvisoryBoard from "../pages/About/AdvisoryBoard";
-import Events from "../pages/Events/Events";
-import EconTalks from "../pages/Events/EconTalks";
-import EconBowl from "../pages/Events/EconBowl";
-import EconOlympiad from "../pages/Events/EconOlympiad";
-import Clubs from "../pages/Clubs/Clubs";
-import CurrentClubs from "../pages/Clubs/CurrentClubs";
-import FLIP from "../pages/Programs/FLIP";
-import EARN from "../pages/Programs/EARN";
+import Home from "../../pages/Home";
+import Team from "../../pages/About/Team";
+import AdvisoryBoard from "../../pages/About/AdvisoryBoard";
+import Events from "../../pages/Events/Events";
+import EconTalks from "../../pages/Events/EconTalks";
+import EconBowl from "../../pages/Events/EconBowl";
+import EconOlympiad from "../../pages/Events/EconOlympiad";
+import Clubs from "../../pages/Clubs/Clubs";
+import CurrentClubs from "../../pages/Clubs/CurrentClubs";
+import FLIP from "../../pages/Programs/FLIP";
+import EARN from "../../pages/Programs/EARN";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },

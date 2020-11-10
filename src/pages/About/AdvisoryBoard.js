@@ -1,6 +1,6 @@
 import { Container, Grid, Typography, Box } from "@material-ui/core";
 import React from "react";
-import advisoryBoard from "../../data/advisoryBoard";
+import advisoryBoard from "../../data/people/advisoryBoard";
 import { Image } from "cloudinary-react";
 import AdvisoryHero from "../../components/team/AdvisoryHero";
 

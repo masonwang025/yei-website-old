@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 import RegisterFormContextProvider from "./contexts/RegisterFormContext";
 import CtaPopupContextProvider from "./contexts/CtaPopupContext";
 
-import routes from "./data/routes";
-import redirectRoutes from "./data/redirectRoutes";
+import routes from "./data/routes/routes";
+import redirectRoutes from "./data/routes/redirectRoutes";
 
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga";

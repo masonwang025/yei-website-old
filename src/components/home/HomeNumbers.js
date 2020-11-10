@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box } from "@material-ui/core";
-import clubs from "../../data/clubs";
+import clubs from "../../data/people/clubs";
 import CountUpOnce from "../CountUpOnce";
 
 const numberContent = [
@@ -13,7 +13,7 @@ const numberContent = [
     caption: "​Current clubs",
   },
   {
-    number: Math.floor(clubs.length * 47.3 / 25) * 25,
+    number: Math.floor((clubs.length * 47.3) / 25) * 25,
     caption: "Active student members",
   },
 ];

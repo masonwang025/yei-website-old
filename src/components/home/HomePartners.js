@@ -1,6 +1,6 @@
 import { Box, Grid, Container, Typography } from "@material-ui/core";
 import React from "react";
-import partners from "../../data/partners";
+import partners from "../../data/sponsors/partners";
 import { Image } from "cloudinary-react";
 
 export default function HomePartners({ classes }) {

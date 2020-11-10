@@ -1,6 +1,6 @@
 import { Grid, Box, Typography, Container } from "@material-ui/core";
 import React from "react";
-import speakers from "../../../data/speakers";
+import speakers from "../../../data/people/speakers";
 import SpeakerProfile from "./SpeakerProfile";
 
 export default function PastSpeakers({ classes }) {

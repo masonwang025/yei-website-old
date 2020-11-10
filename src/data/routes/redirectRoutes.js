@@ -11,7 +11,7 @@ const redirectRoutes = [
   {
     path: "/redirects", // keep this
     redirectLink:
-      "https://github.com/MasonWang025/yei-website/blob/master/src/data/redirectRoutes.js",
+      "https://github.com/MasonWang025/yei-website/blob/master/src/data/routes/redirectRoutes.js",
   },
 ];
 

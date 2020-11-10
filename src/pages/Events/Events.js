@@ -3,7 +3,7 @@ import Page from "../../components/Page";
 import { Helmet } from "react-helmet";
 import EventsSection from "../../components/events/EventsSection";
 import useStyles from "../../styles/pages/eventsStyles";
-import events from "../../data/eventsSections";
+import events from "../../data/components/eventsSections";
 import EventsHero from "../../components/events/EventsHero";
 
 export default function Events() {

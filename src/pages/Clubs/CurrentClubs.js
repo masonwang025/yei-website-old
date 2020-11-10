@@ -2,7 +2,7 @@ import React from "react";
 import ClubCard from "../../components/clubs/ClubCard";
 import PageHero from "../../components/PageHero";
 import { Grid, Button } from "@material-ui/core";
-import clubs from "../../data/clubs";
+import clubs from "../../data/people/clubs";
 import PageSection from "../../components/PageSection";
 import OpenForm from "../../components/clubs/OpenForm";
 import { Helmet } from "react-helmet";

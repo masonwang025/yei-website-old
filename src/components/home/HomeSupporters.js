@@ -1,6 +1,6 @@
 import { Box, Grid, Container, Typography } from "@material-ui/core";
 import React from "react";
-import supporters from "../../data/supporters";
+import supporters from "../../data/sponsors/supporters";
 import { Image } from "cloudinary-react";
 
 export default function HomeSupporters({ classes }) {

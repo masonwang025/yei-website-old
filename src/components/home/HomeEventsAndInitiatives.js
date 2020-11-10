@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
-import featured from "../../data/featured";
+import featured from "../../data/components/featured";
 import { Image } from "cloudinary-react";
 
 export default function HomeEventsAndIniatives({ classes }) {

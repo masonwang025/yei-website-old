@@ -9,7 +9,7 @@ import {
   Box,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import routes from "../../data/routes";
+import routes from "../../data/routes/routes";
 import { Link } from "react-router-dom";
 import CallToActionButton from "./CallToActionButton";
 import NestedListNav from "./NestedListNav";
