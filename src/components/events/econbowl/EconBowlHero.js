@@ -24,7 +24,7 @@ export default function EconBowlHero({ classes }) {
       <Container fixed>
         <Box pt={mdDown ? 5 : 6} pb={mdDown ? 7 : 8}>
           <Collapse in={open}>
-            <Box mb={2.5}>
+            <Box mb={4}>
               <Alert
                 variant="filled"
                 severity="success"

@@ -1,6 +1,7 @@
 const speakers = [
   {
     date: "October 10, 2020",
+    host: "Saratoga YEI",
     name: "Paul R. Milgrom",
     occupation: "2020 Nobel Prize Laureate & Professor @ Stanford",
     vids: ["https://www.youtube.com/watch?v=EpfXoVANHNA"],
@@ -12,6 +13,7 @@ const speakers = [
   {
     date: "October 10, 2020",
     name: "Leeat Yariv",
+    host: "Saratoga YEI",
     occupation: "Professor of Economics @ Princeton",
     vids: ["https://www.youtube.com/watch?v=EpfXoVANHNA?t=1170"],
     bio:
@@ -22,6 +24,7 @@ const speakers = [
   {
     date: "October 10, 2020",
     name: "George J. Mailath",
+    host: "Saratoga YEI",
     vids: ["https://www.youtube.com/watch?v=EpfXoVANHNAt=2450"],
     occupation: "Professor of Economics @ University of Pennsylvania",
     bio:
@@ -101,6 +104,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "George Bulman",
+    host: "Saratoga YEI",
     vids: ["https://youtu.be/xsPGvh-wTnU?t=6305"],
     occupation: "Assistant Professor @ UCSC",
     bio:
@@ -109,6 +113,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "Mark Brady",
+    host: "Saratoga YEI",
     occupation: "Professor of Economics @ SJSU",
     vids: ["https://youtu.be/xsPGvh-wTnU?t=5357"],
     bio:
@@ -117,6 +122,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "Scott Baker",
+    host: "Saratoga YEI",
     vids: ["https://youtu.be/xsPGvh-wTnU?t=4100"],
     occupation: "Associate Professor of Finance @ Northwestern",
     bio:
@@ -125,6 +131,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "Ajay Shenoy",
+    host: "Saratoga YEI",
     vids: ["https://youtu.be/xsPGvh-wTnU?t=2680"],
     occupation: "Assistant Professor @ UCSC",
     bio:
@@ -133,6 +140,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "Roy Bahat",
+    host: "Saratoga YEI",
     vids: ["https://youtu.be/xsPGvh-wTnU?t=880"],
     occupation: "Head of Bloomberg Beta",
     bio:
@@ -141,6 +149,7 @@ const speakers = [
   {
     date: "May 29, 2020",
     name: "Janice Albright",
+    host: "Saratoga YEI",
     vids: ["https://www.youtube.com/watch?v=xsPGvh-wTnU"],
     occupation: "Owner of Big Basin Burger Bar",
     bio:

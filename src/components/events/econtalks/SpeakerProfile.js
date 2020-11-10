@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import Chip from "@material-ui/core/Chip";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import SchoolIcon from "@material-ui/icons/School";
 
 export default function SpeakerProfile({
   name,
@@ -12,6 +13,7 @@ export default function SpeakerProfile({
   classes,
   occupation,
   vid,
+  host,
 }) {
   return (
     <Box m={2.5}>
@@ -40,16 +42,28 @@ export default function SpeakerProfile({
           </Typography>
         </Grid>
         {vid && (
-          <Grid item>
-            <a href={vid} target="_blank" rel="noopener noreferrer">
-              <Chip
-                icon={<YouTubeIcon />}
-                label="View Talk"
-                clickable
-                color="primary"
-                variant="outlined"
-              />
-            </a>
+          <Grid container justify="center" alignItems="center" spacing={1}>
+            <Grid item>
+              <a href={vid} target="_blank" rel="noopener noreferrer">
+                <Chip
+                  icon={<YouTubeIcon />}
+                  label="View Talk"
+                  clickable
+                  color="primary"
+                />
+              </a>
+            </Grid>
+            {host && (
+              <Grid item>
+                <Chip
+                  icon={<SchoolIcon />}
+                  label={"Hosted by " + host}
+                  clickable
+                  color="primary"
+                  variant="outlined"
+                />
+              </Grid>
+            )}
           </Grid>
         )}
         <Grid item>
