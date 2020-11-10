@@ -27,7 +27,7 @@ const team = [
   },
   {
     name: "Andy Chen",
-    positions: ["Executive Board Member", "VP of Leadership"],
+    positions: ["Executive Board Member", "VP of Clubs"],
     linkedin: "https://www.linkedin.com/in/andy-chen-82ba6b1a9/",
   },
   {
@@ -39,11 +39,6 @@ const team = [
     name: "Marcus Kuo",
     positions: ["Executive Board Member", "Human Resources Manager"],
     linkedin: "https://www.linkedin.com/in/marcus-kuo-b9a4281aa/",
-  },
-  {
-    name: "Anushka De",
-    positions: ["Executive Board Member", "Director of Multimedia"],
-    linkedin: "https://www.linkedin.com/in/anushkadde/",
   },
   {
     name: "Arun Balaji",
@@ -66,6 +61,11 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/rajvir-kohli.jpg",
   },
   {
+    name: "Charlotte Lau",
+    positions: ["Executive Board Member", "Director of Multimedia"],
+    linkedin: "https://www.linkedin.com/in/charlotte-lau-8b77421b2/",
+  },
+  {
     name: "Mason Wang",
     positions: ["Director of Technology"],
     linkedin: "https://www.linkedin.com/in/mason-wang/",
@@ -76,12 +76,14 @@ const team = [
   {
     name: "June Wang",
     positions: ["Grant Coordinator"],
-    linkedin: "https://www.linkedin.com/in/june-wang/",
+    linkedin: "https://www.linkedin.com/in/june-w/",
   },
   {
-    name: "Benjamin Chen",
+    name: "Jessica Cheng",
     positions: ["Fundraising Coordinator"],
-    linkedin: "https://www.linkedin.com/in/benjamin-chen-60584a157/",
+    linkedin: "www.linkedin.com/in/jessica-cheng05",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/jessica-chen.jpg",
   },
   {
     name: "Selina Chen",
@@ -89,9 +91,18 @@ const team = [
     linkedin: "https://www.linkedin.com/in/selina-chen-4a97831a2",
   },
   {
-    name: "Charlotte Lau",
+    name: "Sarah Zuo",
     positions: ["Graphic Designer"],
-    linkedin: "https://www.linkedin.com/in/charlotte-lau-8b77421b2/",
+    linkedin: "https://www.linkedin.com/in/sarah-zuo-aa71971ba/",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/sarah-zuo.jpg",
+  },
+  {
+    name: "Katie Chung",
+    positions: ["Videographer", "Video Editor"],
+    linkedin: "https://www.linkedin.com/in/katie-chung-6a94261b6/",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/katie-chung.jpg",
   },
   {
     name: "Sajiv Shah",
@@ -133,6 +144,13 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/darion-phan.jpg",
   },
   {
+    name: "Albert Ye",
+    positions: ["Assistant Testing Developer"],
+    linkedin: "https://www.linkedin.com/in/albert-ye-587aa81a2/ ",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/albert-ye.jpg",
+  },
+  {
     name: "Sanjit Pingili",
     positions: ["Curriculum Designer", "Quality Control"],
     linkedin: "http://linkedin.com/in/sanjit-pingili-14b04a1aa/",
@@ -164,8 +182,19 @@ const team = [
     linkedin: "https://www.linkedin.com/in/chuangbrook/",
   },
   {
+    name: "Sahil Bhatia",
+    positions: ["Accounting Manager"],
+    linkedin: "https://www.linkedin.com/in/sahil-bhatia-2590481a6/ ",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/sahil-bhatia.jpg",
+  },
+  {
     name: "Mounica Policharla",
-    positions: ["Fundraising Coordinator", "Regional Ambassador"],
+    positions: [
+      "Fundraising Coordinator",
+      "Regional Ambassador",
+      "Regional Director",
+    ],
     linkedin: "https://www.linkedin.com/in/mounica-policharla-3308ab1ab/",
   },
   {
@@ -176,9 +205,11 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1599677464/yei-website/team/danny-shao.jpg",
   },
   {
-    name: "Kevin Lin",
+    name: "Sneha Patibandla",
     positions: ["Regional Ambassador"],
-    linkedin: "https://www.linkedin.com/in/kevin-lin-0274b21a7/",
+    linkedin: "https://www.linkedin.com/in/sneha-patibandla-1529731b1/",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1604978019/yei-website/team/sneha-patibandla.jpg",
   },
   {
     name: "Rohan Bajpai",
@@ -187,7 +218,7 @@ const team = [
   },
   {
     name: "Neha Basu",
-    positions: ["Regional Ambassador"],
+    positions: ["Expansion Associate"],
     linkedin: "https://www.linkedin.com/in/nehabasu1/",
   },
   {
@@ -216,11 +247,6 @@ const team = [
     name: "Nevin Thombre",
     positions: ["FLIP Partnership Manager"],
     linkedin: "https://www.linkedin.com/in/nevin-thombre-5154411a9/ ",
-  },
-  {
-    name: "Sacha Toberoff",
-    positions: ["FLIP Partnership Manager"],
-    linkedin: "https://www.linkedin.com/in/sacha-toberoff-668a911b3/",
   },
 ];
 
