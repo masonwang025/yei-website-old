@@ -21,7 +21,7 @@ const featured = [
       "YEI offers public, free speaker events and workshops featuring industry professionals, professors at prestigious universities, business leaders, and policymakers.",
     path: "/events/econtalks",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1604986714/yei-website/logos/econtalks-white.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1604989955/yei-website/logos/econtalks-white.png",
   },
   {
     title: "FLIP",
