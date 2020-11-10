@@ -5,7 +5,7 @@ const featured = [
       "YEI’s Fall Competition, students compete in teams of 3 or 4 for a $1500 Prize Pool.  Competition consists of a Written Exam and Quiz Bowl Rounds. Presented with the Wen & Yung Family Foundation.",
     path: "/events/econbowl",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1600056211/yei-website/logos/econbowl.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1602113541/yei-website/logos/econbowl-white.png",
   },
   {
     title: "EconOlympiad",
@@ -21,7 +21,7 @@ const featured = [
       "YEI offers public, free speaker events and workshops featuring industry professionals, professors at prestigious universities, business leaders, and policymakers.",
     path: "/events/econtalks",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/econtalks.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1604986714/yei-website/logos/econtalks-white.png",
   },
   {
     title: "FLIP",
@@ -37,7 +37,7 @@ const featured = [
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
     path: "/programs",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/earn.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1604986849/yei-website/logos/earn-white.png",
   },
   {
     title: "SELC/WELC",

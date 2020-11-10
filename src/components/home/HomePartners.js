@@ -5,7 +5,7 @@ import { Image } from "cloudinary-react";
 
 export default function HomePartners({ classes }) {
   return (
-    <Box className={classes.supporters} pt={10.25}>
+    <Box className={classes.partners} pt={10.25}>
       <Container fixed>
         <Grid container direction="column" spacing={2}>
           <Grid item>

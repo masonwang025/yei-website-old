@@ -1,83 +1,38 @@
-import {
-  Box,
-  Button,
-  Grid,
-  Container,
-  Typography,
-  Card,
-} from "@material-ui/core";
+import { Box, Grid, Container, Typography } from "@material-ui/core";
 import React from "react";
-import { Link } from "react-router-dom";
 import featured from "../../data/components/featured";
-import { Image } from "cloudinary-react";
+import FeaturedSection from "./FeaturedSection";
 
 export default function HomeEventsAndIniatives({ classes }) {
   return (
-    <Box className={classes.about} pt={8} pb={9}>
-      <Container fixed>
-        <Grid container direction="column" spacing={4}>
-          <Grid item>
-            <Typography className={classes.aboutHeading} variant="h2">
-              Events and Initiatives
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Grid container alignItems="stretch" spacing={3}>
-              {featured.map((item) => (
-                <Grid key={item.title + item.path} item xs={12} md={6}>
-                  <Card className={classes.featuredCard}>
-                    <Box p={3}>
-                      <Grid
-                        container
-                        direction="column"
-                        justify="space-between"
-                        wrap="nowrap"
-                        style={{ height: "100%" }}
-                      >
-                        <Grid item>
-                          <Box mb={2}>
-                            <Typography
-                              variant={window.innerWidth > 600 ? "h3" : "h5"}
-                            >
-                              <b>{item.title}</b>
-                            </Typography>
-                          </Box>
-                          <Box mb={3}>
-                            <Typography variant="body1">
-                              {item.description}{" "}
-                            </Typography>
-                          </Box>
-                        </Grid>
-                        <Image
-                          alt="YEI - Youth Economics Initiative"
-                          cloudName="masonwang"
-                          className={classes.featuredCardLogo}
-                          publicId={
-                            item.imgURL
-                              ? item.imgURL
-                              : "https://res.cloudinary.com/masonwang/image/upload/v1600056092/yei-website/logo.png"
-                          }
-                        />
-                        <Grid item>
-                          <Link to={item.path}>
-                            <Button
-                              aria-label="learn more about this event"
-                              variant="contained"
-                              color="secondary"
-                            >
-                              Learn More
-                            </Button>
-                          </Link>
-                        </Grid>
-                      </Grid>
-                    </Box>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </Grid>
-        </Grid>
-      </Container>
+    <Box pb={2}>
+      <Box pt={9.25} className={classes.blackMode}>
+        <Container fixed>
+          <Typography
+            align="center"
+            className={classes.aboutHeading}
+            variant="h2"
+          >
+            Events and Initiatives
+          </Typography>
+        </Container>
+      </Box>
+      <Grid
+        style={{ marginTop: window.innerWidth < 690 ? "-3.5em" : "0" }}
+        container
+        alignItems="stretch"
+        direction="column"
+        wrap="nowrap"
+      >
+        {featured.map((item, index) => (
+          <FeaturedSection
+            key={item.title + item.path}
+            item={item}
+            index={index}
+            classes={classes}
+          />
+        ))}
+      </Grid>
     </Box>
   );
 }

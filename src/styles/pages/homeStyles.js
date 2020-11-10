@@ -95,23 +95,18 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.primary.darker,
     },
   },
-  featuredCard: {
-    height: "100%",
-    backgroundColor: "#efefef",
-    position: "relative",
-    overflow: "hidden",
-    "& > *": {
-      height: "100%",
+  featuredLogo: {
+    width: "100%",
+  },
+  firstOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 0,
     },
   },
-  featuredCardLogo: {
-    position: "absolute",
-    minWidth: "200px",
-    width: "25%",
-    maxWidth: "50%",
-    bottom: "24px",
-    right: "15px",
-    filter: "opacity(0.13)",
+  secondOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 10,
+    },
   },
   about: {
     backgroundColor: theme.palette.white.secondary,
@@ -144,6 +139,26 @@ const useStyles = makeStyles((theme) => ({
   },
   supporters: {
     background: theme.palette.white.dark,
+  },
+  partners: {
+    marginTop: "-3vw",
+    background: theme.palette.white.dark,
+  },
+  blackMode: {
+    color: "white",
+    backgroundColor: theme.palette.secondary.black,
+  },
+  slantUpLeft: {
+    padding: "4.69em 0",
+    marginTop: "-4vw",
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4vw))",
+  },
+  whiteBg: {
+    backgroundColor: "white",
+    zIndex: 2,
+    padding: "4.69em 0",
+    marginTop: "-4vw",
+    clipPath: "polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%)",
   },
 }));
 
