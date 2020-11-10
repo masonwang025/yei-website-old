@@ -37,7 +37,7 @@ const featured = [
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
     path: "/programs",
     imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1604986849/yei-website/logos/earn-white.png",
+      "https://res.cloudinary.com/masonwang/image/upload/v1604989897/yei-website/logos/earn-white.png",
   },
   {
     title: "SELC/WELC",
