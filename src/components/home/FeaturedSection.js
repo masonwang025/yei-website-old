@@ -22,7 +22,7 @@ export default function FeaturedSection({ item, index, classes }) {
       style={{ zIndex: -1 - index }}
     >
       <Container fixed>
-        <Box py={window.innerWidth >= 690 ? 6.9 : 4}>
+        <Box py={window.innerWidth >= 690 ? 6.9 : 0}>
           <Grid
             container
             direction={window.innerWidth >= 690 ? "row" : "column"}

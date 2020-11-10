@@ -5,7 +5,7 @@ import FeaturedSection from "./FeaturedSection";
 
 export default function HomeEventsAndIniatives({ classes }) {
   return (
-    <Box pb={2}>
+    <Box pb={1.69}>
       <Box pt={9.25} className={classes.blackMode}>
         <Container fixed>
           <Typography
@@ -18,7 +18,7 @@ export default function HomeEventsAndIniatives({ classes }) {
         </Container>
       </Box>
       <Grid
-        style={{ marginTop: window.innerWidth < 690 ? "-3.5em" : "0" }}
+        style={{ marginTop: window.innerWidth < 690 ? "-1.5em" : "0" }}
         container
         alignItems="stretch"
         direction="column"
