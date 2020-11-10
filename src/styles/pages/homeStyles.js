@@ -142,6 +142,8 @@ const useStyles = makeStyles((theme) => ({
   },
   partners: {
     marginTop: "-3vw",
+    zIndex: 5,
+    position: "relative",
     background: theme.palette.white.dark,
   },
   blackMode: {

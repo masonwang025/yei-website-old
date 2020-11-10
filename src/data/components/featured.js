@@ -27,7 +27,7 @@ const featured = [
     title: "FLIP",
     description:
       "YEI’s Financial Literacy Introduction Program (FLIP) is the service arm of our organization.  Through FLIP, our members are empowered to educate their community on Financial Literacy with our comprehensive curriculum and support network.",
-    path: "/programs",
+    path: "/programs/flip",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1602017056/yei-website/logos/flip.png",
   },
@@ -35,7 +35,7 @@ const featured = [
     title: "EARN",
     description:
       "YEI’s EARN program connects students with research and internship opportunities in finance, economics, and business, through a singular centralized application.",
-    path: "/programs",
+    path: "/programs/earn",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1604989897/yei-website/logos/earn-white.png",
   },

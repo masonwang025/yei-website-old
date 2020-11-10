@@ -19,7 +19,7 @@ export default function FeaturedSection({ item, index, classes }) {
           ? `${classes.blackMode} ${classes.slantUpLeft}`
           : `${classes.whiteBg}`
       }
-      style={{ zIndex: -1 - index }}
+      style={{ zIndex: 10 - index }}
     >
       <Container fixed>
         <Box py={window.innerWidth >= 690 ? 6.9 : 0}>

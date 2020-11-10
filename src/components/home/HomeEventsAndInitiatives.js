@@ -12,6 +12,7 @@ export default function HomeEventsAndIniatives({ classes }) {
             align="center"
             className={classes.aboutHeading}
             variant="h2"
+            style={{ zIndex: 1000, position: "relative" }}
           >
             Events and Initiatives
           </Typography>
