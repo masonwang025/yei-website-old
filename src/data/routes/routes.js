@@ -38,6 +38,7 @@ const routes = [
     ],
   },
   { path: "/econbowl", Component: EconBowl },
+  { path: "/team", Component: Team },
   {
     path: "/events",
     name: "Events",
