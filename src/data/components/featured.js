@@ -1,5 +1,5 @@
 import React from "react";
-import SpeakerSlider from "../../components/home/subcomponents/SpeakerSlider";
+import SpeakerSlider from "../../components/home/econtalkslides/SpeakerSlider";
 
 const featured = [
   {
