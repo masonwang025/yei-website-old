@@ -23,42 +23,47 @@ export default function FeaturedSection({ item, index, classes }) {
     >
       <Container fixed>
         <Box py={window.innerWidth >= 690 ? 6.9 : 0}>
-          <Grid
-            container
-            direction={window.innerWidth >= 690 ? "row" : "column"}
-            alignItems="center"
-            style={{ height: "100%" }}
-            spacing={3}
-          >
-            <Grid className={firstClass} item md={item.imgURL ? 8 : 12}>
-              <Typography variant={window.innerWidth > 600 ? "h3" : "h5"}>
-                <b>{item.title}</b>
-              </Typography>
-              <Box my={3}>
-                <Typography variant="body1">{item.description} </Typography>
-              </Box>
-              <Link to={item.path}>
-                <Button
-                  aria-label="learn more about this event"
-                  variant="contained"
-                  color={even ? "default" : "secondary"}
-                >
-                  Learn More
-                </Button>
-              </Link>
-            </Grid>
-            {item.imgURL && (
-              <Grid className={secondClass} item xs={12} sm={6} md={4}>
-                <Box px={2} py={2}>
-                  <Image
-                    alt="YEI - Youth Economics Initiative"
-                    cloudName="masonwang"
-                    className={classes.featuredLogo}
-                    publicId={item.imgURL}
-                  />
-                </Box>
+          <Grid container direction="column" spacing={3} wrap="nowrap">
+            <Grid item>
+              <Grid
+                container
+                direction={window.innerWidth >= 690 ? "row" : "column"}
+                alignItems="center"
+                style={{ height: "100%" }}
+                spacing={3}
+              >
+                <Grid className={firstClass} item md={item.imgURL ? 8 : 12}>
+                  <Typography variant={window.innerWidth > 600 ? "h3" : "h5"}>
+                    <b>{item.title}</b>
+                  </Typography>
+                  <Box my={3}>
+                    <Typography variant="body1">{item.description} </Typography>
+                  </Box>
+                  <Link to={item.path}>
+                    <Button
+                      aria-label="learn more about this event"
+                      variant="contained"
+                      color={even ? "default" : "secondary"}
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                </Grid>
+                {item.imgURL && (
+                  <Grid className={secondClass} item xs={12} sm={6} md={4}>
+                    <Box px={2} py={2}>
+                      <Image
+                        alt="YEI - Youth Economics Initiative"
+                        cloudName="masonwang"
+                        className={classes.featuredLogo}
+                        publicId={item.imgURL}
+                      />
+                    </Box>
+                  </Grid>
+                )}
               </Grid>
-            )}
+            </Grid>
+            {item.component && <Grid item>{item.component}</Grid>}
           </Grid>
         </Box>
       </Container>

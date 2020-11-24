@@ -1,3 +1,6 @@
+import React from "react";
+import SpeakerSlider from "../../components/home/subcomponents/SpeakerSlider";
+
 const featured = [
   {
     title: "EconBowl",
@@ -22,6 +25,7 @@ const featured = [
     path: "/events/econtalks",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1604989955/yei-website/logos/econtalks-white.png",
+    component: <SpeakerSlider />,
   },
   {
     title: "FLIP",

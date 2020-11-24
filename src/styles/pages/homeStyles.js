@@ -162,6 +162,13 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "-4vw",
     clipPath: "polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%)",
   },
+  speakerAvatar: {
+    width: "169px",
+    height: "169px",
+  },
+  slideItem: {
+    textAlign: "center",
+  },
 }));
 
 export default useStyles;
