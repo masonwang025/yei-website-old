@@ -41,8 +41,7 @@ export default function EconBowlHero({ classes }) {
                   </IconButton>
                 }
               >
-                EconBowl 2020-2021 took place on November 8th, 2020, with over
-                330 competitors.
+                EconBowl 2020-2021 took place on November 8th, 2020.
               </Alert>
             </Box>
           </Collapse>
