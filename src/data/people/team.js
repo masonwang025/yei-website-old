@@ -21,9 +21,11 @@ const team = [
     linkedin: "https://www.linkedin.com/in/cheryl-wu-ba12801b1/",
   },
   {
-    name: "Helena Su",
+    name: "Darion Phan",
     positions: ["Executive Board Member", "VP of Resources"],
-    linkedin: "https://www.linkedin.com/in/helena-su-063965193",
+    linkedin: "https://www.linkedin.com/in/darion-phan/",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/darion-phan.jpg",
   },
   {
     name: "Andy Chen",
@@ -86,11 +88,6 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/jessica-chen.jpg",
   },
   {
-    name: "Selina Chen",
-    positions: ["Graphic Designer"],
-    linkedin: "https://www.linkedin.com/in/selina-chen-4a97831a2",
-  },
-  {
     name: "Sarah Zuo",
     positions: ["Graphic Designer"],
     linkedin: "https://www.linkedin.com/in/sarah-zuo-aa71971ba/",
@@ -103,11 +100,6 @@ const team = [
     linkedin: "https://www.linkedin.com/in/katie-chung-6a94261b6/",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/katie-chung.jpg",
-  },
-  {
-    name: "Sajiv Shah",
-    positions: ["Marketing Specialist"],
-    linkedin: "https://www.linkedin.com/in/sajiv-shah-b86303169/",
   },
   {
     name: "Amy Zhou",
@@ -137,11 +129,9 @@ const team = [
     linkedin: "https://www.linkedin.com/in/ethan-lin-a93ab7172/",
   },
   {
-    name: "Darion Phan",
-    positions: ["Testing Developer"],
-    linkedin: "https://www.linkedin.com/in/darion-phan/",
-    imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/darion-phan.jpg",
+    name: "Helena Su",
+    positions: ["Curriculum Designer"],
+    linkedin: "https://www.linkedin.com/in/helena-su-063965193",
   },
   {
     name: "Albert Ye",
@@ -212,9 +202,11 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1604978019/yei-website/team/sneha-patibandla.jpg",
   },
   {
-    name: "Rohan Bajpai",
+    name: "Soumil Voma",
     positions: ["Regional Ambassador"],
-    linkedin: "https://www.linkedin.com/in/rohan-bajpai-460b141ab/",
+    linkedin: "https://www.linkedin.com/in/soumil-voma-728a871bb/",
+    imgURL:
+      "https://res.cloudinary.com/masonwang/image/upload/v1607231640/yei-website/team/soumil-voma.png",
   },
   {
     name: "Neha Basu",

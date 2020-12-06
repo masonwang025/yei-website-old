@@ -1,4 +1,4 @@
-import React /*, { useContext, useEffect }*/ from "react";
+import React, { useContext, useEffect } from "react";
 import HomeHero from "../components/home/HomeHero";
 import { Helmet } from "react-helmet";
 
@@ -12,23 +12,23 @@ import HomeEconClubs from "../components/home/HomeEconClubs";
 import HomeEventsAndIniatives from "../components/home/HomeEventsAndInitiatives";
 import HomeSupporters from "../components/home/HomeSupporters";
 import HomePartners from "../components/home/HomePartners";
-// import { CtaPopupContext } from "../contexts/CtaPopupContext";
+import { CtaPopupContext } from "../contexts/CtaPopupContext";
 
 export default function Home() {
   const classes = useStyles();
 
-  // const { popupShown, updatePopupShown, setOpen } = useContext(CtaPopupContext);
+  const { popupShown, updatePopupShown, setOpen } = useContext(CtaPopupContext);
 
-  // useEffect(() => {
-  //   if (!popupShown) {
-  //     setTimeout(() => {
-  //       setOpen(true);
-  //       updatePopupShown(true);
-  //     }, 3000);
-  //   } else {
-  //     setOpen(false);
-  //   } // eslint-disable-next-line
-  // }, []);
+  useEffect(() => {
+    if (!popupShown) {
+      setTimeout(() => {
+        setOpen(true);
+        updatePopupShown(true);
+      }, 3000);
+    } else {
+      setOpen(false);
+    } // eslint-disable-next-line
+  }, []);
 
   return (
     <div>

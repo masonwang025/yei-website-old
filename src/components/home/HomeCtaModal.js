@@ -69,22 +69,22 @@ export default function HomeCtaModal() {
                   </Grid>
                   <Grid item>
                     <Typography align="center" variant="body2">
-                      EconBowl offers high schoolers the chance to compete
-                      against like-minded individuals and apply real world
-                      economics knowledge in a fast-paced environment. Compete
-                      for glory, represent your high school, and win cash
-                      prizes!
+                      The YEI is now hiring for multiple positions! Check our
+                      application page. Knowledge of economics isn’t required
+                      for every position, and all are welcome to apply.
+                      Applications are on a rolling basis, so apply as soon as
+                      you can!
                     </Typography>
                   </Grid>
                   <Grid item>
                     <Box mt={1}>
-                      <Link className="white" to="/events/econbowl">
+                      <Link className="white" to="/team">
                         <Button
                           onClick={() => setOpen(false)}
                           color="primary"
                           variant="contained"
                         >
-                          Sign Up Now
+                          Apply Now
                         </Button>
                       </Link>
                     </Box>
