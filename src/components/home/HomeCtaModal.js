@@ -64,7 +64,7 @@ export default function HomeCtaModal() {
                 >
                   <Grid item>
                     <Typography align="center" variant="h4">
-                      <b>YEI Staff Positions Open!</b>
+                      <b>Join the YEI Leadership Team!</b>
                     </Typography>
                   </Grid>
                   <Grid item>
