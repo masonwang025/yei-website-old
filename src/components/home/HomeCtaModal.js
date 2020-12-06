@@ -78,7 +78,7 @@ export default function HomeCtaModal() {
                   </Grid>
                   <Grid item>
                     <Box mt={1}>
-                      <Link className="white" to="https://docs.google.com/document/d/1VBmep4hRFlc_m34zoB3PrCpR41UnlAKgH2r-k3FBrAM/edit?usp=sharing">
+                      <Link className="white" to="/team">
                         <Button
                           onClick={() => setOpen(false)}
                           color="primary"
