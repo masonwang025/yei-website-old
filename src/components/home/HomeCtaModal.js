@@ -64,12 +64,12 @@ export default function HomeCtaModal() {
                 >
                   <Grid item>
                     <Typography align="center" variant="h4">
-                      <b>Sign up for EconBowl!</b>
+                      <b>YEI Staff Positions Open!</b>
                     </Typography>
                   </Grid>
                   <Grid item>
                     <Typography align="center" variant="body2">
-                      The YEI is now hiring for multiple positions! Check our
+                      The YEI is now recruiting multiple positions! Check our
                       application page. Knowledge of economics isn’t required
                       for every position, and all are welcome to apply.
                       Applications are on a rolling basis, so apply as soon as
@@ -78,7 +78,7 @@ export default function HomeCtaModal() {
                   </Grid>
                   <Grid item>
                     <Box mt={1}>
-                      <Link className="white" to="/team">
+                      <Link className="white" to="https://docs.google.com/document/d/1VBmep4hRFlc_m34zoB3PrCpR41UnlAKgH2r-k3FBrAM/edit?usp=sharing">
                         <Button
                           onClick={() => setOpen(false)}
                           color="primary"
