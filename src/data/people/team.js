@@ -39,7 +39,7 @@ const team = [
   },
   {
     name: "Marcus Kuo",
-    positions: ["Executive Board Member", "Human Resources Manager"],
+    positions: ["Executive Board Member", "Chief of Staff"],
     linkedin: "https://www.linkedin.com/in/marcus-kuo-b9a4281aa/",
   },
   {
@@ -53,11 +53,7 @@ const team = [
   },
   {
     name: "Rajvir Kohli",
-    positions: [
-      "Executive Board Member",
-      "Director of EARN",
-      "Regional Ambassador",
-    ],
+    positions: ["Executive Board Member", "Director of EARN"],
     linkedin: "https://www.linkedin.com/in/rajvir-kohli-b207781a8/",
     imgURL:
       "https://res.cloudinary.com/masonwang/image/upload/v1599677463/yei-website/team/rajvir-kohli.jpg",
@@ -180,11 +176,7 @@ const team = [
   },
   {
     name: "Mounica Policharla",
-    positions: [
-      "Fundraising Coordinator",
-      "Regional Ambassador",
-      "Regional Director",
-    ],
+    positions: ["Regional Ambassador", "Regional Director"],
     linkedin: "https://www.linkedin.com/in/mounica-policharla-3308ab1ab/",
   },
   {
