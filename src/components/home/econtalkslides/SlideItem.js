@@ -23,7 +23,11 @@ export default function SlideItem({ name, imgURL, date, occupation, vid }) {
             className={classes.speakerAvatar}
             alt={name}
             src={imgURL}
-            style={{ background: "#0d242b" }}
+            style={{
+              background: "#0d242b",
+              width: "166px !important",
+              height: "166px !important",
+            }}
           />
         </Grid>
         <Grid item>
