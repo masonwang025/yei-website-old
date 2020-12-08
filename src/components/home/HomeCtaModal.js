@@ -64,12 +64,12 @@ export default function HomeCtaModal() {
                 >
                   <Grid item>
                     <Typography align="center" variant="h4">
-                      <b>Sign up for EconBowl!</b>
+                      <b>Join the YEI Leadership Team!</b>
                     </Typography>
                   </Grid>
                   <Grid item>
                     <Typography align="center" variant="body2">
-                      The YEI is now hiring for multiple positions! Check our
+                      The YEI is now recruiting multiple positions! Check our
                       application page. Knowledge of economics isn’t required
                       for every position, and all are welcome to apply.
                       Applications are on a rolling basis, so apply as soon as
