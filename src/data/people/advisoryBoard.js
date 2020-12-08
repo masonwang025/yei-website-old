@@ -55,16 +55,18 @@ const advisoryBoard = [
       <Typography variant="body1" gutterBottom>
         Dan Gode is the Clinical Professor of Accounting at the Stern School of
         Business at NYU. Before teaching at Stern, he taught at the William E.
-        Simon Graduate School of Business in the University of Rochester. He
-        teaches and consults extensively in the areas of business drivers,
-        financial reporting and analysis, data analytics, modeling, and
-        taxation. As of December 2019, he has taught 20 different courses with a
-        total of 194 sections and 9,398 students at Stern. He has also taught in
-        the Columbia EMBA program as a visiting faculty.
+        Simon Graduate School of Business in the University of Rochester.
       </Typography>
     ),
     bioRest: (
       <>
+        <Typography variant="body1" gutterBottom>
+          He teaches and consults extensively in the areas of business drivers,
+          financial reporting and analysis, data analytics, modeling, and
+          taxation. As of December 2019, he has taught 20 different courses with
+          a total of 194 sections and 9,398 students at Stern. He has also
+          taught in the Columbia EMBA program as a visiting faculty.
+        </Typography>
         <Typography variant="body1" gutterBottom>
           He has been at Stern since 1998 and was voted “Professor of the Year”
           twice and has been nominated for the award seven times. In addition to
@@ -98,17 +100,20 @@ const advisoryBoard = [
         Graduate School of Business teaching popular communication courses. He
         joined their faculty in 2007. Before that, he was a part of Columbia
         University and NYU’s faculty as senior lecturer/faculty director and
-        clinical associate professor respectively. In 2012, he co-founded the
-        LOWKeynote program for students to create and deliver inspiring talks to
-        enroll others in their vision to change lives, organizations, and the
-        world. In 2019, he was also appointed the inaugural director of the King
-        Global Leadership Program for Stanford’s Knight Hennessy Scholars. This
-        february, he published his first book, Communicate with Mastery: Speak
-        With Conviction and Write for Impact.
+        clinical associate professor respectively.
       </Typography>
     ),
     bioRest: (
       <>
+        <Typography variant="body1" gutterBottom>
+          In 2012, he co-founded the LOWKeynote program for students to create
+          and deliver inspiring talks to enroll others in their vision to change
+          lives, organizations, and the world. In 2019, he was also appointed
+          the inaugural director of the King Global Leadership Program for
+          Stanford’s Knight Hennessy Scholars. This february, he published his
+          first book, Communicate with Mastery: Speak With Conviction and Write
+          for Impact.
+        </Typography>
         <Typography variant="body1" gutterBottom>
           He has also been a self-employed keynote speaker as well as
           communication consultant and coach for over 26 years. He has worked

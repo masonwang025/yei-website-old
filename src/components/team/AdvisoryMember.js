@@ -11,6 +11,7 @@ export default function AdvisoryMember({ advisor, mdDown }) {
         direction={mdDown ? "column" : "row"}
         wrap="nowrap"
         spacing={3}
+        alignContent="center"
       >
         <Grid item md={3} sm={4} xs={6}>
           <Image
