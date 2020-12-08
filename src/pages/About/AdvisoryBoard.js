@@ -16,7 +16,7 @@ export default function AdvisoryBoard() {
         <link rel="icon" href="../assets/favicon.ico" />
         <meta
           name="description"
-          content="Get to know Youth Economics Initiative's advisory board."
+          content="YEI's Advisory Board is composed of a talented group of economists, executives, educators, and leadership experts from prestigious universities and organizations nationwide. YEI's Advisory Board serves as a guiding force in the organization and provides their own experiences in their careers to help our organization grow and thrive."
         />
       </Helmet>
 
