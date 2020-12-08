@@ -28,8 +28,7 @@ export default function Footer() {
               Youth Economics Initiative is a 501(c)(3) non-profit organization.
             </Typography>
             <Typography variant="body2" align="center">
-              &copy; 2020 The Youth Economics Initiative Inc. All Rights
-              Reserved.
+              &copy; 2020 Youth Economics Initiative Inc. All Rights Reserved.
             </Typography>
           </Grid>
           <Grid item>
