@@ -5,20 +5,14 @@ import { Grid, Button } from "@material-ui/core";
 import clubs from "../../data/people/clubs";
 import PageSection from "../../components/PageSection";
 import OpenForm from "../../components/clubs/OpenForm";
-import { Helmet } from "react-helmet";
+import Page from "../../components/Page";
 
 export default function CurrentClubs() {
   return (
-    <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Current Clubs - Youth Economics Initiative (YEI)</title>
-        <meta
-          name="description"
-          content="YEI EconClubs is the premier high school economics club program for students who want to supercharge their economics journey. View YEI's current list of clubs."
-        />
-        <link rel="icon" href="../../assets/favicon.ico" />
-      </Helmet>
+    <Page
+      pageTitle="Current Clubs"
+      desc="YEI EconClubs is the premier high school economics club program for students who want to supercharge their economics journey. View YEI's current list of clubs."
+    >
       <PageHero
         title="YEI Current Clubs"
         paragraph={`View YEI's current ${clubs.length} clubs.`}
@@ -57,6 +51,6 @@ export default function CurrentClubs() {
           })}
         </Grid>
       </PageSection>
-    </div>
+    </Page>
   );
 }

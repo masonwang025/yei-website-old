@@ -2,23 +2,17 @@ import React from "react";
 import PageSection from "../../components/PageSection";
 import Profiles from "../../components/team/Profiles";
 import { Button } from "@material-ui/core";
-import { Helmet } from "react-helmet";
 import TeamHero from "../../components/team/TeamHero";
 import useStyles from "../../styles/pages/teamStyles";
+import Page from "../../components/Page";
 
 export default function Team() {
   const classes = useStyles();
   return (
-    <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Team - Youth Economics Initiative (YEI)</title>{" "}
-        <link rel="icon" href="../assets/favicon.ico" />
-        <meta
-          name="description"
-          content="Get to know the people who make the magic happen at the Youth Economics Initiative. Learn how you can apply to join YEI's team."
-        />
-      </Helmet>
+    <Page
+      pageTitle="Team"
+      desc="Get to know the people who make the magic happen at the Youth Economics Initiative. Learn how you can apply to join YEI's team."
+    >
       <TeamHero classes={classes} />
       <Profiles classes={classes} />
       <PageSection
@@ -51,6 +45,6 @@ export default function Team() {
           </a>
         }
       />
-    </div>
+    </Page>
   );
 }

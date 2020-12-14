@@ -5,23 +5,17 @@ import PageSection from "../../components/PageSection";
 import ClubBenefits from "../../components/clubs/ClubBenefits";
 import { Link } from "react-router-dom";
 import OpenForm from "../../components/clubs/OpenForm";
-import { Helmet } from "react-helmet";
 import useStyles from "../../styles/pages/clubStyles";
 import ClubProcess from "../../components/clubs/ClubProcess";
+import Page from "../../components/Page";
 
 export default function Clubs() {
   const classes = useStyles();
   return (
-    <div>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Clubs - Youth Economics Initiative (YEI)</title>
-        <meta
-          name="description"
-          content="EconClubs is Youth Economics Initiative's (YEI) premier high school economics club program for students who want to supercharge their economics journey."
-        />
-        <link rel="icon" href="../../assets/favicon.ico" />
-      </Helmet>
+    <Page
+      pageTitle="Clubs"
+      desc="EconClubs is Youth Economics Initiative's (YEI) premier high school economics club program for students who want to supercharge their economics journey."
+    >
       <PageHero
         title="YEI EconClubs"
         paragraph="Take your economics club to the next level."
@@ -63,6 +57,6 @@ export default function Clubs() {
       />
       <ClubBenefits />
       <ClubProcess classes={classes} />
-    </div>
+    </Page>
   );
 }

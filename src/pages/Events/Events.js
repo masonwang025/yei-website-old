@@ -1,6 +1,5 @@
 import React from "react";
 import Page from "../../components/Page";
-import { Helmet } from "react-helmet";
 import EventsSection from "../../components/events/EventsSection";
 import useStyles from "../../styles/pages/eventsStyles";
 import events from "../../data/components/eventsSections";
@@ -9,16 +8,10 @@ import EventsHero from "../../components/events/EventsHero";
 export default function Events() {
   const classes = useStyles();
   return (
-    <Page>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Events - Youth Economics Initiative (YEI)</title>
-        <meta
-          name="description"
-          content="Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
-        />
-        <link rel="icon" href="../../assets/favicon.ico" />
-      </Helmet>
+    <Page
+      pageTitle="Events"
+      desc="Youth Economics Initiative (YEI) offers a broad range of events, from competitions, to EconTalks, to socials and conferences."
+    >
       <EventsHero classes={classes} />
       <div id="events"></div>
       {events.map((event, index) => (
