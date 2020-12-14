@@ -58,7 +58,7 @@ export default function EconOlympiad() {
           </Grid>
           <Grid item>
             <Typography align="center" variant="h6">
-              Information coming Winter 2020
+              Information coming January 2021
             </Typography>
           </Grid>
           <Grid item>

@@ -91,13 +91,6 @@ const team = [
       "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/sarah-zuo.jpg",
   },
   {
-    name: "Katie Chung",
-    positions: ["Videographer", "Video Editor"],
-    linkedin: "https://www.linkedin.com/in/katie-chung-6a94261b6/",
-    imgURL:
-      "https://res.cloudinary.com/masonwang/image/upload/v1604978018/yei-website/team/katie-chung.jpg",
-  },
-  {
     name: "Amy Zhou",
     positions: ["Marketing Specialist"],
     linkedin: "http://linkedin.com/in/amy-zhou-933536181/",
