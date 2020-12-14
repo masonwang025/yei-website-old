@@ -21,7 +21,7 @@ export default function MobileNav({
   setDrawerOpen,
 }) {
   return (
-    <Hidden mdUp>
+    <Hidden lgUp>
       <IconButton
         edge="start"
         className={classes.menuButton}

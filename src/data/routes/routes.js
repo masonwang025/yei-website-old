@@ -10,6 +10,7 @@ import Clubs from "../../pages/Clubs/Clubs";
 import CurrentClubs from "../../pages/Clubs/CurrentClubs";
 import FLIP from "../../pages/Programs/FLIP";
 import EARN from "../../pages/Programs/EARN";
+import Resources from "../../pages/Resources";
 
 const routes = [
   { path: "/", Component: Home, name: "Home" },
@@ -61,6 +62,7 @@ const routes = [
       { path: "/earn", Component: EARN, name: "EARN" },
     ],
   },
+  { path: "/resources", Component: Resources /*, name: "Resources" */ },
 ];
 
 export default routes;

@@ -7,7 +7,7 @@ import CallToActionButton from "./CallToActionButton";
 
 export default function DesktopNav({ classes, currPath }) {
   return (
-    <Hidden smDown>
+    <Hidden mdDown>
       {routes.map((route, index) => {
         if (!route.dropRoutes && route.name)
           return (
