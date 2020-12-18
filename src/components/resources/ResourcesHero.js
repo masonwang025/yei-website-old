@@ -10,6 +10,7 @@ import {
   Button,
 } from "@material-ui/core";
 import OpenForm from "../clubs/OpenForm";
+import { Link } from "react-router-dom";
 
 export default function ResourcesHero({ classes }) {
   const mdDown = window.innerWidth <= 960;
@@ -28,20 +29,24 @@ export default function ResourcesHero({ classes }) {
               >
                 <Grid item>
                   <Typography variant="h1" className={classes.title}>
-                    Resources
+                    EconClub Curriculum
                   </Typography>
                 </Grid>
                 <Grid item>
                   <Typography variant="h3">
-                    <b>This is a great subtitle.</b>
+                    <b>Making Economics and Financial Literacy Accessible</b>
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography variant="body1" className={classes.heroText}>
-                    This is a great subtitle. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. At recusandae corrupti facilis
-                    quis architecto placeat, eaque doloremque fugit
-                    necessitatibus molestiae?
+                  <Typography variant="body1">
+                    Youth Economics offers an in-depth portfolio of exclusive
+                    curriculum slide decks, practice worksheets, interactive
+                    concept reviews, and fully deployable lesson plans. Our
+                    chapters gain access to our comprehensive courses that allow
+                    them the frictionless ability to teach their members and
+                    begin exploring. All you need is a willingness to explore
+                    and a YEI EconClub Charter and you're on your way to a
+                    successful Economics Club.
                   </Typography>
                 </Grid>
               </Grid>
@@ -61,8 +66,10 @@ export default function ResourcesHero({ classes }) {
                           <b>Get access to all our resources!</b>
                         </Typography>
                         <Typography variant="body1">
-                          Join us as a YEI club and get access to all of our
-                          resources.
+                          Join us as a YEI club and get full access to{" "}
+                          <b>over 60 weeks</b> of AP Macroeconomics and
+                          Microeconomics, IB Economics and financial literacy
+                          curriculums.{" "}
                         </Typography>
                       </CardContent>
                     </Grid>
@@ -71,7 +78,9 @@ export default function ResourcesHero({ classes }) {
                         <OpenForm>
                           <Button color="primary">Register a Club</Button>
                         </OpenForm>
-                        <Button color="secondary">View our Clubs</Button>
+                        <Link to="/clubs/current-clubs">
+                          <Button color="secondary">View our Clubs</Button>
+                        </Link>
                       </CardActions>
                     </Grid>
                   </Grid>

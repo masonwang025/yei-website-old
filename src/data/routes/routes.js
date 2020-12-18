@@ -38,8 +38,6 @@ const routes = [
       },
     ],
   },
-  { path: "/econbowl", Component: EconBowl },
-  { path: "/team", Component: Team },
   {
     path: "/events",
     name: "Events",
@@ -62,7 +60,7 @@ const routes = [
       { path: "/earn", Component: EARN, name: "EARN" },
     ],
   },
-  { path: "/resources", Component: Resources /*, name: "Resources" */ },
+  { path: "/resources", Component: Resources, name: "Resources" },
 ];
 
 export default routes;

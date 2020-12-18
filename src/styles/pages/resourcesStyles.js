@@ -28,8 +28,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "4em",
   },
   image: {
-    width: "calc(100% - 26px)",
-    boxShadow: "-13px 13px #0d242aaa, 13px -13px #279361aa",
+    width: "100%",
+    borderRadius: "25px",
+    boxShadow: "0 0 11px rgba(33,33,33, .25)",
   },
   heroText: {
     fontSize: 26,
@@ -37,9 +38,18 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 22,
     },
   },
-  image2: {
-    width: "calc(100% - 26px)",
-    boxShadow: "-13px -13px #279361aa, 13px 13px #0d242aaa",
+  firstOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 0,
+    },
+  },
+  secondOrder: {
+    [theme.breakpoints.up("md")]: {
+      order: 10,
+    },
+  },
+  darkerBg: {
+    background: theme.palette.white.dark,
   },
 }));
 

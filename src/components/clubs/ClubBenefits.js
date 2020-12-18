@@ -10,15 +10,11 @@ export default function ClubBenefits() {
       content:
         "Whether you're a new club just starting out or a pre-existing club wanting to join, Youth Economics Initiative will provide you with invaluable resources including our comprehensive AP/IB Economics club curriculum and our FLIP Personal Finance club workshop guide.",
       ctaBtn: (
-        <a
-          href="mailto:expansion@theyei.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link to="/resources">
           <Button color="secondary" variant="outlined">
-            Request a Demo
+            Get Access Now
           </Button>
-        </a>
+        </Link>
       ),
     },
     {

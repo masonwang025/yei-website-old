@@ -38,8 +38,7 @@ export default function Footer() {
                   href="mailto:admin@theyei.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline"
-                  style={{ color: "white" }}
+                  className="underline white"
                 >
                   admin@theyei.org
                 </a>

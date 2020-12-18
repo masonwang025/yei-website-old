@@ -29,22 +29,27 @@ const StyledTableRow = withStyles((theme) => ({
 
 const useStyles = makeStyles({});
 
-export default function ScheduleTable({ rows }) {
+export default function ScheduleTable({ rows, header1, header2, width }) {
   const classes = useStyles();
 
   return (
     <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="customized table">
+      <Table className={classes.table} aria-label="schedule table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Time</StyledTableCell>
-            <StyledTableCell>Event</StyledTableCell>
+            <StyledTableCell>{header1 ? header1 : "Time"}</StyledTableCell>
+            <StyledTableCell>{header2 ? header2 : "Event"}</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row, index) => (
             <StyledTableRow key={row.name + " " + index}>
-              <StyledTableCell align="left">{row.time}</StyledTableCell>
+              <StyledTableCell
+                style={{ width: width ? width : 125 }}
+                align="left"
+              >
+                {row.time}
+              </StyledTableCell>
               <StyledTableCell align="left">{row.event}</StyledTableCell>
             </StyledTableRow>
           ))}
