@@ -4,7 +4,7 @@ import { Container, Typography, Box } from "@material-ui/core";
 export default function ResourceSection({ classes }) {
   return (
     <Box pt={8} pb={9} className={classes.lightMode}>
-      <Container id="ib-curriculum" fixed>
+      <Container id="ib-economics" fixed>
         <Typography variant="h3" gutterBottom>
           25+ Week IB Curriculum
         </Typography>

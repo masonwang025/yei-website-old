@@ -45,8 +45,11 @@ export default function ResourcesHero({ classes }) {
                     chapters gain access to our comprehensive courses that allow
                     them the frictionless ability to teach their members and
                     begin exploring. All you need is a willingness to explore
-                    and a YEI EconClub Charter and you're on your way to a
-                    successful Economics Club.
+                    and a{" "}
+                    <OpenForm inline>
+                      <span className="underline">YEI EconClub Charter</span>
+                    </OpenForm>{" "}
+                    and you're on your way to a successful Economics Club.
                   </Typography>
                 </Grid>
               </Grid>

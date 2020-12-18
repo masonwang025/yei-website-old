@@ -65,7 +65,7 @@ const sampleLinks = [
 export default function FinancialLiteracyCurriculum({ classes }) {
   return (
     <Box pt={8} pb={9} className={classes.darkerBg}>
-      <Container id="ib-curriculum" fixed>
+      <Container id="financial-literacy" fixed>
         <Typography variant="h3" gutterBottom>
           15+ Week First Step to Financial Literacy Curriculum
         </Typography>
