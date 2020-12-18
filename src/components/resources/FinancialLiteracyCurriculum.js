@@ -44,6 +44,24 @@ const units = [
   },
 ];
 
+const sampleLinks = [
+  {
+    link:
+      "https://docs.google.com/presentation/d/1h_6ccJOJiA53DKlE3KewrBM4UJiBrg_P59Zb0HYOkGk/edit#slide=id.g8949bf35a7_0_884",
+    text: "Module 1 Slides",
+  },
+  {
+    link:
+      "https://docs.google.com/document/d/1J7HyimwTFhJPomCnClTtzdoqW3nFx_JQTEyoqONS428/edit",
+    text: "Module 1 Handout",
+  },
+  {
+    link:
+      "https://docs.google.com/document/d/16YafhQdwAjZARn_qfSTpcnCal1msVhv7m9vQjPcmsps/edit",
+    text: "Module 1 Instructions",
+  },
+];
+
 export default function FinancialLiteracyCurriculum({ classes }) {
   return (
     <Box pt={8} pb={9} className={classes.darkerBg}>
@@ -74,7 +92,7 @@ export default function FinancialLiteracyCurriculum({ classes }) {
             className={classes.orderFirst}
             alignItems="center"
           >
-            <Grid item xs={12} md={8} className={classes.secondOrder}>
+            <Grid item xs={12} md={7} className={classes.secondOrder}>
               <Typography gutterBottom variant="h4">
                 <b>Sample Resource</b>
               </Typography>
@@ -94,11 +112,25 @@ export default function FinancialLiteracyCurriculum({ classes }) {
                   admin@theyei.org
                 </a>{" "}
                 for any questions.
+                <ul>
+                  {sampleLinks.map((item) => (
+                    <li>
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline"
+                      >
+                        {item.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </Typography>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid item xs={12} md={5}>
               <a
-                href="https://res.cloudinary.com/masonwang/image/upload/v1608259157/yei-website/resources/flip-module1-slide.png"
+                href={sampleLinks[0].link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
