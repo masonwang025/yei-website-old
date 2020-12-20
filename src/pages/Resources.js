@@ -14,7 +14,7 @@ export default function Resources() {
   return (
     <Page
       pageTitle="Resources"
-      desc="Youth Economics Initiative (YEI) provides numerous high quality resources for both AP and IB curriculums."
+      desc="Youth Economics Initiative (YEI) provides high quality club resources for both AP and IB economics."
     >
       <ResourcesHero classes={classes} />
       <Box py={5} className={classes.darkMode}>
