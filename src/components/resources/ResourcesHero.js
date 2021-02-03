@@ -42,7 +42,7 @@ export default function ResourcesHero({ classes }) {
                     Youth Economics offers an in-depth portfolio of exclusive
                     curriculum slide decks, practice worksheets, interactive
                     concept reviews, and fully deployable lesson plans. Our
-                    chapters gain access to our comprehensive courses that allow
+                    clubs gain access to our comprehensive courses that allow
                     them the frictionless ability to teach their members and
                     begin exploring. All you need is a willingness to explore
                     and a{" "}
@@ -71,8 +71,8 @@ export default function ResourcesHero({ classes }) {
                         <Typography variant="body1">
                           Join us as a YEI club and get full access to{" "}
                           <b>over 60 weeks</b> of AP Macroeconomics and
-                          Microeconomics, IB Economics and financial literacy
-                          curriculums.{" "}
+                          Microeconomics, IB Economics, and financial literacy
+                          content formatted and tested for club meetings.{" "}
                         </Typography>
                       </CardContent>
                     </Grid>
